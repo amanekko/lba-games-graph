@@ -20,15 +20,40 @@ export class App implements AfterViewInit {
   // History for undo feature
   private history: Array<{ nodes: any[], edges: any[] }> = [];
 
-  // Modal State
+  // Modal State (Nodes)
   public isEditModalOpen = signal(false);
   public editingNodeLabel = signal('');
   public editingNodeType = signal('standard');
+  public editingNodeMagicLevel = signal('0');
   private editCallback: any = null;
   private editingNodeData: any = null;
 
+  // Modal State (Edges)
+  public isEdgeModalOpen = signal(false);
+  public editingEdgeLabel = signal('');
+  private editingEdgeId: string | null = null;
+  private editEdgeCallback: any = null;
+  private editingEdgeData: any = null;
+
+  // File System handle for direct saving
+  private fileHandle: any = null;
+  public saveStatus = signal('');
+
   ngAfterViewInit(): void {
-    this.loadExample();
+    this.errorMessage.set('');
+    fetch('graph.json')
+      .then(res => {
+        if (!res.ok) throw new Error('Could not load graph.json.');
+        return res.json();
+      })
+      .then(data => {
+        this.nodes.clear();
+        this.edges.clear();
+        this.nodes.add(data.nodes || []);
+        this.edges.add(data.edges || []);
+        this.renderGraph();
+      })
+      .catch(() => this.renderGraph()); // Start empty if file not found
   }
 
   private saveHistory(): void {
@@ -36,12 +61,14 @@ export class App implements AfterViewInit {
       const cleanNodes = this.nodes.get().map((node: any) => ({
         id: node.id,
         label: node.label,
+        baseLabel: node.baseLabel,
         color: node.color,
         font: node.font,
         shape: node.shape,
         x: node.x,
         y: node.y,
-        nodeType: node.nodeType
+        nodeType: node.nodeType,
+        magicLevel: node.magicLevel
       }));
 
       const cleanEdges = this.edges.get().map((edge: any) => ({
@@ -70,6 +97,13 @@ export class App implements AfterViewInit {
     // Check for Ctrl+Z or Cmd+Z
     if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'z') {
       this.undo();
+      event.preventDefault();
+      return;
+    }
+
+    // Check for Ctrl+S or Cmd+S
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 's') {
+      this.saveGraph();
       event.preventDefault();
       return;
     }
@@ -120,16 +154,19 @@ export class App implements AfterViewInit {
 
   public confirmEdit(): void {
     if (this.editCallback && this.editingNodeData) {
-      const newLabel = this.editingNodeLabel();
+      const baseLabel = this.editingNodeLabel();
       const newType = this.editingNodeType();
+      const magicLevel = this.editingNodeMagicLevel();
       
-      const style = this.getNodeStyle(newType, newLabel);
+      const style = this.getNodeStyle(newType, baseLabel, magicLevel);
       
       this.editingNodeData.label = style.label;
       this.editingNodeData.shape = style.shape;
       this.editingNodeData.color = style.color;
       this.editingNodeData.font = style.font;
       this.editingNodeData.nodeType = newType;
+      this.editingNodeData.baseLabel = baseLabel;
+      this.editingNodeData.magicLevel = newType === 'enemy' ? magicLevel : undefined;
 
       this.saveHistory();
       this.editCallback(this.editingNodeData);
@@ -150,64 +187,130 @@ export class App implements AfterViewInit {
     this.editingNodeData = null;
   }
 
+  public updateEdgeLabel(event: Event): void {
+    const input = event.target as HTMLInputElement;
+    this.editingEdgeLabel.set(input.value);
+  }
+
+  public confirmEdgeEdit(): void {
+    if (this.editEdgeCallback && this.editingEdgeData) {
+      this.editingEdgeData.label = this.editingEdgeLabel();
+      this.saveHistory();
+      this.editEdgeCallback(this.editingEdgeData);
+    } else if (this.editingEdgeId) {
+      this.saveHistory();
+      this.edges.update({ id: this.editingEdgeId, label: this.editingEdgeLabel() });
+    }
+    this.closeEdgeModal();
+  }
+
+  public cancelEdgeEdit(): void {
+    if (this.editEdgeCallback) {
+      this.editEdgeCallback(null);
+    }
+    this.closeEdgeModal();
+  }
+
+  private closeEdgeModal(): void {
+    this.isEdgeModalOpen.set(false);
+    this.editingEdgeId = null;
+    this.editEdgeCallback = null;
+    this.editingEdgeData = null;
+  }
 
 
-  public loadExample(): void {
-    this.errorMessage.set('');
-    fetch('example-graph.json')
-      .then(res => {
-        if (!res.ok) throw new Error('Could not load example graph.');
-        return res.json();
-      })
-      .then(data => {
-        this.nodes.clear();
-        this.edges.clear();
-        this.nodes.add(data.nodes || []);
-        this.edges.add(data.edges || []);
-        this.renderGraph();
-      })
-      .catch(err => this.errorMessage.set(err.message));
+
+
+  public async openFile(): Promise<void> {
+    // Try File System Access API (Chrome/Edge)
+    if ('showOpenFilePicker' in window) {
+      try {
+        const [handle] = await (window as any).showOpenFilePicker({
+          types: [{ description: 'JSON Files', accept: { 'application/json': ['.json'] } }]
+        });
+        this.fileHandle = handle;
+        const file = await handle.getFile();
+        const text = await file.text();
+        this.loadGraphData(text);
+        return;
+      } catch (err: any) {
+        if (err.name === 'AbortError') return;
+      }
+    }
+    // Fallback: trigger hidden file input
+    document.getElementById('fallbackFileInput')?.click();
+  }
+
+  private loadGraphData(text: string): void {
+    try {
+      const data = JSON.parse(text);
+      this.nodes.clear();
+      this.edges.clear();
+      this.nodes.add(data.nodes || []);
+      this.edges.add(data.edges || []);
+      this.renderGraph();
+      this.errorMessage.set('');
+    } catch {
+      this.errorMessage.set('Invalid JSON file format.');
+    }
   }
 
   public onFileSelected(event: Event): void {
     const input = event.target as HTMLInputElement;
     if (!input.files || input.files.length === 0) return;
-
-    const file = input.files[0];
     const reader = new FileReader();
-
-    reader.onload = (e) => {
-      try {
-        const content = e.target?.result as string;
-        const data = JSON.parse(content);
-
-        this.nodes.clear();
-        this.edges.clear();
-        this.nodes.add(data.nodes || []);
-        this.edges.add(data.edges || []);
-
-        this.renderGraph();
-        this.errorMessage.set('');
-      } catch (err) {
-        this.errorMessage.set('Invalid JSON file format.');
-      }
-    };
-
+    reader.onload = (e) => this.loadGraphData(e.target?.result as string);
     reader.onerror = () => this.errorMessage.set('Error reading the file.');
-    reader.readAsText(file);
+    reader.readAsText(input.files[0]);
     input.value = '';
   }
 
-  public exportJson(): void {
-    // Extract only necessary data to keep JSON clean
+  public async saveGraph(): Promise<void> {
+    const data = this.buildExportData();
+    const json = JSON.stringify(data, null, 2);
+
+    // Try File System Access API (Chrome/Edge)
+    if ('showSaveFilePicker' in window) {
+      try {
+        if (!this.fileHandle) {
+          this.fileHandle = await (window as any).showSaveFilePicker({
+            suggestedName: 'graph.json',
+            types: [{ description: 'JSON Files', accept: { 'application/json': ['.json'] } }]
+          });
+        }
+        const writable = await this.fileHandle.createWritable();
+        await writable.write(json);
+        await writable.close();
+        this.saveStatus.set('Saved!');
+        setTimeout(() => this.saveStatus.set(''), 2000);
+        return;
+      } catch (err: any) {
+        if (err.name === 'AbortError') return; // User cancelled
+        this.fileHandle = null; // Reset on error
+      }
+    }
+
+    // Fallback: download as graph.json
+    const blob = new Blob([json], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'graph.json';
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
+  private buildExportData() {
     const cleanNodes = this.nodes.get().map((node: any) => {
       return {
         id: node.id,
         label: node.label,
+        baseLabel: node.baseLabel,
         color: node.color,
         font: node.font,
         shape: node.shape,
-        nodeType: node.nodeType
+        nodeType: node.nodeType,
+        magicLevel: node.magicLevel
       };
     });
 
@@ -220,32 +323,39 @@ export class App implements AfterViewInit {
       };
     });
 
-    const exportData = {
-      nodes: cleanNodes,
-      edges: cleanEdges
-    };
+    return { nodes: cleanNodes, edges: cleanEdges };
+  }
 
-    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exportData, null, 2));
+  public exportJson(): void {
+    const data = this.buildExportData();
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data, null, 2));
     const downloadAnchorNode = document.createElement('a');
     downloadAnchorNode.setAttribute("href", dataStr);
-    downloadAnchorNode.setAttribute("download", "game-flow.json");
+    downloadAnchorNode.setAttribute("download", "graph.json");
     document.body.appendChild(downloadAnchorNode);
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
   }
 
-  private getNodeStyle(type: string, label: string) {
+  private getNodeStyle(type: string, baseLabel: string, magicLevel: string = '0') {
+    const magic = type === 'enemy' ? `\n[Magic: ${magicLevel}]` : '';
     switch (type) {
+      case 'enemy':
+        return { label: (baseLabel || 'Enemy') + magic, shape: 'box', color: '#ef4444', font: { color: '#ffffff' } };
+      case 'object':
+        return { label: baseLabel || 'Object', shape: 'box', color: '#ca8a04', font: { color: '#ffffff' } };
+      case 'scene':
+        return { label: baseLabel || 'Scene', shape: 'box', color: '#10b981', font: { color: '#ffffff' } };
       case 'and':
-        return { label: label || 'AND', shape: 'circle', color: '#eab308', font: { color: '#ffffff' } };
+        return { label: baseLabel || 'AND', shape: 'ellipse', color: '#7c3aed', font: { color: '#ffffff' } };
       case 'or':
-        return { label: label || 'OR', shape: 'circle', color: '#f97316', font: { color: '#ffffff' } };
+        return { label: baseLabel || 'OR', shape: 'ellipse', color: '#7c3aed', font: { color: '#ffffff' } };
       case 'start':
-        return { label: label || 'Start', shape: 'box', color: '#10b981', font: { color: '#ffffff' } };
+        return { label: baseLabel || 'Start', shape: 'box', color: '#64748b', font: { color: '#ffffff' } };
       case 'end':
-        return { label: label || 'End', shape: 'box', color: '#ef4444', font: { color: '#ffffff' } };
-      default:
-        return { label: label || 'New Node', shape: 'box', color: '#3b82f6', font: { color: '#ffffff' } };
+        return { label: baseLabel || 'End', shape: 'box', color: '#64748b', font: { color: '#ffffff' } };
+      default: // standard
+        return { label: baseLabel || 'Node', shape: 'box', color: '#3b82f6', font: { color: '#ffffff' } };
     }
   }
 
@@ -292,8 +402,9 @@ export class App implements AfterViewInit {
         editNode: (nodeData: any, callback: any) => {
           this.editingNodeData = nodeData;
           this.editCallback = callback;
-          this.editingNodeLabel.set(nodeData.label || '');
+          this.editingNodeLabel.set(nodeData.baseLabel || nodeData.label || '');
           this.editingNodeType.set(nodeData.nodeType || 'standard');
+          this.editingNodeMagicLevel.set(nodeData.magicLevel || '0');
           this.isEditModalOpen.set(true);
         },
         addEdge: (edgeData: any, callback: any) => {
@@ -301,14 +412,10 @@ export class App implements AfterViewInit {
             callback(null); // Optional: prevents self-loops
             return;
           }
-          const label = prompt("Enter Edge Label (optional):");
-          if (label === null) {
-            callback(null);
-            return;
-          }
-          this.saveHistory();
-          edgeData.label = label || "";
-          callback(edgeData);
+          this.editingEdgeData = edgeData;
+          this.editEdgeCallback = callback;
+          this.editingEdgeLabel.set('');
+          this.isEdgeModalOpen.set(true);
         },
         editEdge: false,
         deleteNode: (nodeData: any, callback: any) => {
@@ -331,5 +438,42 @@ export class App implements AfterViewInit {
     }
 
     this.network = new Network(container, data, options);
+
+    // Track the last selected node for Ctrl+Click connections
+    let lastSelectedNode: string | null = null;
+
+    this.network.on('click', (params) => {
+      const ctrlPressed = params.event.srcEvent.ctrlKey || params.event.srcEvent.metaKey;
+      const clickedNode = params.nodes.length > 0 ? params.nodes[0] : null;
+
+      if (ctrlPressed && lastSelectedNode !== null && clickedNode !== null && lastSelectedNode !== clickedNode) {
+        // Create an edge from the last selected node to the newly clicked node
+        this.saveHistory();
+        this.edges.add({
+          from: lastSelectedNode,
+          to: clickedNode,
+          label: ''
+        });
+      } else if (!ctrlPressed) {
+        // Update the last selected node only if Ctrl is not pressed
+        lastSelectedNode = clickedNode;
+      }
+    });
+
+    this.network.on('doubleClick', (params) => {
+      if (params.nodes.length > 0) {
+        // Vis-network's built-in edit mode triggers our custom editNode callback
+        this.network?.editNode();
+      } else if (params.edges.length > 0) {
+        // Handle edge label editing via custom modal
+        const edgeId = params.edges[0];
+        const edgeData = this.edges.get(edgeId) as any;
+        if (edgeData) {
+          this.editingEdgeId = edgeId;
+          this.editingEdgeLabel.set(edgeData.label || "");
+          this.isEdgeModalOpen.set(true);
+        }
+      }
+    });
   }
 }

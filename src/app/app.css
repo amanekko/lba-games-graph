@@ -95,6 +95,19 @@
   background-color: #059669;
 }
 
+.btn-save {
+  background-color: #2563eb;
+  color: #fff;
+  border: 1px solid #3b82f6;
+  min-width: 70px;
+  transition: all 0.2s;
+}
+
+.btn-save:hover {
+  background-color: #1d4ed8;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
 .upload-btn {
   display: inline-flex;
   align-items: center;
@@ -153,4 +166,165 @@
 ::ng-deep .vis-network .vis-edit-mode .vis-button:hover {
   background: rgba(0, 0, 0, 0.1) !important;
   box-shadow: none !important;
+}
+
+/* Modal Styling */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 450px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modal-content h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.text-input {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.text-input:focus {
+  border-color: var(--accent-color);
+}
+
+.type-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.type-btn {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
+  color: var(--text-primary);
+  padding: 10px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.type-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.type-btn.selected {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Node Type Colors */
+.type-btn.type-standard { border-color: rgba(59, 130, 246, 0.3); }
+.type-btn.type-standard.selected { border-color: #3b82f6; box-shadow: 0 0 10px rgba(59, 130, 246, 0.3); }
+
+.type-btn.type-enemy { border-color: rgba(239, 68, 68, 0.3); }
+.type-btn.type-enemy.selected { border-color: #ef4444; box-shadow: 0 0 10px rgba(239, 68, 68, 0.3); }
+
+.type-btn.type-object { border-color: rgba(202, 138, 4, 0.3); }
+.type-btn.type-object.selected { border-color: #ca8a04; box-shadow: 0 0 10px rgba(202, 138, 4, 0.3); }
+
+.type-btn.type-scene { border-color: rgba(16, 185, 129, 0.3); }
+.type-btn.type-scene.selected { border-color: #10b981; box-shadow: 0 0 10px rgba(16, 185, 129, 0.3); }
+
+.type-btn.type-and { border-color: rgba(124, 58, 237, 0.3); }
+.type-btn.type-and.selected { border-color: #7c3aed; box-shadow: 0 0 10px rgba(124, 58, 237, 0.3); }
+
+.type-btn.type-or { border-color: rgba(124, 58, 237, 0.3); }
+.type-btn.type-or.selected { border-color: #7c3aed; box-shadow: 0 0 10px rgba(124, 58, 237, 0.3); }
+
+.type-btn.type-start { border-color: rgba(100, 116, 139, 0.3); }
+.type-btn.type-start.selected { border-color: #64748b; box-shadow: 0 0 10px rgba(100, 116, 139, 0.3); }
+
+.type-btn.type-end { border-color: rgba(100, 116, 139, 0.3); }
+.type-btn.type-end.selected { border-color: #64748b; box-shadow: 0 0 10px rgba(100, 116, 139, 0.3); }
+
+/* Magic Level Selector */
+.magic-selector {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.magic-btn {
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(239, 68, 68, 0.3);
+  color: var(--text-primary);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.magic-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.magic-btn.selected {
+  border-color: #ef4444;
+  background: rgba(239, 68, 68, 0.15);
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 10px;
 }

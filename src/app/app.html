@@ -7,11 +7,11 @@
       </div>
 
       <div class="controls">
-        <label class="btn upload-btn">
-          <span>Upload JSON</span>
-          <input type="file" accept=".json" (change)="onFileSelected($event)" hidden>
-        </label>
-        <button class="btn btn-secondary" (click)="loadExample()">Load Example</button>
+        <button class="btn btn-secondary" (click)="openFile()">Open File</button>
+        <input id="fallbackFileInput" type="file" accept=".json" (change)="onFileSelected($event)" hidden>
+        <button class="btn btn-save" (click)="saveGraph()" title="Save (Ctrl+S)">
+          {{ saveStatus() || 'Save' }}
+        </button>
         <button class="btn btn-primary" (click)="exportJson()">Export JSON</button>
       </div>
     </div>
@@ -41,18 +41,52 @@
           <div class="input-group">
             <label>Node Type</label>
             <div class="type-selector">
-              <button class="type-btn standard" [class.selected]="editingNodeType() === 'standard'" (click)="setNodeType('standard')">Standard</button>
-              <button class="type-btn and" [class.selected]="editingNodeType() === 'and'" (click)="setNodeType('and')">AND</button>
-              <button class="type-btn or" [class.selected]="editingNodeType() === 'or'" (click)="setNodeType('or')">OR</button>
-              <button class="type-btn start" [class.selected]="editingNodeType() === 'start'" (click)="setNodeType('start')">Start</button>
-              <button class="type-btn end" [class.selected]="editingNodeType() === 'end'" (click)="setNodeType('end')">End</button>
+              <button class="type-btn type-standard" [class.selected]="editingNodeType() === 'standard'" (click)="setNodeType('standard')">Standard</button>
+              <button class="type-btn type-enemy" [class.selected]="editingNodeType() === 'enemy'" (click)="setNodeType('enemy')">Enemy</button>
+              <button class="type-btn type-object" [class.selected]="editingNodeType() === 'object'" (click)="setNodeType('object')">Object</button>
+              <button class="type-btn type-scene" [class.selected]="editingNodeType() === 'scene'" (click)="setNodeType('scene')">Scene</button>
+              <button class="type-btn type-and" [class.selected]="editingNodeType() === 'and'" (click)="setNodeType('and')">AND</button>
+              <button class="type-btn type-or" [class.selected]="editingNodeType() === 'or'" (click)="setNodeType('or')">OR</button>
+              <button class="type-btn type-start" [class.selected]="editingNodeType() === 'start'" (click)="setNodeType('start')">Start</button>
+              <button class="type-btn type-end" [class.selected]="editingNodeType() === 'end'" (click)="setNodeType('end')">End</button>
             </div>
           </div>
+
+          @if (editingNodeType() === 'enemy') {
+            <div class="input-group">
+              <label for="magicLevel">Magic Level</label>
+              <div class="magic-selector">
+                @for (lvl of ['0','1','2','3','4','saber']; track lvl) {
+                  <button class="magic-btn" [class.selected]="editingNodeMagicLevel() === lvl" (click)="editingNodeMagicLevel.set(lvl)">{{ lvl }}</button>
+                }
+              </div>
+            </div>
+          }
         </div>
 
         <div class="modal-actions">
           <button class="btn btn-secondary" (click)="cancelEdit()">Cancel</button>
           <button class="btn btn-primary" (click)="confirmEdit()">Save Changes</button>
+        </div>
+      </div>
+    </div>
+  }
+
+  @if (isEdgeModalOpen()) {
+    <div class="modal-backdrop" (click)="cancelEdgeEdit()">
+      <div class="modal-content glass-panel" (click)="$event.stopPropagation()">
+        <h2>Edit Edge</h2>
+        
+        <div class="modal-body">
+          <div class="input-group">
+            <label for="edgeLabel">Edge Label</label>
+            <input id="edgeLabel" type="text" [value]="editingEdgeLabel()" (input)="updateEdgeLabel($event)" class="text-input" placeholder="Enter edge label (optional)..." />
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn btn-secondary" (click)="cancelEdgeEdit()">Cancel</button>
+          <button class="btn btn-primary" (click)="confirmEdgeEdit()">Save Changes</button>
         </div>
       </div>
     </div>
