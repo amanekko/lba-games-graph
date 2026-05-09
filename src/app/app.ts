@@ -25,8 +25,16 @@ export class App implements AfterViewInit {
   public editingNodeLabel = signal('');
   public editingNodeType = signal('standard');
   public editingNodeMagicLevel = signal('0');
+  public editingNodeIsland = signal('');
   private editCallback: any = null;
   private editingNodeData: any = null;
+
+  // Island color palette
+  private readonly ISLAND_PALETTE = [
+    '#f59e0b', '#06b6d4', '#a855f7', '#f43f5e',
+    '#14b8a6', '#fb923c', '#818cf8', '#84cc16'
+  ];
+  private islandColorMap = new Map<string, string>();
 
   // Modal State (Edges)
   public isEdgeModalOpen = signal(false);
@@ -41,6 +49,11 @@ export class App implements AfterViewInit {
 
   // Track where mousedown started to avoid accidental modal close
   private mouseDownOnBackdrop = false;
+
+  public readonly ISLANDS = [
+    'Citadel', 'Principal', 'White Leaf Desert',
+    'Proxima', 'Hamalyi', 'Tipett', 'Brundle', 'Fortress'
+  ];
 
   ngAfterViewInit(): void {
     this.errorMessage.set('');
@@ -71,7 +84,8 @@ export class App implements AfterViewInit {
         x: node.x,
         y: node.y,
         nodeType: node.nodeType,
-        magicLevel: node.magicLevel
+        magicLevel: node.magicLevel,
+        island: node.island
       }));
 
       const cleanEdges = this.edges.get().map((edge: any) => ({
@@ -164,6 +178,7 @@ export class App implements AfterViewInit {
       const baseLabel = this.editingNodeLabel();
       const newType = this.editingNodeType();
       const magicLevel = this.editingNodeMagicLevel();
+      const island = this.editingNodeIsland().trim();
       
       const style = this.getNodeStyle(newType, baseLabel, magicLevel);
       
@@ -174,6 +189,23 @@ export class App implements AfterViewInit {
       this.editingNodeData.nodeType = newType;
       this.editingNodeData.baseLabel = baseLabel;
       this.editingNodeData.magicLevel = newType === 'enemy' ? magicLevel : undefined;
+      this.editingNodeData.island = island || undefined;
+
+      // Apply island border styling
+      if (island) {
+        const islandColor = this.getIslandColor(island);
+        this.editingNodeData.borderWidth = 4;
+        this.editingNodeData.shapeProperties = { borderDashes: [6, 4] };
+        this.editingNodeData.color = {
+          background: style.color as string,
+          border: islandColor,
+          highlight: { background: style.color as string, border: islandColor },
+          hover: { background: style.color as string, border: islandColor }
+        };
+      } else {
+        this.editingNodeData.borderWidth = 2;
+        this.editingNodeData.shapeProperties = { borderDashes: false };
+      }
 
       this.saveHistory();
       this.editCallback(this.editingNodeData);
@@ -328,7 +360,10 @@ export class App implements AfterViewInit {
         font: node.font,
         shape: node.shape,
         nodeType: node.nodeType,
-        magicLevel: node.magicLevel
+        magicLevel: node.magicLevel,
+        island: node.island,
+        borderWidth: node.borderWidth,
+        shapeProperties: node.shapeProperties
       };
     });
 
@@ -342,6 +377,26 @@ export class App implements AfterViewInit {
     });
 
     return { nodes: cleanNodes, edges: cleanEdges };
+  }
+
+  public getIslands(): { name: string; color: string }[] {
+    const seen = new Set<string>();
+    const result: { name: string; color: string }[] = [];
+    this.nodes.get().forEach((node: any) => {
+      if (node.island && !seen.has(node.island)) {
+        seen.add(node.island);
+        result.push({ name: node.island, color: this.getIslandColor(node.island) });
+      }
+    });
+    return result;
+  }
+
+  private getIslandColor(name: string): string {
+    if (!this.islandColorMap.has(name)) {
+      const idx = this.islandColorMap.size % this.ISLAND_PALETTE.length;
+      this.islandColorMap.set(name, this.ISLAND_PALETTE[idx]);
+    }
+    return this.islandColorMap.get(name)!;
   }
 
   public exportJson(): void {
@@ -423,6 +478,7 @@ export class App implements AfterViewInit {
           this.editingNodeLabel.set(nodeData.baseLabel || nodeData.label || '');
           this.editingNodeType.set(nodeData.nodeType || 'standard');
           this.editingNodeMagicLevel.set(nodeData.magicLevel || '0');
+          this.editingNodeIsland.set(nodeData.island || '');
           this.isEditModalOpen.set(true);
         },
         addEdge: (edgeData: any, callback: any) => {

@@ -25,6 +25,18 @@
 
   <main class="canvas-container glass-panel">
     <div #networkContainer class="network-wrapper"></div>
+
+    @if (getIslands().length > 0) {
+      <div class="island-legend glass-panel">
+        <p class="legend-title">Islands</p>
+        @for (island of getIslands(); track island.name) {
+          <div class="legend-item">
+            <span class="legend-dot" [style.background]="island.color" [style.border-color]="island.color"></span>
+            <span class="legend-label">{{ island.name }}</span>
+          </div>
+        }
+      </div>
+    }
   </main>
 
   @if (isEditModalOpen()) {
@@ -64,6 +76,16 @@
               </div>
             </div>
           }
+
+          <div class="input-group">
+            <label>Island <span class="label-hint">(optional)</span></label>
+            <div class="island-selector">
+              <button class="island-btn" [class.selected]="editingNodeIsland() === ''" (click)="editingNodeIsland.set('')">None</button>
+              @for (isl of ISLANDS; track isl) {
+                <button class="island-btn" [class.selected]="editingNodeIsland() === isl" (click)="editingNodeIsland.set(isl)">{{ isl }}</button>
+              }
+            </div>
+          </div>
         </div>
 
         <div class="modal-actions">
