@@ -166,6 +166,7 @@ export class App implements AfterViewInit {
     if (type === 'end') this.editingNodeLabel.set('End');
     if (type === 'and') this.editingNodeLabel.set('AND');
     if (type === 'or') this.editingNodeLabel.set('OR');
+    if (type === 'chapter' && !this.editingNodeLabel().startsWith('Chapter')) this.editingNodeLabel.set('Chapter ');
   }
 
   public updateLabel(event: Event): void {
@@ -413,6 +414,8 @@ export class App implements AfterViewInit {
         return { label: baseLabel || 'Start', shape: 'box', color: '#64748b', font: { color: '#ffffff' } };
       case 'end':
         return { label: baseLabel || 'End', shape: 'box', color: '#64748b', font: { color: '#ffffff' } };
+      case 'chapter':
+        return { label: baseLabel || 'Chapter', shape: 'box', color: '#db2777', font: { color: '#ffffff', size: 18, face: 'Inter, sans-serif' }, borderWidth: 3 };
       default: // standard
         return { label: baseLabel || 'Node', shape: 'box', color: '#3b82f6', font: { color: '#ffffff' } };
     }

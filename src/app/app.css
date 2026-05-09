@@ -369,6 +369,9 @@
 .type-btn.type-end { border-color: rgba(100, 116, 139, 0.3); }
 .type-btn.type-end.selected { border-color: #64748b; box-shadow: 0 0 10px rgba(100, 116, 139, 0.3); }
 
+.type-btn.type-chapter { border-color: rgba(219, 39, 119, 0.3); }
+.type-btn.type-chapter.selected { border-color: #db2777; box-shadow: 0 0 10px rgba(219, 39, 119, 0.3); }
+
 /* Magic Level Selector */
 .magic-selector {
   display: flex;
