@@ -1,0 +1,26 @@
+<div class="app-container">
+  <header class="glass-panel header">
+    <div class="header-content">
+      <div class="title-area">
+        <h1>Game Flow Visualizer</h1>
+        <p class="subtitle">Interactive path mapping</p>
+      </div>
+      
+      <div class="controls">
+        <label class="btn upload-btn">
+          <span>Upload JSON</span>
+          <input type="file" accept=".json" (change)="onFileSelected($event)" hidden>
+        </label>
+        <button class="btn btn-secondary" (click)="loadExample()">Load Example</button>
+      </div>
+    </div>
+    
+    <div class="error-msg" *ngIf="errorMessage">
+      {{ errorMessage }}
+    </div>
+  </header>
+
+  <main class="canvas-container">
+    <div #networkContainer class="network-wrapper"></div>
+  </main>
+</div>

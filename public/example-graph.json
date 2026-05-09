@@ -1,0 +1,25 @@
+{
+  "nodes": [
+    { "id": 1, "label": "Start Game", "color": "#10b981", "font": { "color": "#ffffff" }, "shape": "box" },
+    { "id": 2, "label": "Find Red Key", "color": "#3b82f6", "font": { "color": "#ffffff" }, "shape": "box" },
+    { "id": 3, "label": "Find Blue Key", "color": "#3b82f6", "font": { "color": "#ffffff" }, "shape": "box" },
+    { "id": 4, "label": "AND", "color": "#eab308", "font": { "color": "#000000" }, "shape": "circle" },
+    { "id": 5, "label": "Unlock Gate", "color": "#3b82f6", "font": { "color": "#ffffff" }, "shape": "box" },
+    { "id": 6, "label": "Secret Path", "color": "#3b82f6", "font": { "color": "#ffffff" }, "shape": "box" },
+    { "id": 7, "label": "OR", "color": "#f97316", "font": { "color": "#ffffff" }, "shape": "circle" },
+    { "id": 8, "label": "Reach Castle", "color": "#3b82f6", "font": { "color": "#ffffff" }, "shape": "box" },
+    { "id": 9, "label": "End Game", "color": "#ef4444", "font": { "color": "#ffffff" }, "shape": "box" }
+  ],
+  "edges": [
+    { "id": "e1", "from": 1, "to": 2, "label": "starts" },
+    { "id": "e2", "from": 1, "to": 3, "label": "starts" },
+    { "id": "e3", "from": 2, "to": 4, "label": "" },
+    { "id": "e4", "from": 3, "to": 4, "label": "" },
+    { "id": "e5", "from": 4, "to": 5, "label": "both required" },
+    { "id": "e6", "from": 1, "to": 6, "label": "skip gate" },
+    { "id": "e7", "from": 5, "to": 7, "label": "" },
+    { "id": "e8", "from": 6, "to": 7, "label": "" },
+    { "id": "e9", "from": 7, "to": 8, "label": "any path" },
+    { "id": "e10", "from": 8, "to": 9, "label": "win" }
+  ]
+}

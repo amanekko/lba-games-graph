@@ -1,0 +1,156 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  gap: 20px;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.title-area h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  background: linear-gradient(90deg, #f8fafc, #94a3b8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toolbar-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.select-input {
+  background: var(--bg-color);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.select-input:focus {
+  border-color: var(--accent-color);
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.btn-primary {
+  background-color: #10b981;
+}
+
+.btn-primary:hover {
+  background-color: #059669;
+}
+
+.upload-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-msg {
+  color: #ef4444;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.canvas-container {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  min-height: 400px;
+}
+
+.network-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Vis Network Customization */
+::ng-deep .vis-network {
+  outline: none;
+}
+
+/* Vis Network Manipulation Toolbar Styling */
+::ng-deep .vis-network .vis-manipulation,
+::ng-deep .vis-network .vis-edit-mode {
+  background: var(--panel-bg) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+  color: var(--text-primary) !important;
+  padding-top: 5px !important;
+}
+
+::ng-deep .vis-network .vis-manipulation .vis-button,
+::ng-deep .vis-network .vis-edit-mode .vis-button {
+  font-family: 'Inter', sans-serif !important;
+  color: var(--text-primary) !important;
+  background-color: transparent !important;
+  border-radius: 6px !important;
+  transition: all 0.2s;
+}
+
+::ng-deep .vis-network .vis-manipulation .vis-button:hover,
+::ng-deep .vis-network .vis-edit-mode .vis-button:hover {
+  background: rgba(0, 0, 0, 0.1) !important;
+  box-shadow: none !important;
+}
