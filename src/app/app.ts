@@ -39,6 +39,9 @@ export class App implements AfterViewInit {
   private fileHandle: any = null;
   public saveStatus = signal('');
 
+  // Track where mousedown started to avoid accidental modal close
+  private mouseDownOnBackdrop = false;
+
   ngAfterViewInit(): void {
     this.errorMessage.set('');
     fetch('graph.json')
@@ -145,6 +148,10 @@ export class App implements AfterViewInit {
 
   public setNodeType(type: string): void {
     this.editingNodeType.set(type);
+    if (type === 'start') this.editingNodeLabel.set('Start');
+    if (type === 'end') this.editingNodeLabel.set('End');
+    if (type === 'and') this.editingNodeLabel.set('AND');
+    if (type === 'or') this.editingNodeLabel.set('OR');
   }
 
   public updateLabel(event: Event): void {
@@ -179,6 +186,17 @@ export class App implements AfterViewInit {
       this.editCallback(null);
     }
     this.closeModal();
+  }
+
+  public onBackdropMouseDown(event: MouseEvent): void {
+    this.mouseDownOnBackdrop = event.target === event.currentTarget;
+  }
+
+  public onBackdropClick(cancel: () => void): void {
+    if (this.mouseDownOnBackdrop) {
+      cancel();
+    }
+    this.mouseDownOnBackdrop = false;
   }
 
   private closeModal(): void {
