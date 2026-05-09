@@ -52,7 +52,7 @@ export class App implements AfterViewInit {
 
   public readonly ISLANDS = [
     'Citadel', 'Principal', 'White Leaf Desert',
-    'Proxima', 'Hamalyi', 'Tipett', 'Brundle', 'Fortress'
+    'Proxima', 'Hamalyi', 'Tipett', 'Brundle', 'Fortress', 'Polar'
   ];
 
   ngAfterViewInit(): void {
@@ -190,22 +190,8 @@ export class App implements AfterViewInit {
       this.editingNodeData.baseLabel = baseLabel;
       this.editingNodeData.magicLevel = newType === 'enemy' ? magicLevel : undefined;
       this.editingNodeData.island = island || undefined;
-
-      // Apply island border styling
-      if (island) {
-        const islandColor = this.getIslandColor(island);
-        this.editingNodeData.borderWidth = 4;
-        this.editingNodeData.shapeProperties = { borderDashes: [6, 4] };
-        this.editingNodeData.color = {
-          background: style.color as string,
-          border: islandColor,
-          highlight: { background: style.color as string, border: islandColor },
-          hover: { background: style.color as string, border: islandColor }
-        };
-      } else {
-        this.editingNodeData.borderWidth = 2;
-        this.editingNodeData.shapeProperties = { borderDashes: false };
-      }
+      this.editingNodeData.borderWidth = 2;
+      this.editingNodeData.shapeProperties = { borderDashes: false };
 
       this.saveHistory();
       this.editCallback(this.editingNodeData);
@@ -512,6 +498,131 @@ export class App implements AfterViewInit {
     }
 
     this.network = new Network(container, data, options);
+
+    // Math helper for convex hull
+    const crossProduct = (a: any, b: any, c: any) => (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
+    const getHull = (points: any[]) => {
+      if (points.length <= 2) return points;
+      points.sort((a, b) => a.x !== b.x ? a.x - b.x : a.y - b.y);
+      const upper = [];
+      for (const p of points) {
+        while (upper.length >= 2 && crossProduct(upper[upper.length - 2], upper[upper.length - 1], p) <= 0) upper.pop();
+        upper.push(p);
+      }
+      const lower = [];
+      for (let i = points.length - 1; i >= 0; i--) {
+        const p = points[i];
+        while (lower.length >= 2 && crossProduct(lower[lower.length - 2], lower[lower.length - 1], p) <= 0) lower.pop();
+        lower.push(p);
+      }
+      upper.pop();
+      lower.pop();
+      return upper.concat(lower);
+    };
+
+    // Draw island background envelopes before nodes are rendered
+    this.network.on('beforeDrawing', (ctx: CanvasRenderingContext2D) => {
+      const nodesByIsland = new Map<string, any[]>();
+      this.nodes.get().forEach((node: any) => {
+        if (node.island) {
+          if (!nodesByIsland.has(node.island)) nodesByIsland.set(node.island, []);
+          nodesByIsland.get(node.island)!.push(node);
+        }
+      });
+
+      const edges = this.edges.get();
+
+      nodesByIsland.forEach((nodes, islandName) => {
+        const visited = new Set<string>();
+        const clusters: any[][] = [];
+
+        nodes.forEach(startNode => {
+          if (!visited.has(startNode.id)) {
+            const cluster: any[] = [];
+            const queue = [startNode];
+            visited.add(startNode.id);
+            while (queue.length > 0) {
+              const current = queue.shift()!;
+              cluster.push(current);
+              edges.forEach((edge: any) => {
+                let neighborId = null;
+                if (edge.from === current.id) neighborId = edge.to;
+                else if (edge.to === current.id) neighborId = edge.from;
+                if (neighborId) {
+                  const neighborNode = nodes.find(n => n.id === neighborId);
+                  if (neighborNode && !visited.has(neighborId)) {
+                    visited.add(neighborId);
+                    queue.push(neighborNode);
+                  }
+                }
+              });
+            }
+            clusters.push(cluster);
+          }
+        });
+
+        clusters.forEach(clusterNodes => {
+          const color = this.getIslandColor(islandName);
+          const points: any[] = [];
+          clusterNodes.forEach(node => {
+            const bb = this.network!.getBoundingBox(node.id);
+            if (bb) {
+              // Add corners of the node to the point set for the hull
+              points.push({ x: bb.left, y: bb.top });
+              points.push({ x: bb.right, y: bb.top });
+              points.push({ x: bb.left, y: bb.bottom });
+              points.push({ x: bb.right, y: bb.bottom });
+            }
+          });
+
+          if (points.length === 0) return;
+
+          const hull = getHull(points);
+          const pad = 20;
+
+          ctx.save();
+          ctx.beginPath();
+          
+          if (hull.length > 0) {
+            // Draw a path around the hull points with rounded expansion
+            ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
+            ctx.lineWidth = pad * 2;
+            
+            ctx.moveTo(hull[0].x, hull[0].y);
+            for (let i = 1; i < hull.length; i++) {
+              ctx.lineTo(hull[i].x, hull[i].y);
+            }
+            ctx.closePath();
+            
+            // Fill and Stroke the expanded hull
+            // We use a thick stroke to create the padding effect
+            ctx.fillStyle = color + '1a';
+            ctx.strokeStyle = color + '33'; // Faint stroke for the "aura"
+            ctx.fill();
+            ctx.stroke();
+
+            // Draw the dashed border separately to avoid internal lines
+            ctx.strokeStyle = color;
+            ctx.setLineDash([8, 5]);
+            ctx.lineWidth = 2;
+            ctx.stroke();
+
+            // Label position: top-left-most point
+            let topMost = hull[0];
+            hull.forEach(p => { if (p.y < topMost.y || (p.y === topMost.y && p.x < topMost.x)) topMost = p; });
+            
+            ctx.setLineDash([]);
+            ctx.font = 'bold 12px Inter, sans-serif';
+            ctx.fillStyle = color;
+            ctx.textAlign = 'left';
+            ctx.textBaseline = 'bottom';
+            ctx.fillText(islandName, topMost.x, topMost.y - pad - 4);
+          }
+          ctx.restore();
+        });
+      });
+    });
 
     // Track the last selected node for Ctrl+Click connections
     let lastSelectedNode: string | null = null;
