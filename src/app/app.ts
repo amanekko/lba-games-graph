@@ -11,7 +11,7 @@ export class App implements AfterViewInit {
   @ViewChild('networkContainer') networkContainer!: ElementRef;
 
   public errorMessage = signal<string>('');
-  private network: Network | null = null;
+  public network: Network | null = null;
 
   // DataSets for vis-network
   private nodes = new DataSet<any>();
@@ -46,6 +46,7 @@ export class App implements AfterViewInit {
   // File System handle for direct saving
   private fileHandle: any = null;
   public saveStatus = signal('');
+  public isAutoLayout = signal(true);
 
   // Track where mousedown started to avoid accidental modal close
   private mouseDownOnBackdrop = false;
@@ -180,9 +181,9 @@ export class App implements AfterViewInit {
       const newType = this.editingNodeType();
       const magicLevel = this.editingNodeMagicLevel();
       const island = this.editingNodeIsland().trim();
-      
+
       const style = this.getNodeStyle(newType, baseLabel, magicLevel);
-      
+
       this.editingNodeData.label = style.label;
       this.editingNodeData.shape = style.shape;
       this.editingNodeData.color = style.color;
@@ -337,8 +338,15 @@ export class App implements AfterViewInit {
     URL.revokeObjectURL(url);
   }
 
+  public toggleAutoLayout(): void {
+    this.isAutoLayout.update(val => !val);
+    this.renderGraph();
+  }
+
   private buildExportData() {
+    const positions = this.network ? this.network.getPositions() : {};
     const cleanNodes = this.nodes.get().map((node: any) => {
+      const pos = positions[node.id] || { x: node.x, y: node.y };
       return {
         id: node.id,
         label: node.label,
@@ -350,7 +358,9 @@ export class App implements AfterViewInit {
         magicLevel: node.magicLevel,
         island: node.island,
         borderWidth: node.borderWidth,
-        shapeProperties: node.shapeProperties
+        shapeProperties: node.shapeProperties,
+        x: pos.x,
+        y: pos.y
       };
     });
 
@@ -441,10 +451,23 @@ export class App implements AfterViewInit {
         arrows: { to: { enabled: true, scaleFactor: 1, type: 'arrow' } },
         color: { color: '#94a3b8', highlight: '#f8fafc', hover: '#cbd5e1' },
         font: { size: 12, face: 'Inter, sans-serif', color: '#cbd5e1', strokeWidth: 2, strokeColor: '#0f172a' },
-        smooth: { enabled: true, type: 'cubicBezier', forceDirection: 'horizontal', roundness: 0.4 }
+        smooth: { enabled: true, type: 'cubicBezier', forceDirection: 'horizontal', roundness: 0.5 }
       },
       layout: {
-        hierarchical: { direction: 'LR', sortMethod: 'directed', nodeSpacing: 150, levelSeparation: 200 }
+        hierarchical: {
+          enabled: this.isAutoLayout(),
+          direction: 'LR',
+          sortMethod: 'directed',
+          nodeSpacing: 200,
+          levelSeparation: 250,
+          parentCentralization: true,
+          edgeMinimization: true,
+          blockShifting: true
+        }
+      },
+      physics: {
+        enabled: false,
+        hierarchicalRepulsion: { nodeDistance: 150 }
       },
       manipulation: {
         enabled: true,
@@ -489,9 +512,6 @@ export class App implements AfterViewInit {
           this.saveHistory();
           callback(edgeData);
         }
-      },
-      physics: {
-        hierarchicalRepulsion: { nodeDistance: 150 }
       },
       interaction: { hover: true, tooltipDelay: 200 }
     };
@@ -585,19 +605,19 @@ export class App implements AfterViewInit {
 
           ctx.save();
           ctx.beginPath();
-          
+
           if (hull.length > 0) {
             // Draw a path around the hull points with rounded expansion
             ctx.lineJoin = 'round';
             ctx.lineCap = 'round';
             ctx.lineWidth = pad * 2;
-            
+
             ctx.moveTo(hull[0].x, hull[0].y);
             for (let i = 1; i < hull.length; i++) {
               ctx.lineTo(hull[i].x, hull[i].y);
             }
             ctx.closePath();
-            
+
             // Fill and Stroke the expanded hull
             // We use a thick stroke to create the padding effect
             ctx.fillStyle = color + '1a';
@@ -614,7 +634,7 @@ export class App implements AfterViewInit {
             // Label position: top-left-most point
             let topMost = hull[0];
             hull.forEach(p => { if (p.y < topMost.y || (p.y === topMost.y && p.x < topMost.x)) topMost = p; });
-            
+
             ctx.setLineDash([]);
             ctx.font = 'bold 12px Inter, sans-serif';
             ctx.fillStyle = color;

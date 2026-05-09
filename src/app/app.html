@@ -9,9 +9,13 @@
       <div class="controls">
         <button class="btn btn-secondary" (click)="openFile()">Open File</button>
         <input id="fallbackFileInput" type="file" accept=".json" (change)="onFileSelected($event)" hidden>
+        <button class="btn" [class.btn-primary]="isAutoLayout()" [class.btn-secondary]="!isAutoLayout()" (click)="toggleAutoLayout()" [title]="isAutoLayout() ? 'Hierarchical layout is active' : 'Manual positioning mode'">
+          {{ isAutoLayout() ? 'Auto Layout: ON' : 'Auto Layout: OFF' }}
+        </button>
         <button class="btn btn-save" (click)="saveGraph()" title="Save (Ctrl+S)">
           {{ saveStatus() || 'Save' }}
         </button>
+        <button class="btn btn-secondary" (click)="network?.fit()" title="Fit entire graph to view">Fit View</button>
         <button class="btn btn-primary" (click)="exportJson()">Export JSON</button>
       </div>
     </div>
