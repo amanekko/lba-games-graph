@@ -148,6 +148,29 @@ export class App implements AfterViewInit {
         }
       }
     }
+
+    // Check for 'L' (Link)
+    if (event.key.toLowerCase() === 'l') {
+      const target = event.target as HTMLElement;
+      if (target.tagName !== 'INPUT' && target.tagName !== 'TEXTAREA' && target.tagName !== 'SELECT') {
+        if (this.network) {
+          const selectedNodes = this.network.getSelectedNodes();
+          if (selectedNodes.length >= 2) {
+            this.saveHistory();
+            // Connect nodes in sequence: 1 -> 2 -> 3...
+            for (let i = 0; i < selectedNodes.length - 1; i++) {
+              this.edges.add({
+                from: selectedNodes[i],
+                to: selectedNodes[i+1],
+                label: ''
+              });
+            }
+            this.network.unselectAll();
+            event.preventDefault();
+          }
+        }
+      }
+    }
   }
 
   public undo(): void {
@@ -513,7 +536,12 @@ export class App implements AfterViewInit {
           callback(edgeData);
         }
       },
-      interaction: { hover: true, tooltipDelay: 200 }
+      interaction: {
+        hover: true,
+        tooltipDelay: 200,
+        multiselect: true,
+        selectConnectedEdges: false
+      }
     };
 
     if (this.network) {
