@@ -53,7 +53,7 @@ export class App implements AfterViewInit {
 
   public readonly ISLANDS = [
     'Citadel', 'Principal', 'White Leaf Desert',
-    'Proxima', 'Hamalyi', 'Tipett', 'Brundle', 'Fortress', 'Polar'
+    'Proxima', 'Hamalayi', 'Tipett', 'Brundle', 'Fortress', 'Polar'
   ];
 
   ngAfterViewInit(): void {
@@ -161,7 +161,7 @@ export class App implements AfterViewInit {
             for (let i = 0; i < selectedNodes.length - 1; i++) {
               this.edges.add({
                 from: selectedNodes[i],
-                to: selectedNodes[i+1],
+                to: selectedNodes[i + 1],
                 label: ''
               });
             }
