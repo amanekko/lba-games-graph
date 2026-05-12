@@ -430,6 +430,219 @@ export class App implements AfterViewInit {
     downloadAnchorNode.remove();
   }
 
+  public exportHtml(): void {
+    const exportData = this.buildExportData();
+    const islands = this.getIslands();
+    
+    // Create legend items HTML
+    const legendHtml = islands.map(isl => `
+      <div class="legend-item">
+        <span class="legend-dot" style="background: ${isl.color}; border-color: ${isl.color}"></span>
+        <span class="legend-label">${isl.name}</span>
+      </div>
+    `).join('');
+
+    const htmlContent = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Flow Export - Snapshot</title>
+  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --panel-bg: rgba(30, 41, 59, 0.7);
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --accent-color: #3b82f6;
+      --border-color: rgba(255, 255, 255, 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+      background: radial-gradient(circle at 50% -20%, #1e293b, #0f172a 80%);
+    }
+    .app-container { display: flex; flex-direction: column; height: 100vh; padding: 20px; gap: 20px; }
+    .glass-panel {
+      background: var(--panel-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    }
+    .canvas-container { flex: 1; border-radius: 12px; overflow: hidden; position: relative; min-height: 500px; }
+    .network-wrapper { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+    .island-legend {
+      position: absolute; bottom: 16px; left: 16px; z-index: 10;
+      padding: 12px 16px; display: flex; flex-direction: column; gap: 8px;
+      min-width: 160px; pointer-events: none;
+    }
+    .legend-title {
+      font-size: 0.75rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--text-secondary); margin: 0 0 4px 0;
+    }
+    .legend-item { display: flex; align-items: center; gap: 8px; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 50%; border: 2px solid; flex-shrink: 0; }
+    .legend-label { font-size: 0.85rem; color: var(--text-primary); }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <main class="canvas-container glass-panel">
+      <div id="networkContainer" class="network-wrapper"></div>
+      ${islands.length > 0 ? `
+      <div class="island-legend glass-panel">
+        <p class="legend-title">Islands</p>
+        ${legendHtml}
+      </div>` : ''}
+    </main>
+  </div>
+
+  <script>
+    const data = ${JSON.stringify(exportData)};
+    const ISLAND_PALETTE = ${JSON.stringify(this.ISLAND_PALETTE)};
+    const islandColorMap = new Map();
+
+    function getIslandColor(name) {
+      if (!islandColorMap.has(name)) {
+        const idx = islandColorMap.size % ISLAND_PALETTE.length;
+        islandColorMap.set(name, ISLAND_PALETTE[idx]);
+      }
+      return islandColorMap.get(name);
+    }
+
+    const container = document.getElementById('networkContainer');
+    const options = {
+      nodes: {
+        shape: 'box',
+        margin: { top: 10, bottom: 10, left: 10, right: 10 },
+        font: { size: 16, face: 'Inter, sans-serif' },
+        shadow: true,
+        borderWidth: 2
+      },
+      edges: {
+        arrows: { to: { enabled: true, scaleFactor: 1, type: 'arrow' } },
+        color: { color: '#94a3b8', highlight: '#f8fafc', hover: '#cbd5e1' },
+        font: { size: 12, face: 'Inter, sans-serif', color: '#cbd5e1', strokeWidth: 2, strokeColor: '#0f172a' },
+        smooth: { enabled: true, type: 'cubicBezier', forceDirection: 'horizontal', roundness: 0.5 }
+      },
+      interaction: { hover: true, tooltipDelay: 200 },
+      physics: { enabled: false }
+    };
+
+    const network = new vis.Network(container, data, options);
+
+    const crossProduct = (a, b, c) => (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
+    const getHull = (points) => {
+      if (points.length <= 2) return points;
+      points.sort((a, b) => a.x !== b.x ? a.x - b.x : a.y - b.y);
+      const upper = [];
+      for (const p of points) {
+        while (upper.length >= 2 && crossProduct(upper[upper.length - 2], upper[upper.length - 1], p) <= 0) upper.pop();
+        upper.push(p);
+      }
+      const lower = [];
+      for (let i = points.length - 1; i >= 0; i--) {
+        const p = points[i];
+        while (lower.length >= 2 && crossProduct(lower[lower.length - 2], lower[lower.length - 1], p) <= 0) lower.pop();
+        lower.push(p);
+      }
+      upper.pop();
+      lower.pop();
+      return upper.concat(lower);
+    };
+
+    network.on('beforeDrawing', (ctx) => {
+      const nodesByIsland = new Map();
+      data.nodes.forEach(node => {
+        if (node.island) {
+          if (!nodesByIsland.has(node.island)) nodesByIsland.set(node.island, []);
+          nodesByIsland.get(node.island).push(node);
+        }
+      });
+
+      nodesByIsland.forEach((nodes, islandName) => {
+        const visited = new Set();
+        const clusters = [];
+        nodes.forEach(startNode => {
+          if (!visited.has(startNode.id)) {
+            const cluster = [];
+            const queue = [startNode];
+            visited.add(startNode.id);
+            while (queue.length > 0) {
+              const current = queue.shift();
+              cluster.push(current);
+              data.edges.forEach(edge => {
+                let neighborId = null;
+                if (edge.from === current.id) neighborId = edge.to;
+                else if (edge.to === current.id) neighborId = edge.from;
+                if (neighborId) {
+                  const neighborNode = nodes.find(n => n.id === neighborId);
+                  if (neighborNode && !visited.has(neighborId)) {
+                    visited.add(neighborId);
+                    queue.push(neighborNode);
+                  }
+                }
+              });
+            }
+            clusters.push(cluster);
+          }
+        });
+
+        clusters.forEach(clusterNodes => {
+          const color = getIslandColor(islandName);
+          const points = [];
+          clusterNodes.forEach(node => {
+            const bb = network.getBoundingBox(node.id);
+            if (bb) {
+              points.push({ x: bb.left, y: bb.top }, { x: bb.right, y: bb.top },
+                          { x: bb.left, y: bb.bottom }, { x: bb.right, y: bb.bottom });
+            }
+          });
+          if (points.length === 0) return;
+          const hull = getHull(points);
+          const pad = 20;
+          ctx.save();
+          ctx.beginPath();
+          if (hull.length > 0) {
+            ctx.lineJoin = 'round'; ctx.lineCap = 'round'; ctx.lineWidth = pad * 2;
+            ctx.moveTo(hull[0].x, hull[0].y);
+            for (let i = 1; i < hull.length; i++) ctx.lineTo(hull[i].x, hull[i].y);
+            ctx.closePath();
+            ctx.fillStyle = color + '1a'; ctx.strokeStyle = color + '33';
+            ctx.fill(); ctx.stroke();
+            ctx.strokeStyle = color; ctx.setLineDash([8, 5]); ctx.lineWidth = 2; ctx.stroke();
+            let topMost = hull[0];
+            hull.forEach(p => { if (p.y < topMost.y || (p.y === topMost.y && p.x < topMost.x)) topMost = p; });
+            ctx.setLineDash([]); ctx.font = 'bold 12px Inter, sans-serif'; ctx.fillStyle = color;
+            ctx.textAlign = 'left'; ctx.textBaseline = 'bottom';
+            ctx.fillText(islandName, topMost.x, topMost.y - pad - 4);
+          }
+          ctx.restore();
+        });
+      });
+    });
+  </script>
+</body>
+</html>`;
+
+    const blob = new Blob([htmlContent], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'graph_export.html';
+    a.click();
+    URL.revokeObjectURL(url);
+  }
+
   private getNodeStyle(type: string, baseLabel: string, magicLevel: string = '0') {
     const magic = type === 'enemy' ? `\n[Magic: ${magicLevel}]` : '';
     switch (type) {
