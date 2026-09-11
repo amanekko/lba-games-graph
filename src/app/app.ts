@@ -54,6 +54,17 @@ export class App implements AfterViewInit {
   };
   // Islands currently in use (derived from selected game)
   public ISLANDS: string[] = this.GAME_ISLANDS[this.selectedGame];
+  // Store copied nodes for copy‑paste functionality
+  private copiedNodes: { nodes: any[]; edges: any[] } | null = null;
+  // Simple ID generator for new nodes
+  private generateNodeId(): number {
+    // Convert existing node IDs to numbers, ignoring non-numeric IDs
+    const numericIds = this.nodes.get().map((node: any) => {
+      const idNum = Number(node.id);
+      return isNaN(idNum) ? null : idNum;
+    }).filter((id) => id !== null) as number[];
+    return numericIds.length ? Math.max(...numericIds) + 1 : 1;
+  }
 
   // Modal State (Edges)
   public isEdgeModalOpen = signal(false);
@@ -184,6 +195,18 @@ export class App implements AfterViewInit {
           }
         }
       }
+    }
+    // Copy selected nodes (Ctrl+C / Cmd+C)
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'c') {
+      this.copySelectedNodes();
+      event.preventDefault();
+      return;
+    }
+    // Paste nodes (Ctrl+V / Cmd+V)
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'v') {
+      this.pasteNodes();
+      event.preventDefault();
+      return;
     }
   }
 
@@ -460,6 +483,45 @@ export class App implements AfterViewInit {
       this.exportHtml();
     }
   }
+    // Copy selected nodes to internal clipboard
+  private copySelectedNodes(): void {
+    if (!this.network) return;
+    const selectedIds = this.network.getSelectedNodes();
+    if (selectedIds.length === 0) {
+      this.copiedNodes = null;
+      return;
+    }
+    const selectedNodes = this.nodes.get(selectedIds);
+    const selectedIdSet = new Set(selectedIds);
+    const selectedEdges = this.edges.get().filter((e: any) => selectedIdSet.has(e.from) && selectedIdSet.has(e.to));
+    this.copiedNodes = { nodes: selectedNodes, edges: selectedEdges };
+  }
+
+  // Paste previously copied nodes, offsetting positions
+  private pasteNodes(): void {
+    if (!this.network || !this.copiedNodes) return;
+    const idMap = new Map<number, number>();
+    this.copiedNodes.nodes.forEach((node: any) => {
+      const newId = this.generateNodeId();
+      idMap.set(node.id, newId);
+      const newNode = { ...node, id: newId };
+      if (newNode.x !== undefined) newNode.x += 30;
+      if (newNode.y !== undefined) newNode.y += 30;
+      this.nodes.add(newNode);
+    });
+    this.copiedNodes.edges.forEach((edge: any) => {
+      const newFrom = idMap.get(edge.from);
+      const newTo = idMap.get(edge.to);
+      if (newFrom !== undefined && newTo !== undefined) {
+        const newEdge = { ...edge, from: newFrom, to: newTo };
+        this.edges.add(newEdge);
+      }
+    });
+    this.saveHistory();
+    const newIds = Array.from(idMap.values());
+    this.network.selectNodes(newIds);
+  }
+
   public exportHtml(): void {
     const exportData = this.buildExportData();
     const islands = this.getIslands();
