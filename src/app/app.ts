@@ -1,11 +1,14 @@
 import { Component, ElementRef, ViewChild, AfterViewInit, signal, HostListener } from '@angular/core';
 import { Network, Options } from 'vis-network';
 import { DataSet } from 'vis-data';
-
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  standalone: true,
+  imports: [FormsModule, CommonModule]
 })
 export class App implements AfterViewInit {
   @ViewChild('networkContainer') networkContainer!: ElementRef;
@@ -35,6 +38,22 @@ export class App implements AfterViewInit {
     '#14b8a6', '#fb923c', '#818cf8', '#84cc16'
   ];
   private islandColorMap = new Map<string, string>();
+  // Current selected game (LBA1 or LBA2)
+  public selectedGame: string = '';
+  // Island sets per game
+  private readonly GAME_ISLANDS: { [key: string]: string[] } = {
+    LBA1: [
+      'Citadel', 'Principal', 'White Leaf Desert',
+      'Proxima', 'Hamalayi', 'Tipett', 'Brundle', 'Fortress', 'Polar'
+    ],
+    LBA2: [
+      'Citadel island', 'Desert island', 'Moon base', 'Otringal',
+      'Celebration island', 'Franco island', 'Elevator island',
+      'Island CX', 'Wanny island', 'Mosquibee island'
+    ]
+  };
+  // Islands currently in use (derived from selected game)
+  public ISLANDS: string[] = this.GAME_ISLANDS[this.selectedGame];
 
   // Modal State (Edges)
   public isEdgeModalOpen = signal(false);
@@ -50,11 +69,6 @@ export class App implements AfterViewInit {
 
   // Track where mousedown started to avoid accidental modal close
   private mouseDownOnBackdrop = false;
-
-  public readonly ISLANDS = [
-    'Citadel', 'Principal', 'White Leaf Desert',
-    'Proxima', 'Hamalayi', 'Tipett', 'Brundle', 'Fortress', 'Polar'
-  ];
 
   ngAfterViewInit(): void {
     this.errorMessage.set('');
@@ -279,8 +293,14 @@ export class App implements AfterViewInit {
     this.editingEdgeData = null;
   }
 
-
-
+  // Handles change of selected game
+  public onGameChange(game: string): void {
+    this.selectedGame = game;
+    // Update islands list for new game
+    this.ISLANDS = this.GAME_ISLANDS[game] || [];
+    // Reset island color map to reflect new islands
+    this.islandColorMap.clear();
+  }
 
   public async openFile(): Promise<void> {
     // Try File System Access API (Chrome/Edge)
@@ -430,10 +450,20 @@ export class App implements AfterViewInit {
     downloadAnchorNode.remove();
   }
 
+  // Handle export dropdown change
+  public onExportChange(event: Event): void {
+    const select = event.target as HTMLSelectElement;
+    const value = select?.value;
+    if (value === 'json') {
+      this.exportJson();
+    } else if (value === 'html') {
+      this.exportHtml();
+    }
+  }
   public exportHtml(): void {
     const exportData = this.buildExportData();
     const islands = this.getIslands();
-    
+
     // Create legend items HTML
     const legendHtml = islands.map(isl => `
       <div class="legend-item">
