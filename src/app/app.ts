@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, AfterViewInit, signal, HostListener } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit, signal, HostListener, ChangeDetectorRef, NgZone } from '@angular/core';
 import { Network, Options } from 'vis-network';
 import { DataSet } from 'vis-data';
 import { FormsModule } from '@angular/forms';
@@ -80,6 +80,8 @@ export class App implements AfterViewInit {
 
   // Track where mousedown started to avoid accidental modal close
   private mouseDownOnBackdrop = false;
+
+  constructor(private cdr: ChangeDetectorRef, private ngZone: NgZone) {}
 
   ngAfterViewInit(): void {
     this.errorMessage.set('');
@@ -352,7 +354,17 @@ export class App implements AfterViewInit {
       this.edges.clear();
       this.nodes.add(data.nodes || []);
       this.edges.add(data.edges || []);
+      // Update selected game if provided in the file
+      if (data.game && typeof data.game === 'string') {
+        // Run inside Angular zone to ensure view updates
+        this.ngZone.run(() => {
+          this.selectedGame = data.game;
+          this.onGameChange(data.game);
+        });
+      }
       this.renderGraph();
+      // Ensure Angular updates bound UI (dropdown, island list)
+      this.cdr.detectChanges();
       this.errorMessage.set('');
     } catch {
       this.errorMessage.set('Invalid JSON file format.');
@@ -439,7 +451,7 @@ export class App implements AfterViewInit {
       };
     });
 
-    return { nodes: cleanNodes, edges: cleanEdges };
+    return { game: this.selectedGame, nodes: cleanNodes, edges: cleanEdges };
   }
 
   public getIslands(): { name: string; color: string }[] {
