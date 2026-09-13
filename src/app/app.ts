@@ -52,6 +52,21 @@ export class App implements AfterViewInit {
       'Island CX', 'Wanny island', 'Mosquibee island'
     ]
   };
+
+  // Custom colors for LBA2 islands to better match their style
+  private readonly LBA2_ISLAND_COLORS: { [key: string]: string } = {
+    'Citadel island': '#8B4513', // brown
+    'Desert island': '#C2B280', // sand
+    'Moon base': '#50C878', // emerald
+    'Otringal': '#FFFFFF', // white
+    'Celebration island': '#8B0000', // dark red
+    'Franco island': '#1A3E6E', // deep navy blue (unchanged)
+    'Elevator island': '#A9A9A9', // grey metal
+    'Island CX': '#505050', // dark grey
+    'Wanny island': '#B11226', // ruby red
+    'Mosquibee island': '#FFB300', // honey yellow
+    'Knartas island': '#F5F5DC' // beige
+  };
   // Islands currently in use (derived from selected game)
   public ISLANDS: string[] = this.GAME_ISLANDS[this.selectedGame];
   // Store copied nodes for copy‑paste functionality
@@ -467,6 +482,11 @@ export class App implements AfterViewInit {
   }
 
   private getIslandColor(name: string): string {
+    // Use custom LBA2 colors if applicable
+    if (this.selectedGame === 'LBA2' && this.LBA2_ISLAND_COLORS && this.LBA2_ISLAND_COLORS[name]) {
+      return this.LBA2_ISLAND_COLORS[name];
+    }
+    // Fallback to generated palette colors cached in islandColorMap
     if (!this.islandColorMap.has(name)) {
       const idx = this.islandColorMap.size % this.ISLAND_PALETTE.length;
       this.islandColorMap.set(name, this.ISLAND_PALETTE[idx]);
