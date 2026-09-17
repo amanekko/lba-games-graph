@@ -91,7 +91,7 @@ export class App implements AfterViewInit {
   // File System handle for direct saving
   private fileHandle: any = null;
   public saveStatus = signal('');
-  public isAutoLayout = signal(true);
+  public isAutoLayout = signal(false);
 
   // Track where mousedown started to avoid accidental modal close
   private mouseDownOnBackdrop = false;
