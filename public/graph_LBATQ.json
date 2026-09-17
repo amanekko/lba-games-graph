@@ -1,0 +1,2573 @@
+{
+  "nodes": [
+    {
+      "id": "e6823050-1b76-4343-9311-4ed335ffb6d5",
+      "label": "Start",
+      "baseLabel": "Start",
+      "color": {
+        "background": "#64748b",
+        "border": "#f59e0b",
+        "highlight": {
+          "background": "#64748b",
+          "border": "#f59e0b"
+        },
+        "hover": {
+          "background": "#64748b",
+          "border": "#f59e0b"
+        }
+      },
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "start",
+      "island": "Citadel",
+      "x": -2341,
+      "y": 1199
+    },
+    {
+      "id": "ae0f2b75-ad58-4011-8cd4-aaaa153e2902",
+      "label": "End",
+      "baseLabel": "End",
+      "color": "#64748b",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "end",
+      "island": "Polar",
+      "x": 556,
+      "y": 897
+    },
+    {
+      "id": "ecff9753-d356-4b07-900a-7807a2d1b148",
+      "label": "End scene",
+      "baseLabel": "End scene",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Polar",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 554,
+      "y": 827
+    },
+    {
+      "id": "2fb3515b-6484-490d-8180-a1f3b64e7619",
+      "label": "Fun Frock\n[Magic: saber]",
+      "baseLabel": "Fun Frock",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "saber",
+      "island": "Polar",
+      "x": 553,
+      "y": 754
+    },
+    {
+      "id": "bf248bec-8081-4931-bf0e-376ae755e43e",
+      "label": "Saber",
+      "baseLabel": "Saber",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Principal",
+      "x": 351,
+      "y": 1011
+    },
+    {
+      "id": "a10f6db0-ea8c-46f4-b0a9-768ad954b4ec",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Polar",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 551,
+      "y": 688
+    },
+    {
+      "id": "b438e118-4994-483e-8d84-66efbe129672",
+      "label": "Polar Island",
+      "baseLabel": "Polar Island",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Polar",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 540,
+      "y": 501
+    },
+    {
+      "id": "a41f4567-289b-4c3b-be61-028124b2bb3a",
+      "label": "Side quest Principal Island",
+      "baseLabel": "Side quest Principal Island",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Principal",
+      "x": 82,
+      "y": 1085
+    },
+    {
+      "id": "5c0e781b-319a-42ff-8714-bd2896b94bfb",
+      "label": "Groboclone at Fortress\n[Magic: 4]",
+      "baseLabel": "Groboclone at Fortress",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "4",
+      "island": "Principal",
+      "x": 82,
+      "y": 1171
+    },
+    {
+      "id": "ef95c524-a249-457e-8c93-26de3e108015",
+      "label": "Key on Principal Island",
+      "baseLabel": "Key on Principal Island",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Principal",
+      "x": 354,
+      "y": 1096
+    },
+    {
+      "id": "613a94cc-70b6-4363-a484-55ef78b34de0",
+      "label": "Twinsen's Cellar",
+      "baseLabel": "Twinsen's Cellar",
+      "color": {
+        "background": "#10b981",
+        "border": "#f59e0b",
+        "highlight": {
+          "background": "#10b981",
+          "border": "#f59e0b"
+        },
+        "hover": {
+          "background": "#10b981",
+          "border": "#f59e0b"
+        }
+      },
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Citadel",
+      "x": -2276,
+      "y": 1032
+    },
+    {
+      "id": "70a4efca-63d7-476d-b33a-fe107d42cb90",
+      "label": "Jumps in Luna bedroom",
+      "baseLabel": "Jumps in Luna bedroom",
+      "color": {
+        "background": "#3b82f6",
+        "border": "#f59e0b",
+        "highlight": {
+          "background": "#3b82f6",
+          "border": "#f59e0b"
+        },
+        "hover": {
+          "background": "#3b82f6",
+          "border": "#f59e0b"
+        }
+      },
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Citadel",
+      "x": -2275,
+      "y": 1091
+    },
+    {
+      "id": "0cf50c6e-e4a6-4044-89f7-2f4b3e7cb4e8",
+      "label": "Horn",
+      "baseLabel": "Horn",
+      "color": {
+        "background": "#ca8a04",
+        "border": "#f59e0b",
+        "highlight": {
+          "background": "#ca8a04",
+          "border": "#f59e0b"
+        },
+        "hover": {
+          "background": "#ca8a04",
+          "border": "#f59e0b"
+        }
+      },
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel",
+      "x": -2040,
+      "y": 888
+    },
+    {
+      "id": "5c4aa071-ffa6-4040-9a11-f9c19e45eea0",
+      "label": "Medalion",
+      "baseLabel": "Medalion",
+      "color": {
+        "background": "#ca8a04",
+        "border": "#f59e0b",
+        "highlight": {
+          "background": "#ca8a04",
+          "border": "#f59e0b"
+        },
+        "hover": {
+          "background": "#ca8a04",
+          "border": "#f59e0b"
+        }
+      },
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel",
+      "x": -2213,
+      "y": 887
+    },
+    {
+      "id": "053324cf-8826-4a1b-b0d0-d6c84e4e1c09",
+      "label": "Statue Fun Frock passage",
+      "baseLabel": "Statue Fun Frock passage",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Citadel",
+      "x": -1958,
+      "y": 949
+    },
+    {
+      "id": "b77845a7-b396-4f33-aa9b-4861bfc09e69",
+      "label": "Asylum secret passage",
+      "baseLabel": "Asylum secret passage",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Citadel",
+      "x": -1726,
+      "y": 1009
+    },
+    {
+      "id": "000ff147-5a93-4d6b-9586-20c88d2a69f3",
+      "label": "Enter scene in front of Asylum ",
+      "baseLabel": "Enter scene in front of Asylum ",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Citadel",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1554,
+      "y": 1082
+    },
+    {
+      "id": "7f6863a0-ee4f-4ce3-99d4-867925527fba",
+      "label": "Magic Lvl 3",
+      "baseLabel": "Magic Lvl 3",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Citadel",
+      "x": -2186,
+      "y": 824
+    },
+    {
+      "id": "1ebaaf2a-295e-4a3d-9755-e69493db2402",
+      "label": "Getting Caught",
+      "baseLabel": "Getting Caught",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Citadel",
+      "x": -1491,
+      "y": 1196
+    },
+    {
+      "id": "c1e4e6ed-b1ed-4c38-985d-fa77d62f98d4",
+      "label": "Boing ball + cinematic",
+      "baseLabel": "Boing ball + cinematic",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Citadel",
+      "x": -1995,
+      "y": 1089
+    },
+    {
+      "id": "19c0a81f-7e8a-45bc-b3e6-cdff11d09acf",
+      "label": "Luna getting Kidnapped",
+      "baseLabel": "Luna getting Kidnapped",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Citadel",
+      "x": -1159,
+      "y": 1173
+    },
+    {
+      "id": "c1a93a88-4418-46ec-a6d2-27597dda33b0",
+      "label": "Luna waiting to go to boing ball",
+      "baseLabel": "Luna waiting to go to boing ball",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Citadel",
+      "x": -2110,
+      "y": 1196
+    },
+    {
+      "id": "0b2604fa-35eb-4cfa-a240-29c3f5cc6464",
+      "label": "Syrop",
+      "baseLabel": "Syrop",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel",
+      "x": -1211,
+      "y": 858
+    },
+    {
+      "id": "8a27233c-43c2-4041-8219-670ef4a56a51",
+      "label": "Ball",
+      "baseLabel": "Ball",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel",
+      "x": -1003,
+      "y": 1069
+    },
+    {
+      "id": "d3660d99-90fb-4516-bf58-a809abc1d37f",
+      "label": "Tunic",
+      "baseLabel": "Tunic",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel",
+      "x": -1123,
+      "y": 1030
+    },
+    {
+      "id": "898585d4-9b0b-49f1-906a-e12b9016ad09",
+      "label": "Chapter 1",
+      "baseLabel": "Chapter 1",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Citadel",
+      "x": -874,
+      "y": 1173
+    },
+    {
+      "id": "ac83b9b7-ab49-4deb-9847-0a0e89395b7b",
+      "label": "Chapter 2",
+      "baseLabel": "Chapter 2",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Citadel",
+      "x": -869,
+      "y": 903
+    },
+    {
+      "id": "2040fe8c-292c-4a68-837a-ed8c37a9e46d",
+      "label": "Ferry Ticket",
+      "baseLabel": "Ferry Ticket",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel",
+      "x": -726,
+      "y": 1088
+    },
+    {
+      "id": "0c8489ed-45d4-4c7d-8865-6a78ed4dbdcc",
+      "label": "Take Ferry",
+      "baseLabel": "Take Ferry",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Citadel",
+      "x": -698,
+      "y": 951
+    },
+    {
+      "id": "61bafe86-fa5c-4389-a828-da6ba14521b5",
+      "label": "Principal Island",
+      "baseLabel": "Principal Island",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Principal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -408,
+      "y": 1131
+    },
+    {
+      "id": "ab28d636-dc03-422d-8de7-f69adde6f2bf",
+      "label": "Chapter 3",
+      "baseLabel": "Chapter 3",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Citadel",
+      "x": -881,
+      "y": 690
+    },
+    {
+      "id": "d212a5fb-7611-40b4-abed-5267814ed3ec",
+      "label": "Hit Rabibunny once",
+      "baseLabel": "Hit Rabibunny once",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Principal",
+      "x": -169,
+      "y": 1082
+    },
+    {
+      "id": "54ea2f9c-11d2-4bf0-acef-a764bc267df9",
+      "label": "Statue Fun Frock passage",
+      "baseLabel": "Statue Fun Frock passage",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Principal",
+      "x": -404,
+      "y": 1019
+    },
+    {
+      "id": "c48ae314-0c55-4e22-b3eb-41c8de19ba26",
+      "label": "get 220 Kashes",
+      "baseLabel": "get 220 Kashes",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Principal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -404,
+      "y": 926
+    },
+    {
+      "id": "a2d20304-7d81-4e92-a83d-f957ed3fa265",
+      "label": "Gas",
+      "baseLabel": "Gas",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Principal",
+      "x": -399,
+      "y": 745
+    },
+    {
+      "id": "a44b1a9e-8e23-4297-bcaf-fb7339db8671",
+      "label": "Shop: 30 Kashes",
+      "baseLabel": "Shop: 30 Kashes",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Principal",
+      "x": -404,
+      "y": 838
+    },
+    {
+      "id": "20ca68ec-2e1e-41f8-b452-5c21aa4782dc",
+      "label": "Mecapingouin",
+      "baseLabel": "Mecapingouin",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Principal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -17,
+      "y": 453
+    },
+    {
+      "id": "fa44e506-98f2-4f32-8f53-37b63a480d7f",
+      "label": "Shop: 3 Kashes",
+      "baseLabel": "Shop: 3 Kashes",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Principal",
+      "x": -163,
+      "y": 843
+    },
+    {
+      "id": "9bdf9651-2073-44b5-8f63-d66e31949db1",
+      "label": "Water Castle",
+      "baseLabel": "Water Castle",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Principal",
+      "x": -241,
+      "y": 731
+    },
+    {
+      "id": "4b2ff7b0-ab03-418d-9195-65b2744303f6",
+      "label": "Change var game syrop",
+      "baseLabel": "Change var game syrop",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Principal",
+      "x": -239,
+      "y": 658
+    },
+    {
+      "id": "9db404a9-4852-44a0-89ad-b7af66a09a6a",
+      "label": "Talk to Astronomer",
+      "baseLabel": "Talk to Astronomer",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Principal",
+      "x": -682,
+      "y": 616
+    },
+    {
+      "id": "64568438-5bfc-4f3f-a7bc-7aff7a6dec15",
+      "label": "Chapter 4",
+      "baseLabel": "Chapter 4",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Principal",
+      "x": -875,
+      "y": 472
+    },
+    {
+      "id": "a1eae232-7afd-4774-a249-100ac14b1905",
+      "label": "Read book in Library",
+      "baseLabel": "Read book in Library",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Principal",
+      "x": -241,
+      "y": 525
+    },
+    {
+      "id": "2aceb6a8-048c-48f3-ba1b-c0bf8fb143bf",
+      "label": "Libraby Door ",
+      "baseLabel": "Libraby Door ",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Principal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -241,
+      "y": 593
+    },
+    {
+      "id": "b05c8544-30bf-4d00-b3ba-f3e8d62141b7",
+      "label": "Port Belooga",
+      "baseLabel": "Port Belooga",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Principal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -449,
+      "y": 322
+    },
+    {
+      "id": "99fb213e-9123-4c31-926e-8051b5b0ece4",
+      "label": "Desert Island: Fisherman",
+      "baseLabel": "Desert Island: Fisherman",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "White Leaf Desert",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -756,
+      "y": 297
+    },
+    {
+      "id": "ba4fd324-1e0b-4dc1-b4d5-88f7c668d850",
+      "label": "Speak to old guy",
+      "baseLabel": "Speak to old guy",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "White Leaf Desert",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -753,
+      "y": 220
+    },
+    {
+      "id": "66ad0744-6ebe-439a-be47-0c3fb616bd20",
+      "label": "Temple of Bù",
+      "baseLabel": "Temple of Bù",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "White Leaf Desert",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -754,
+      "y": 141
+    },
+    {
+      "id": "9dfd6373-0f59-43a0-8bae-33f365380c5f",
+      "label": "Temple of Bù last scene",
+      "baseLabel": "Temple of Bù last scene",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "White Leaf Desert",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -755,
+      "y": -34
+    },
+    {
+      "id": "c487efca-5319-4886-9341-9276e541a3a4",
+      "label": "Solve 1st puzzle",
+      "baseLabel": "Solve 1st puzzle",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "White Leaf Desert",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -673,
+      "y": 41
+    },
+    {
+      "id": "e59dba47-25a7-4110-9cdf-9302fac832f3",
+      "label": "Jumps",
+      "baseLabel": "Jumps",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "White Leaf Desert",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -825,
+      "y": 50
+    },
+    {
+      "id": "0156bf11-3545-4bb2-b3c5-b2b5cf6c59ee",
+      "label": "Book of Bu",
+      "baseLabel": "Book of Bu",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "White Leaf Desert",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -754,
+      "y": -111
+    },
+    {
+      "id": "62b0fd6a-5557-4a1a-8d8a-136374d8c001",
+      "label": "Chapter 5",
+      "baseLabel": "Chapter 5",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "White Leaf Desert",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -965,
+      "y": -108
+    },
+    {
+      "id": "73746a6e-ef6c-457c-9333-7218ffe716dd",
+      "label": "Chapter 6",
+      "baseLabel": "Chapter 6",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Citadel",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -976,
+      "y": -472
+    },
+    {
+      "id": "72ab123e-e9cf-4a88-a6a4-39e6974bb515",
+      "label": "Read stone in cave",
+      "baseLabel": "Read stone in cave",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Citadel",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1106,
+      "y": -376
+    },
+    {
+      "id": "55b7f40c-91aa-493c-81bc-ef7c1a460d76",
+      "label": "Buy Catamaran: 200 Kashes",
+      "baseLabel": "Buy Catamaran: 200 Kashes",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Principal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 16,
+      "y": 327
+    },
+    {
+      "id": "4a017af2-4012-4c81-9145-f392515224b7",
+      "label": "Read North Stone",
+      "baseLabel": "Read North Stone",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Proxima",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 596,
+      "y": 131
+    },
+    {
+      "id": "f0b238c8-7c0f-4531-8855-6e36da416455",
+      "label": "Read South Stone",
+      "baseLabel": "Read South Stone",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Proxima",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 341,
+      "y": 135
+    },
+    {
+      "id": "85ae4357-9a17-4a08-bfcb-57edc1578040",
+      "label": "Sendell Symbol on mountain",
+      "baseLabel": "Sendell Symbol on mountain",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Proxima",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 518,
+      "y": 190
+    },
+    {
+      "id": "6f2c0a35-a0be-4140-9544-abeaebb66aca",
+      "label": "Jumps",
+      "baseLabel": "Jumps",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Proxima",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 749,
+      "y": 199
+    },
+    {
+      "id": "0db7b8ec-61b4-431b-bc8b-474caf83b72f",
+      "label": "Proxima Island",
+      "baseLabel": "Proxima Island",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Proxima",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 386,
+      "y": 310
+    },
+    {
+      "id": "c6dba37a-7a3f-4385-b996-b74c66dee183",
+      "label": "Hamalayi",
+      "baseLabel": "Hamalayi",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 431,
+      "y": -217
+    },
+    {
+      "id": "d2d2c137-4d1c-428c-83c8-fcd11e481c09",
+      "label": "Fisherman",
+      "baseLabel": "Fisherman",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "White Leaf Desert",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1101,
+      "y": -223
+    },
+    {
+      "id": "e501227d-82a0-4c52-85f8-6c45b9e43bea",
+      "label": "Fun Frock Python",
+      "baseLabel": "Fun Frock Python",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Polar",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 545,
+      "y": 637
+    },
+    {
+      "id": "08a49537-2772-42d4-8280-25f15b75b7a8",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Polar",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 544,
+      "y": 569
+    },
+    {
+      "id": "38f9d516-b106-45d8-acc7-611c456a562f",
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 436,
+      "y": -412
+    },
+    {
+      "id": "7a7333b2-72b3-424f-9c46-dbb433840f51",
+      "label": "Grobo\n[Magic: 3]",
+      "baseLabel": "Grobo",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "3",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 436,
+      "y": -318
+    },
+    {
+      "id": "e0e08bbb-8225-4a82-8e45-acdfe734c7c9",
+      "label": "Travel to Mutant factory",
+      "baseLabel": "Travel to Mutant factory",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 450,
+      "y": -500
+    },
+    {
+      "id": "01b689ed-dfa1-4aea-b7d0-a7267c46721a",
+      "label": "Mutant eggs\n[Magic: 0]",
+      "baseLabel": "Mutant eggs",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "0",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 524,
+      "y": -625
+    },
+    {
+      "id": "652f7ff1-bb53-4285-93da-42a9bf404b0c",
+      "label": "Rabibunny Village",
+      "baseLabel": "Rabibunny Village",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 355,
+      "y": -614
+    },
+    {
+      "id": "57c63f6f-4368-4ccb-8c18-07648ad085a7",
+      "label": "Sacred Carrot Door",
+      "baseLabel": "Sacred Carrot Door",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 447,
+      "y": -758
+    },
+    {
+      "id": "b7d6f75b-63ad-45c1-abc1-24c92f3d5264",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 443,
+      "y": -688
+    },
+    {
+      "id": "568f5c5a-9556-401a-b8f0-e57021d8118c",
+      "label": "Military Base",
+      "baseLabel": "Military Base",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 446,
+      "y": -847
+    },
+    {
+      "id": "2ab10fc2-6ca1-4b65-bb79-bd9e99c79be7",
+      "label": "Ladder Storage",
+      "baseLabel": "Ladder Storage",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 456,
+      "y": -942
+    },
+    {
+      "id": "687182e0-de54-4188-ab77-040bf5200843",
+      "label": "Clear Water",
+      "baseLabel": "Clear Water",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 453,
+      "y": -1191
+    },
+    {
+      "id": "8b110daa-dd0c-43de-a77d-3d435d986a20",
+      "label": "Frozen Lake",
+      "baseLabel": "Frozen Lake",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 452,
+      "y": -1042
+    },
+    {
+      "id": "281815b7-cec6-4a4a-8fb9-a8fcdd441ef0",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 544,
+      "y": -1113
+    },
+    {
+      "id": "803b2a79-4fca-4308-bdd1-8373793a3067",
+      "label": "Flute",
+      "baseLabel": "Flute",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Proxima",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 706,
+      "y": 28
+    },
+    {
+      "id": "594581b2-b765-4c8a-b189-5ece0637b264",
+      "label": "Tipett",
+      "baseLabel": "Tipett",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Tipett",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 765,
+      "y": -840
+    },
+    {
+      "id": "240afc77-e801-40c8-b179-99432364f086",
+      "label": "Meteor Guitar",
+      "baseLabel": "Meteor Guitar",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "White Leaf Desert",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 810,
+      "y": -399
+    },
+    {
+      "id": "8f7b709f-a8e1-48db-a461-158638af5a30",
+      "label": "Funky Town Sewer",
+      "baseLabel": "Funky Town Sewer",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Tipett",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1168,
+      "y": -641
+    },
+    {
+      "id": "a5034914-2026-4565-aa7b-8df5534da729",
+      "label": "Bar",
+      "baseLabel": "Bar",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Tipett",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1036,
+      "y": -839
+    },
+    {
+      "id": "f3a8923d-56ec-4572-93f9-9ef4dd4af5b5",
+      "label": "Fisher key",
+      "baseLabel": "Fisher key",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Tipett",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 900,
+      "y": -838
+    },
+    {
+      "id": "3f79da96-51e0-4675-bab1-e4ee3970e8c1",
+      "label": "Sewer plate",
+      "baseLabel": "Sewer plate",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Tipett",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1168,
+      "y": -718
+    },
+    {
+      "id": "4ce0b6a7-1be3-469e-9972-a5599a01b1d8",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Tipett",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1157,
+      "y": -791
+    },
+    {
+      "id": "27a3265c-3d89-4b33-b9dc-0cc730880dfe",
+      "label": "Ladder Storage",
+      "baseLabel": "Ladder Storage",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Tipett",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1165,
+      "y": -557
+    },
+    {
+      "id": "a480e708-d404-45fd-9f04-8cacc5646f8f",
+      "label": "Dinofly",
+      "baseLabel": "Dinofly",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Tipett",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1167,
+      "y": -472
+    },
+    {
+      "id": "492e3982-1acc-4ddd-b507-7512cf2b326f",
+      "label": "Brundle",
+      "baseLabel": "Brundle",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Brundle",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1024,
+      "y": -236
+    },
+    {
+      "id": "b650ad4b-599b-40c9-9d32-5e60f6d61d3e",
+      "label": "Sendell Symbol",
+      "baseLabel": "Sendell Symbol",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Brundle",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1022,
+      "y": -87
+    },
+    {
+      "id": "589d9d58-1f1f-4928-85c1-c1b2b52d106b",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Brundle",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1023,
+      "y": -164
+    },
+    {
+      "id": "ac7acb9a-e2c7-4d79-bdb3-0ce866baa7c7",
+      "label": "Destroy Teleportation Center",
+      "baseLabel": "Destroy Teleportation Center",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Brundle",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1023,
+      "y": 5
+    },
+    {
+      "id": "a1e03ece-433f-41af-bbd9-1a0a06bc357a",
+      "label": "Fortress",
+      "baseLabel": "Fortress",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Fortress",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1216,
+      "y": 190
+    },
+    {
+      "id": "cb469032-cb13-4b62-9f30-d5bcb2e215ff",
+      "label": "Kill 3 guards + tank\n[Magic: 0]",
+      "baseLabel": "Kill 3 guards + tank",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "0",
+      "island": "Fortress",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1211,
+      "y": 342
+    },
+    {
+      "id": "f1c40e9e-a624-4c3e-b739-d1d7f90dc49e",
+      "label": "Rabibunny digging",
+      "baseLabel": "Rabibunny digging",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Fortress",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1213,
+      "y": 441
+    },
+    {
+      "id": "f43e7078-0799-4b40-b078-ebf274e16dee",
+      "label": "Sendell's Symbol",
+      "baseLabel": "Sendell's Symbol",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Fortress",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1188,
+      "y": 576
+    },
+    {
+      "id": "0e934351-17ef-4b06-9ed8-0fbe74808848",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Fortress",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1188,
+      "y": 686
+    },
+    {
+      "id": "114c7ca9-aa5a-4953-ab6b-741774ed22f4",
+      "label": "Stone Explosion",
+      "baseLabel": "Stone Explosion",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Fortress",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1186,
+      "y": 769
+    },
+    {
+      "id": "bf4d3c7b-eda2-436a-9740-c632eded32ad",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 466,
+      "y": 61
+    },
+    {
+      "id": "dfa2d292-cbb8-4fb5-af4b-a898c2198a4f",
+      "label": "Push Rabbibunny to the door with magic ball",
+      "baseLabel": "Push Rabbibunny to the door with magic ball",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 59,
+      "y": -604
+    },
+    {
+      "id": "6e097aa1-2b58-409d-a6be-b8ab838b0b19",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 320,
+      "y": -701
+    },
+    {
+      "id": "8bc4b384-07ae-481d-893f-9aa5c03a2f30",
+      "label": "Military Base",
+      "baseLabel": "Military Base",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 279,
+      "y": -218
+    },
+    {
+      "id": "ea8d156b-8c55-429b-a40d-4777c45f62e2",
+      "label": "Free sphero",
+      "baseLabel": "Free sphero",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 281,
+      "y": -320
+    },
+    {
+      "id": "bf256376-8188-488a-b82f-a5c91a08da38",
+      "label": "Blue card",
+      "baseLabel": "Blue card",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 285,
+      "y": -407
+    },
+    {
+      "id": "e4a80d12-5a48-44bf-a4bc-072223f1e28f",
+      "label": "Behind base",
+      "baseLabel": "Behind base",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Hamalayi",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 273,
+      "y": -503
+    }
+  ],
+  "edges": [
+    {
+      "id": "29918a20-e674-40b8-8fbc-8d911867a493",
+      "from": "ecff9753-d356-4b07-900a-7807a2d1b148",
+      "to": "ae0f2b75-ad58-4011-8cd4-aaaa153e2902",
+      "label": ""
+    },
+    {
+      "id": "047a3609-131c-4028-a825-0f3394977cb4",
+      "from": "2fb3515b-6484-490d-8180-a1f3b64e7619",
+      "to": "ecff9753-d356-4b07-900a-7807a2d1b148",
+      "label": ""
+    },
+    {
+      "id": "3036214b-62c4-465a-9071-4ddf9c51d3a2",
+      "from": "bf248bec-8081-4931-bf0e-376ae755e43e",
+      "to": "a10f6db0-ea8c-46f4-b0a9-768ad954b4ec",
+      "label": ""
+    },
+    {
+      "id": "9c25c7e7-ab11-4885-836d-2abe24621b0d",
+      "from": "a10f6db0-ea8c-46f4-b0a9-768ad954b4ec",
+      "to": "2fb3515b-6484-490d-8180-a1f3b64e7619",
+      "label": ""
+    },
+    {
+      "id": "061c2988-c2bb-48d4-81ab-ad3d0e1e0bad",
+      "from": "ef95c524-a249-457e-8c93-26de3e108015",
+      "to": "bf248bec-8081-4931-bf0e-376ae755e43e",
+      "label": ""
+    },
+    {
+      "id": "7547639e-1cd7-4112-900a-1601d3739bcc",
+      "from": "70a4efca-63d7-476d-b33a-fe107d42cb90",
+      "to": "613a94cc-70b6-4363-a484-55ef78b34de0",
+      "label": ""
+    },
+    {
+      "id": "e9831a0b-1ab6-4653-8569-69a0c4e16d70",
+      "from": "e6823050-1b76-4343-9311-4ed335ffb6d5",
+      "to": "70a4efca-63d7-476d-b33a-fe107d42cb90",
+      "label": ""
+    },
+    {
+      "id": "1e242114-28db-4038-9afb-4bb5835ca6ea",
+      "from": "613a94cc-70b6-4363-a484-55ef78b34de0",
+      "to": "0cf50c6e-e4a6-4044-89f7-2f4b3e7cb4e8",
+      "label": ""
+    },
+    {
+      "id": "507e4434-cd1f-4f52-800d-9d807b0c9e09",
+      "from": "613a94cc-70b6-4363-a484-55ef78b34de0",
+      "to": "5c4aa071-ffa6-4040-9a11-f9c19e45eea0",
+      "label": ""
+    },
+    {
+      "id": "ff4f1aa0-b409-4d37-961b-7a15c36787c5",
+      "from": "0cf50c6e-e4a6-4044-89f7-2f4b3e7cb4e8",
+      "to": "053324cf-8826-4a1b-b0d0-d6c84e4e1c09",
+      "label": ""
+    },
+    {
+      "id": "7b26abb4-4052-4eb8-ac23-7e091da65510",
+      "from": "b77845a7-b396-4f33-aa9b-4861bfc09e69",
+      "to": "000ff147-5a93-4d6b-9586-20c88d2a69f3",
+      "label": ""
+    },
+    {
+      "id": "9584b8c2-65e0-4b2e-807f-5e35d020240e",
+      "from": "053324cf-8826-4a1b-b0d0-d6c84e4e1c09",
+      "to": "b77845a7-b396-4f33-aa9b-4861bfc09e69",
+      "label": ""
+    },
+    {
+      "id": "99dfa536-b0d7-459a-b334-e30f1eb86270",
+      "from": "5c4aa071-ffa6-4040-9a11-f9c19e45eea0",
+      "to": "7f6863a0-ee4f-4ce3-99d4-867925527fba",
+      "label": ""
+    },
+    {
+      "id": "fe8c6ae8-2e4e-4f0f-8ff5-70b852c36178",
+      "from": "c1e4e6ed-b1ed-4c38-985d-fa77d62f98d4",
+      "to": "1ebaaf2a-295e-4a3d-9755-e69493db2402",
+      "label": ""
+    },
+    {
+      "id": "e989e1ba-1c41-4a8c-8baf-b4f1f34b3e3a",
+      "from": "1ebaaf2a-295e-4a3d-9755-e69493db2402",
+      "to": "19c0a81f-7e8a-45bc-b3e6-cdff11d09acf",
+      "label": ""
+    },
+    {
+      "id": "b540568d-e151-4fe2-85f9-9955ded7a7d3",
+      "from": "e6823050-1b76-4343-9311-4ed335ffb6d5",
+      "to": "c1a93a88-4418-46ec-a6d2-27597dda33b0",
+      "label": ""
+    },
+    {
+      "id": "5d8e5999-918c-47d5-a3e1-9186ca0a1d68",
+      "from": "c1a93a88-4418-46ec-a6d2-27597dda33b0",
+      "to": "c1e4e6ed-b1ed-4c38-985d-fa77d62f98d4",
+      "label": ""
+    },
+    {
+      "id": "d95cceef-77d4-4db2-af89-2347dba794bf",
+      "from": "19c0a81f-7e8a-45bc-b3e6-cdff11d09acf",
+      "to": "898585d4-9b0b-49f1-906a-e12b9016ad09",
+      "label": ""
+    },
+    {
+      "id": "4f66e1d4-ec9c-459b-8506-53db510aa1f0",
+      "from": "19c0a81f-7e8a-45bc-b3e6-cdff11d09acf",
+      "to": "8a27233c-43c2-4041-8219-670ef4a56a51",
+      "label": ""
+    },
+    {
+      "id": "93aaf9c2-7a37-4c48-a287-8c1d063d5916",
+      "from": "19c0a81f-7e8a-45bc-b3e6-cdff11d09acf",
+      "to": "d3660d99-90fb-4516-bf58-a809abc1d37f",
+      "label": ""
+    },
+    {
+      "id": "26db4a30-d541-4fae-841d-95ea6c09781b",
+      "from": "d3660d99-90fb-4516-bf58-a809abc1d37f",
+      "to": "ac83b9b7-ab49-4deb-9847-0a0e89395b7b",
+      "label": ""
+    },
+    {
+      "id": "5588ad2c-43d2-4a5d-9446-60bed3b1e1cd",
+      "from": "898585d4-9b0b-49f1-906a-e12b9016ad09",
+      "to": "ac83b9b7-ab49-4deb-9847-0a0e89395b7b",
+      "label": ""
+    },
+    {
+      "id": "25257ab9-eda2-4e19-8c59-05d6ce66eb56",
+      "from": "0c8489ed-45d4-4c7d-8865-6a78ed4dbdcc",
+      "to": "ab28d636-dc03-422d-8de7-f69adde6f2bf",
+      "label": ""
+    },
+    {
+      "id": "9e807669-33fd-4fab-b4d1-b438d2304881",
+      "from": "ac83b9b7-ab49-4deb-9847-0a0e89395b7b",
+      "to": "ab28d636-dc03-422d-8de7-f69adde6f2bf",
+      "label": ""
+    },
+    {
+      "id": "85f278e2-fc36-4aad-85cb-211dcc424e72",
+      "from": "0c8489ed-45d4-4c7d-8865-6a78ed4dbdcc",
+      "to": "61bafe86-fa5c-4389-a828-da6ba14521b5",
+      "label": ""
+    },
+    {
+      "id": "72480d6c-b2c4-438c-867a-e0f21571cbee",
+      "from": "d212a5fb-7611-40b4-abed-5267814ed3ec",
+      "to": "a41f4567-289b-4c3b-be61-028124b2bb3a",
+      "label": ""
+    },
+    {
+      "id": "0ca60049-2f01-4164-828e-c391881fee09",
+      "from": "0cf50c6e-e4a6-4044-89f7-2f4b3e7cb4e8",
+      "to": "54ea2f9c-11d2-4bf0-acef-a764bc267df9",
+      "label": ""
+    },
+    {
+      "id": "6c92b560-563b-439e-9738-7a32df246c3e",
+      "from": "54ea2f9c-11d2-4bf0-acef-a764bc267df9",
+      "to": "c48ae314-0c55-4e22-b3eb-41c8de19ba26",
+      "label": ""
+    },
+    {
+      "id": "76e4b525-1f2f-4d84-ac8e-25c5f4204668",
+      "from": "c48ae314-0c55-4e22-b3eb-41c8de19ba26",
+      "to": "a44b1a9e-8e23-4297-bcaf-fb7339db8671",
+      "label": ""
+    },
+    {
+      "id": "0b5e2cf9-9dec-4c3b-96e2-cde91e136547",
+      "from": "a44b1a9e-8e23-4297-bcaf-fb7339db8671",
+      "to": "a2d20304-7d81-4e92-a83d-f957ed3fa265",
+      "label": "x10"
+    },
+    {
+      "id": "88f0ec82-0811-40cc-8798-64b8545421e8",
+      "from": "c48ae314-0c55-4e22-b3eb-41c8de19ba26",
+      "to": "fa44e506-98f2-4f32-8f53-37b63a480d7f",
+      "label": ""
+    },
+    {
+      "id": "1ec61be5-2af0-4e5f-bf2b-de618750c175",
+      "from": "fa44e506-98f2-4f32-8f53-37b63a480d7f",
+      "to": "20ca68ec-2e1e-41f8-b452-5c21aa4782dc",
+      "label": ""
+    },
+    {
+      "id": "a9d297d2-556b-4fdb-852d-3c6130861990",
+      "from": "a2d20304-7d81-4e92-a83d-f957ed3fa265",
+      "to": "9bdf9651-2073-44b5-8f63-d66e31949db1",
+      "label": ""
+    },
+    {
+      "id": "e053d6e4-ac4b-46ed-b28c-b22b0142f7db",
+      "from": "9bdf9651-2073-44b5-8f63-d66e31949db1",
+      "to": "4b2ff7b0-ab03-418d-9195-65b2744303f6",
+      "label": ""
+    },
+    {
+      "id": "bc045620-9135-4057-8f19-53b1e4a1e584",
+      "from": "0b2604fa-35eb-4cfa-a240-29c3f5cc6464",
+      "to": "4b2ff7b0-ab03-418d-9195-65b2744303f6",
+      "label": ""
+    },
+    {
+      "id": "48099362-8142-41c5-b8d0-8e262dca43f2",
+      "from": "ab28d636-dc03-422d-8de7-f69adde6f2bf",
+      "to": "9db404a9-4852-44a0-89ad-b7af66a09a6a",
+      "label": ""
+    },
+    {
+      "id": "bb33005f-a1c5-45b8-b221-acfefea6b606",
+      "from": "9db404a9-4852-44a0-89ad-b7af66a09a6a",
+      "to": "64568438-5bfc-4f3f-a7bc-7aff7a6dec15",
+      "label": ""
+    },
+    {
+      "id": "c8510626-e277-4c82-8146-8f9ebe5a5aa6",
+      "from": "4b2ff7b0-ab03-418d-9195-65b2744303f6",
+      "to": "2aceb6a8-048c-48f3-ba1b-c0bf8fb143bf",
+      "label": ""
+    },
+    {
+      "id": "0e552c63-5119-4a81-8e49-1cc0d3eaa43f",
+      "from": "2aceb6a8-048c-48f3-ba1b-c0bf8fb143bf",
+      "to": "a1eae232-7afd-4774-a249-100ac14b1905",
+      "label": ""
+    },
+    {
+      "id": "6efa4522-bbee-4e80-8397-3f95fea3b951",
+      "from": "a2d20304-7d81-4e92-a83d-f957ed3fa265",
+      "to": "b05c8544-30bf-4d00-b3ba-f3e8d62141b7",
+      "label": ""
+    },
+    {
+      "id": "569a3322-4ace-4515-be66-079c371235a2",
+      "from": "b05c8544-30bf-4d00-b3ba-f3e8d62141b7",
+      "to": "99fb213e-9123-4c31-926e-8051b5b0ece4",
+      "label": ""
+    },
+    {
+      "id": "1d102c1c-2701-42e1-af94-6abf5fbfd40f",
+      "from": "a1eae232-7afd-4774-a249-100ac14b1905",
+      "to": "99fb213e-9123-4c31-926e-8051b5b0ece4",
+      "label": ""
+    },
+    {
+      "id": "0372cd7c-8912-4701-a1ab-7e7c0975ffa0",
+      "from": "99fb213e-9123-4c31-926e-8051b5b0ece4",
+      "to": "ba4fd324-1e0b-4dc1-b4d5-88f7c668d850",
+      "label": ""
+    },
+    {
+      "id": "391ba5f5-89ff-4442-b103-8ae755986362",
+      "from": "ba4fd324-1e0b-4dc1-b4d5-88f7c668d850",
+      "to": "66ad0744-6ebe-439a-be47-0c3fb616bd20",
+      "label": ""
+    },
+    {
+      "id": "b14ce910-2c87-47c1-a4de-a7540ea42071",
+      "from": "66ad0744-6ebe-439a-be47-0c3fb616bd20",
+      "to": "c487efca-5319-4886-9341-9276e541a3a4",
+      "label": ""
+    },
+    {
+      "id": "3700b79a-40f4-4805-bc43-1a8325d74b55",
+      "from": "c487efca-5319-4886-9341-9276e541a3a4",
+      "to": "9dfd6373-0f59-43a0-8bae-33f365380c5f",
+      "label": ""
+    },
+    {
+      "id": "ce867557-e9fe-4beb-a966-32957a54f842",
+      "from": "66ad0744-6ebe-439a-be47-0c3fb616bd20",
+      "to": "e59dba47-25a7-4110-9cdf-9302fac832f3",
+      "label": ""
+    },
+    {
+      "id": "e78123e4-f9d9-4a76-8956-1cea36f143fc",
+      "from": "e59dba47-25a7-4110-9cdf-9302fac832f3",
+      "to": "9dfd6373-0f59-43a0-8bae-33f365380c5f",
+      "label": ""
+    },
+    {
+      "id": "c561f3cd-77dd-4d44-8f0f-363d8d1a84e3",
+      "from": "20ca68ec-2e1e-41f8-b452-5c21aa4782dc",
+      "to": "c487efca-5319-4886-9341-9276e541a3a4",
+      "label": ""
+    },
+    {
+      "id": "ae7316d8-f5b3-44af-95c9-fab0da8e7d4a",
+      "from": "61bafe86-fa5c-4389-a828-da6ba14521b5",
+      "to": "54ea2f9c-11d2-4bf0-acef-a764bc267df9",
+      "label": ""
+    },
+    {
+      "id": "84028ec5-5269-4e64-a2c1-52305bf78c1e",
+      "from": "61bafe86-fa5c-4389-a828-da6ba14521b5",
+      "to": "9bdf9651-2073-44b5-8f63-d66e31949db1",
+      "label": ""
+    },
+    {
+      "id": "ceed0b01-665e-4032-9dbc-4e92534dda64",
+      "from": "9dfd6373-0f59-43a0-8bae-33f365380c5f",
+      "to": "0156bf11-3545-4bb2-b3c5-b2b5cf6c59ee",
+      "label": ""
+    },
+    {
+      "id": "39038f78-f8e2-49f8-bcf1-b64685431fa6",
+      "from": "0156bf11-3545-4bb2-b3c5-b2b5cf6c59ee",
+      "to": "62b0fd6a-5557-4a1a-8d8a-136374d8c001",
+      "label": ""
+    },
+    {
+      "id": "355320d7-d57a-4398-9ffb-e12a7c8bc49d",
+      "from": "64568438-5bfc-4f3f-a7bc-7aff7a6dec15",
+      "to": "62b0fd6a-5557-4a1a-8d8a-136374d8c001",
+      "label": ""
+    },
+    {
+      "id": "5e7942ac-7fde-452e-90d2-ab90384eefa5",
+      "from": "62b0fd6a-5557-4a1a-8d8a-136374d8c001",
+      "to": "73746a6e-ef6c-457c-9333-7218ffe716dd",
+      "label": ""
+    },
+    {
+      "id": "51603893-54f7-4e0c-a74d-5a01beff4dec",
+      "from": "72ab123e-e9cf-4a88-a6a4-39e6974bb515",
+      "to": "73746a6e-ef6c-457c-9333-7218ffe716dd",
+      "label": ""
+    },
+    {
+      "id": "4b2c55ea-a06a-4c27-9e3e-3338dfb97ed7",
+      "from": "73746a6e-ef6c-457c-9333-7218ffe716dd",
+      "to": "55b7f40c-91aa-493c-81bc-ef7c1a460d76",
+      "label": ""
+    },
+    {
+      "id": "974ed697-3e9e-4ca9-adaa-725fedcc56d2",
+      "from": "b05c8544-30bf-4d00-b3ba-f3e8d62141b7",
+      "to": "55b7f40c-91aa-493c-81bc-ef7c1a460d76",
+      "label": ""
+    },
+    {
+      "id": "4933b0a9-d2b0-498f-a43f-7d93d8ef26a8",
+      "from": "85ae4357-9a17-4a08-bfcb-57edc1578040",
+      "to": "4a017af2-4012-4c81-9145-f392515224b7",
+      "label": ""
+    },
+    {
+      "id": "6d563334-ebf9-416e-8698-43fe1314cb02",
+      "from": "6f2c0a35-a0be-4140-9544-abeaebb66aca",
+      "to": "4a017af2-4012-4c81-9145-f392515224b7",
+      "label": ""
+    },
+    {
+      "id": "6e34fda6-05f8-4e90-9e89-9267b1d22105",
+      "from": "0cf50c6e-e4a6-4044-89f7-2f4b3e7cb4e8",
+      "to": "85ae4357-9a17-4a08-bfcb-57edc1578040",
+      "label": ""
+    },
+    {
+      "id": "31f28916-1536-4c2c-a263-ed419d4ce9f5",
+      "from": "55b7f40c-91aa-493c-81bc-ef7c1a460d76",
+      "to": "0db7b8ec-61b4-431b-bc8b-474caf83b72f",
+      "label": ""
+    },
+    {
+      "id": "049f89f9-daea-4cba-a2c8-ee08c4cfd7c6",
+      "from": "0db7b8ec-61b4-431b-bc8b-474caf83b72f",
+      "to": "6f2c0a35-a0be-4140-9544-abeaebb66aca",
+      "label": ""
+    },
+    {
+      "id": "474b14af-3290-4987-90c7-e712813a39fa",
+      "from": "0db7b8ec-61b4-431b-bc8b-474caf83b72f",
+      "to": "85ae4357-9a17-4a08-bfcb-57edc1578040",
+      "label": ""
+    },
+    {
+      "id": "403fd6b9-0cb3-41ec-b546-7fe984603727",
+      "from": "0db7b8ec-61b4-431b-bc8b-474caf83b72f",
+      "to": "f0b238c8-7c0f-4531-8855-6e36da416455",
+      "label": ""
+    },
+    {
+      "id": "8eef2270-d83a-4c2c-b6b9-111b5d30892c",
+      "from": "61bafe86-fa5c-4389-a828-da6ba14521b5",
+      "to": "d212a5fb-7611-40b4-abed-5267814ed3ec",
+      "label": ""
+    },
+    {
+      "id": "71bfc841-c096-4bf9-86f1-4b00fbbdbe5c",
+      "from": "61bafe86-fa5c-4389-a828-da6ba14521b5",
+      "to": "5c0e781b-319a-42ff-8714-bd2896b94bfb",
+      "label": ""
+    },
+    {
+      "id": "ba61e041-d990-4776-ab45-88cfafd77822",
+      "from": "5c0e781b-319a-42ff-8714-bd2896b94bfb",
+      "to": "ef95c524-a249-457e-8c93-26de3e108015",
+      "label": ""
+    },
+    {
+      "id": "7bd6d6e8-2348-4de3-9be1-7049d7ef2857",
+      "from": "a41f4567-289b-4c3b-be61-028124b2bb3a",
+      "to": "ef95c524-a249-457e-8c93-26de3e108015",
+      "label": ""
+    },
+    {
+      "id": "59cae40e-59be-42dd-807d-d655edce2d46",
+      "from": "2040fe8c-292c-4a68-837a-ed8c37a9e46d",
+      "to": "0c8489ed-45d4-4c7d-8865-6a78ed4dbdcc",
+      "label": ""
+    },
+    {
+      "id": "b6b0c342-bf20-4283-9020-972398b3ce65",
+      "from": "1ebaaf2a-295e-4a3d-9755-e69493db2402",
+      "to": "0b2604fa-35eb-4cfa-a240-29c3f5cc6464",
+      "label": ""
+    },
+    {
+      "id": "20e4bc6a-bc00-4224-9e88-e09b1f72e608",
+      "from": "61bafe86-fa5c-4389-a828-da6ba14521b5",
+      "to": "9db404a9-4852-44a0-89ad-b7af66a09a6a",
+      "label": ""
+    },
+    {
+      "id": "1beb484f-4db5-4df7-b9f3-a87555ebd4dc",
+      "from": "d2d2c137-4d1c-428c-83c8-fcd11e481c09",
+      "to": "72ab123e-e9cf-4a88-a6a4-39e6974bb515",
+      "label": ""
+    },
+    {
+      "id": "00d65608-b6e1-4029-a342-2943ed5ceedf",
+      "from": "e501227d-82a0-4c52-85f8-6c45b9e43bea",
+      "to": "a10f6db0-ea8c-46f4-b0a9-768ad954b4ec",
+      "label": ""
+    },
+    {
+      "id": "fd4f6108-06b5-4483-891d-3ede5eccf21b",
+      "from": "0cf50c6e-e4a6-4044-89f7-2f4b3e7cb4e8",
+      "to": "08a49537-2772-42d4-8280-25f15b75b7a8",
+      "label": ""
+    },
+    {
+      "id": "27d9e28c-415a-470e-a6dd-46fa326b6771",
+      "from": "b438e118-4994-483e-8d84-66efbe129672",
+      "to": "08a49537-2772-42d4-8280-25f15b75b7a8",
+      "label": ""
+    },
+    {
+      "id": "051327c4-7249-408b-b4a9-14a4ba3a04da",
+      "from": "08a49537-2772-42d4-8280-25f15b75b7a8",
+      "to": "e501227d-82a0-4c52-85f8-6c45b9e43bea",
+      "label": ""
+    },
+    {
+      "id": "d12354ba-9ac3-4ad4-8a2a-0a842e316a96",
+      "from": "c6dba37a-7a3f-4385-b996-b74c66dee183",
+      "to": "7a7333b2-72b3-424f-9c46-dbb433840f51",
+      "label": ""
+    },
+    {
+      "id": "44dc6f00-87ec-473e-a12c-ac5c9dcb4367",
+      "from": "7a7333b2-72b3-424f-9c46-dbb433840f51",
+      "to": "38f9d516-b106-45d8-acc7-611c456a562f",
+      "label": ""
+    },
+    {
+      "id": "f052e429-8622-4714-92f4-f780c40d0eea",
+      "from": "38f9d516-b106-45d8-acc7-611c456a562f",
+      "to": "e0e08bbb-8225-4a82-8e45-acdfe734c7c9",
+      "label": ""
+    },
+    {
+      "id": "04b9bb4c-ba85-47c9-967c-49408b5ea318",
+      "from": "e0e08bbb-8225-4a82-8e45-acdfe734c7c9",
+      "to": "01b689ed-dfa1-4aea-b7d0-a7267c46721a",
+      "label": ""
+    },
+    {
+      "id": "849bc074-d1fa-4e1b-a692-6f4b36d3f7a0",
+      "from": "e0e08bbb-8225-4a82-8e45-acdfe734c7c9",
+      "to": "652f7ff1-bb53-4285-93da-42a9bf404b0c",
+      "label": ""
+    },
+    {
+      "id": "c9a12f48-95c0-465d-be3f-3f9ba561666e",
+      "from": "01b689ed-dfa1-4aea-b7d0-a7267c46721a",
+      "to": "b7d6f75b-63ad-45c1-abc1-24c92f3d5264",
+      "label": ""
+    },
+    {
+      "id": "bd7d2817-cfaa-48de-9e01-3c2fa33f83e6",
+      "from": "652f7ff1-bb53-4285-93da-42a9bf404b0c",
+      "to": "b7d6f75b-63ad-45c1-abc1-24c92f3d5264",
+      "label": ""
+    },
+    {
+      "id": "4b9e0d06-a780-4cb8-982a-7b8afc2ba600",
+      "from": "b7d6f75b-63ad-45c1-abc1-24c92f3d5264",
+      "to": "57c63f6f-4368-4ccb-8c18-07648ad085a7",
+      "label": ""
+    },
+    {
+      "id": "f2093e3e-dc52-4d34-9810-64d6cd31ad65",
+      "from": "57c63f6f-4368-4ccb-8c18-07648ad085a7",
+      "to": "568f5c5a-9556-401a-b8f0-e57021d8118c",
+      "label": ""
+    },
+    {
+      "id": "ba93422a-f8c4-4385-95a8-e4911ba9a371",
+      "from": "568f5c5a-9556-401a-b8f0-e57021d8118c",
+      "to": "2ab10fc2-6ca1-4b65-bb79-bd9e99c79be7",
+      "label": ""
+    },
+    {
+      "id": "4fe0fb50-87de-4490-9395-c92e4060f7ad",
+      "from": "2ab10fc2-6ca1-4b65-bb79-bd9e99c79be7",
+      "to": "0824ed42-3f17-4163-a131-2c4c7ea6282e",
+      "label": ""
+    },
+    {
+      "id": "76cbe78e-0843-41af-850b-e6e6592f356a",
+      "from": "2ab10fc2-6ca1-4b65-bb79-bd9e99c79be7",
+      "to": "8b110daa-dd0c-43de-a77d-3d435d986a20",
+      "label": ""
+    },
+    {
+      "id": "1f04ad32-258e-4e1b-9693-27b3351ce9fe",
+      "from": "8b110daa-dd0c-43de-a77d-3d435d986a20",
+      "to": "281815b7-cec6-4a4a-8fb9-a8fcdd441ef0",
+      "label": ""
+    },
+    {
+      "id": "8ac94e76-5ec1-466a-8ae6-466aea427281",
+      "from": "281815b7-cec6-4a4a-8fb9-a8fcdd441ef0",
+      "to": "687182e0-de54-4188-ab77-040bf5200843",
+      "label": ""
+    },
+    {
+      "id": "38e5a25a-7b13-4bdb-adf5-aa85c4da1ad0",
+      "from": "803b2a79-4fca-4308-bdd1-8373793a3067",
+      "to": "281815b7-cec6-4a4a-8fb9-a8fcdd441ef0",
+      "label": ""
+    },
+    {
+      "id": "e7821ef6-9a6e-4d04-a590-5c06b9a4dea6",
+      "from": "568f5c5a-9556-401a-b8f0-e57021d8118c",
+      "to": "594581b2-b765-4c8a-b189-5ece0637b264",
+      "label": ""
+    },
+    {
+      "id": "db205a28-410f-4fca-8167-bc612f8ef838",
+      "from": "803b2a79-4fca-4308-bdd1-8373793a3067",
+      "to": "240afc77-e801-40c8-b179-99432364f086",
+      "label": ""
+    },
+    {
+      "id": "bbf52248-4bec-4dec-81fc-502c3334f382",
+      "from": "594581b2-b765-4c8a-b189-5ece0637b264",
+      "to": "f3a8923d-56ec-4572-93f9-9ef4dd4af5b5",
+      "label": ""
+    },
+    {
+      "id": "450e7b11-2337-4073-b4f4-1ffc3632291f",
+      "from": "f3a8923d-56ec-4572-93f9-9ef4dd4af5b5",
+      "to": "a5034914-2026-4565-aa7b-8df5534da729",
+      "label": ""
+    },
+    {
+      "id": "f25f8907-ac9f-42a8-9ada-a5effed40b51",
+      "from": "a5034914-2026-4565-aa7b-8df5534da729",
+      "to": "4ce0b6a7-1be3-469e-9972-a5599a01b1d8",
+      "label": ""
+    },
+    {
+      "id": "b156dfeb-36fd-4090-8652-648e15ddce44",
+      "from": "240afc77-e801-40c8-b179-99432364f086",
+      "to": "4ce0b6a7-1be3-469e-9972-a5599a01b1d8",
+      "label": ""
+    },
+    {
+      "id": "e280fb0b-65f0-4ea2-879b-d333a95b88e7",
+      "from": "4ce0b6a7-1be3-469e-9972-a5599a01b1d8",
+      "to": "3f79da96-51e0-4675-bab1-e4ee3970e8c1",
+      "label": ""
+    },
+    {
+      "id": "d228a7a8-9674-4c68-8fa4-1ebaf5fa365c",
+      "from": "3f79da96-51e0-4675-bab1-e4ee3970e8c1",
+      "to": "8f7b709f-a8e1-48db-a461-158638af5a30",
+      "label": ""
+    },
+    {
+      "id": "56a09cd5-58a7-498e-86c7-9e1b39be293d",
+      "from": "8f7b709f-a8e1-48db-a461-158638af5a30",
+      "to": "27a3265c-3d89-4b33-b9dc-0cc730880dfe",
+      "label": ""
+    },
+    {
+      "id": "59c7c6f9-ecce-4252-aa50-92fbc19c4a01",
+      "from": "27a3265c-3d89-4b33-b9dc-0cc730880dfe",
+      "to": "a480e708-d404-45fd-9f04-8cacc5646f8f",
+      "label": ""
+    },
+    {
+      "id": "82b72168-f28d-4392-a182-86df5b75c1f2",
+      "from": "a480e708-d404-45fd-9f04-8cacc5646f8f",
+      "to": "492e3982-1acc-4ddd-b507-7512cf2b326f",
+      "label": ""
+    },
+    {
+      "id": "848409cd-888e-492e-97b3-bd26e08cc516",
+      "from": "492e3982-1acc-4ddd-b507-7512cf2b326f",
+      "to": "589d9d58-1f1f-4928-85c1-c1b2b52d106b",
+      "label": ""
+    },
+    {
+      "id": "ab488ce5-bbe5-4d63-9c1b-198c1d88d19f",
+      "from": "0cf50c6e-e4a6-4044-89f7-2f4b3e7cb4e8",
+      "to": "589d9d58-1f1f-4928-85c1-c1b2b52d106b",
+      "label": ""
+    },
+    {
+      "id": "80e94313-b635-4eda-96bb-aa8986bb4088",
+      "from": "589d9d58-1f1f-4928-85c1-c1b2b52d106b",
+      "to": "b650ad4b-599b-40c9-9d32-5e60f6d61d3e",
+      "label": ""
+    },
+    {
+      "id": "fcd3a4e8-743f-4388-ae4f-25eb5843c914",
+      "from": "b650ad4b-599b-40c9-9d32-5e60f6d61d3e",
+      "to": "ac7acb9a-e2c7-4d79-bdb3-0ce866baa7c7",
+      "label": ""
+    },
+    {
+      "id": "9240687a-d5fe-4697-9fe8-fcce9586e052",
+      "from": "a480e708-d404-45fd-9f04-8cacc5646f8f",
+      "to": "a1e03ece-433f-41af-bbd9-1a0a06bc357a",
+      "label": ""
+    },
+    {
+      "id": "8800436b-9ef9-434b-afb2-a41590e94dd2",
+      "from": "a1e03ece-433f-41af-bbd9-1a0a06bc357a",
+      "to": "cb469032-cb13-4b62-9f30-d5bcb2e215ff",
+      "label": ""
+    },
+    {
+      "id": "ffab17a8-b9ce-4c30-b864-4f2701a94c20",
+      "from": "cb469032-cb13-4b62-9f30-d5bcb2e215ff",
+      "to": "f1c40e9e-a624-4c3e-b739-d1d7f90dc49e",
+      "label": ""
+    },
+    {
+      "id": "82bd5b52-584b-45ea-9337-1a2721736c2a",
+      "from": "f43e7078-0799-4b40-b078-ebf274e16dee",
+      "to": "0e934351-17ef-4b06-9ed8-0fbe74808848",
+      "label": ""
+    },
+    {
+      "id": "a70ff35b-b8ef-410c-8f1a-3f446b7885b4",
+      "from": "0e934351-17ef-4b06-9ed8-0fbe74808848",
+      "to": "114c7ca9-aa5a-4953-ab6b-741774ed22f4",
+      "label": ""
+    },
+    {
+      "id": "ea8f1d84-df3f-43cc-80b4-1fa3a68dfcfa",
+      "from": "687182e0-de54-4188-ab77-040bf5200843",
+      "to": "0e934351-17ef-4b06-9ed8-0fbe74808848",
+      "label": ""
+    },
+    {
+      "id": "0ac11d4f-fbd0-4ca5-8ee6-de01b3903827",
+      "from": "114c7ca9-aa5a-4953-ab6b-741774ed22f4",
+      "to": "b438e118-4994-483e-8d84-66efbe129672",
+      "label": ""
+    },
+    {
+      "id": "f9210bfa-e8e3-4094-9859-c7945b79e365",
+      "from": "4a017af2-4012-4c81-9145-f392515224b7",
+      "to": "bf4d3c7b-eda2-436a-9740-c632eded32ad",
+      "label": ""
+    },
+    {
+      "id": "22b1762e-32c7-4ea1-9181-c60cf8d3fde6",
+      "from": "f0b238c8-7c0f-4531-8855-6e36da416455",
+      "to": "bf4d3c7b-eda2-436a-9740-c632eded32ad",
+      "label": ""
+    },
+    {
+      "id": "2ae3ebc3-fd4c-4d82-a532-841bcde8811f",
+      "from": "bf4d3c7b-eda2-436a-9740-c632eded32ad",
+      "to": "c6dba37a-7a3f-4385-b996-b74c66dee183",
+      "label": ""
+    },
+    {
+      "id": "5d7338a6-da12-47b9-b0ec-2874c9cf34cf",
+      "from": "4a017af2-4012-4c81-9145-f392515224b7",
+      "to": "803b2a79-4fca-4308-bdd1-8373793a3067",
+      "label": ""
+    },
+    {
+      "id": "aafe536d-c725-49c3-95e1-3560c183d53f",
+      "from": "652f7ff1-bb53-4285-93da-42a9bf404b0c",
+      "to": "6e097aa1-2b58-409d-a6be-b8ab838b0b19",
+      "label": ""
+    },
+    {
+      "id": "a817f29c-98b0-4d23-ada1-cf1a5f4bfff6",
+      "from": "dfa2d292-cbb8-4fb5-af4b-a898c2198a4f",
+      "to": "6e097aa1-2b58-409d-a6be-b8ab838b0b19",
+      "label": ""
+    },
+    {
+      "id": "f1326d04-5226-475f-9ca9-972548ccc167",
+      "from": "6e097aa1-2b58-409d-a6be-b8ab838b0b19",
+      "to": "57c63f6f-4368-4ccb-8c18-07648ad085a7",
+      "label": ""
+    },
+    {
+      "id": "5fda7f4d-48f6-47bb-8d59-f9ea72d7b40d",
+      "from": "c6dba37a-7a3f-4385-b996-b74c66dee183",
+      "to": "8bc4b384-07ae-481d-893f-9aa5c03a2f30",
+      "label": ""
+    },
+    {
+      "id": "220f9112-79a3-46bb-bd71-8cd3597a04b2",
+      "from": "8bc4b384-07ae-481d-893f-9aa5c03a2f30",
+      "to": "ea8d156b-8c55-429b-a40d-4777c45f62e2",
+      "label": ""
+    },
+    {
+      "id": "c1f7b9be-a585-48ea-9e1b-26fae50f8d3d",
+      "from": "ea8d156b-8c55-429b-a40d-4777c45f62e2",
+      "to": "bf256376-8188-488a-b82f-a5c91a08da38",
+      "label": ""
+    },
+    {
+      "id": "7ba543d2-a70e-4e9f-8e4c-40a62b21327b",
+      "from": "bf256376-8188-488a-b82f-a5c91a08da38",
+      "to": "e4a80d12-5a48-44bf-a4bc-072223f1e28f",
+      "label": ""
+    },
+    {
+      "id": "5e690319-c236-42ea-8863-70c252d59a0f",
+      "from": "e4a80d12-5a48-44bf-a4bc-072223f1e28f",
+      "to": "652f7ff1-bb53-4285-93da-42a9bf404b0c",
+      "label": ""
+    },
+    {
+      "id": "e948149d-3407-481b-905a-436c6c748f89",
+      "from": "000ff147-5a93-4d6b-9586-20c88d2a69f3",
+      "to": "19c0a81f-7e8a-45bc-b3e6-cdff11d09acf",
+      "label": ""
+    },
+    {
+      "id": "da3d644f-ebb4-42df-9a62-a92e54d21e32",
+      "from": "613a94cc-70b6-4363-a484-55ef78b34de0",
+      "to": "0b2604fa-35eb-4cfa-a240-29c3f5cc6464",
+      "label": ""
+    }
+  ]
+}

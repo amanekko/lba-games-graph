@@ -1,0 +1,7841 @@
+{
+  "game": "LBA2",
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Start",
+      "baseLabel": "Start",
+      "color": "#64748b",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "start",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1357,
+      "y": -615
+    },
+    {
+      "id": 9,
+      "label": "End Game",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "x": 5665,
+      "y": 148
+    },
+    {
+      "id": "38efd80f-e851-4a91-a197-fdc8c65d53ae",
+      "label": "79: change Celebration island (with statue)",
+      "baseLabel": "79: change Celebration island (with statue)",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3626,
+      "y": 148
+    },
+    {
+      "id": "79f58300-d69a-471b-9563-9257811ebeae",
+      "label": "55 completed fragment key state",
+      "baseLabel": "55 completed fragment key state",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3092,
+      "y": -90
+    },
+    {
+      "id": "ce39ed33-c62c-4b02-b3c3-34a496cf45b5",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3089,
+      "y": 147
+    },
+    {
+      "id": "3219b573-ac38-4985-b33f-ebe5627f8aa2",
+      "label": "31 Franco's Fragment / Completed",
+      "baseLabel": "31 Franco's Fragment / Completed",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2759,
+      "y": 63
+    },
+    {
+      "id": "d543b7f1-bdc4-4827-b3a0-220bbcf0f58a",
+      "label": "Magic lvl 4",
+      "baseLabel": "Magic lvl 4",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "x": 3269,
+      "y": 255
+    },
+    {
+      "id": "15da195c-8411-4560-a92a-2ca71377a310",
+      "label": "Fun Frock\n[Magic: 4]",
+      "baseLabel": "Fun Frock",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "4",
+      "island": "Celebration island",
+      "x": 5320,
+      "y": 87
+    },
+    {
+      "id": "b96a9252-58b6-4263-a7f2-180dd3355da2",
+      "label": "185: Statue middle",
+      "baseLabel": "185: Statue middle",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3940,
+      "y": 145
+    },
+    {
+      "id": "d7d37f58-088f-4ca0-9bf9-8c9027c43ff0",
+      "label": "Use pickaxe on hole",
+      "baseLabel": "Use pickaxe on hole",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Franco island",
+      "x": 2490,
+      "y": 227
+    },
+    {
+      "id": "0561b56f-583d-4e07-9a37-c09b09e714ca",
+      "label": "36 Pickaxe",
+      "baseLabel": "36 Pickaxe",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2148,
+      "y": 172
+    },
+    {
+      "id": "6f55766f-f64a-413d-b78b-641fa93db6cc",
+      "label": "Buy pickaxe (20 Zlittos)",
+      "baseLabel": "Buy pickaxe (20 Zlittos)",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Franco island",
+      "x": 1954,
+      "y": 172
+    },
+    {
+      "id": "5d1cb1d5-d074-4635-980d-a44ccee31b2d",
+      "label": "124 dissidents story: reach harbor",
+      "baseLabel": "124 dissidents story: reach harbor",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3094,
+      "y": 944
+    },
+    {
+      "id": "9e2c22df-4e05-4743-8900-78b20295f686",
+      "label": "Talk to Island CX survivor",
+      "baseLabel": "Talk to Island CX survivor",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3096,
+      "y": 848
+    },
+    {
+      "id": "ad5dd532-5c7d-4a89-bd41-56da9a6f0cc6",
+      "label": "123",
+      "baseLabel": "123",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1431,
+      "y": 332
+    },
+    {
+      "id": "e8d0c70d-34bc-4d3e-af78-b98b4c674a12",
+      "label": "Talk to Gazogem station worker",
+      "baseLabel": "Talk to Gazogem station worker",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1336,
+      "y": 260
+    },
+    {
+      "id": "ed4a6628-9e2f-4414-8d1e-e1b91c7a95cc",
+      "label": "136: Bar",
+      "baseLabel": "136: Bar",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1043,
+      "y": 465
+    },
+    {
+      "id": "16a668cf-6309-4978-8e46-58e4678bae77",
+      "label": "Magic lvl 3",
+      "baseLabel": "Magic lvl 3",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1039,
+      "y": 537
+    },
+    {
+      "id": "81c172d8-0ccb-4ac0-8576-09a1d70dd47c",
+      "label": "Take Leontine airship",
+      "baseLabel": "Take Leontine airship",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1397,
+      "y": 404
+    },
+    {
+      "id": "e7c539e7-1c55-4e20-93aa-bd27595184fb",
+      "label": "95: Volcano",
+      "baseLabel": "95: Volcano",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3089,
+      "y": 744
+    },
+    {
+      "id": "ce2c8978-cfab-4d7c-b1a5-adf838ceda02",
+      "label": "Take Taxi to Franco",
+      "baseLabel": "Take Taxi to Franco",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2842,
+      "y": 513
+    },
+    {
+      "id": "e457ac22-3f0b-4caf-a035-8bf19af861c6",
+      "label": "109: Village",
+      "baseLabel": "109: Village",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1573,
+      "y": 237
+    },
+    {
+      "id": "a961f58d-966c-4104-af31-0df81a621b14",
+      "label": "94: Bladino's landing zone",
+      "baseLabel": "94: Bladino's landing zone",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 856,
+      "y": 403
+    },
+    {
+      "id": "32021ab9-fcf0-4535-987f-3d24002c5af6",
+      "label": "53: Cross airlock",
+      "baseLabel": "53: Cross airlock",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 251,
+      "y": 394
+    },
+    {
+      "id": "d1ea87cb-cf18-49a6-8cb0-b799828ca13f",
+      "label": "85 = 10",
+      "baseLabel": "85 = 10",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 539,
+      "y": 472
+    },
+    {
+      "id": "519b88a8-6578-4b3a-a6f7-efd8880d3013",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 532,
+      "y": 394
+    },
+    {
+      "id": "6a445a4c-ecfd-4b4b-a926-fff6c9fea99d",
+      "label": "85 = 9",
+      "baseLabel": "85 = 9",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 703,
+      "y": 625
+    },
+    {
+      "id": "21f38f9f-52b2-4279-a81c-61c0c597dc4a",
+      "label": "Baldino: current track 5 ( go to point 19 == leaving)",
+      "baseLabel": "Baldino: current track 5 ( go to point 19 == leaving)",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 538,
+      "y": 541
+    },
+    {
+      "id": "67a55143-0001-4ee9-a7f7-c3defa844641",
+      "label": "85 = 8",
+      "baseLabel": "85 = 8",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 717,
+      "y": 830
+    },
+    {
+      "id": 10,
+      "label": "85 = 7",
+      "baseLabel": "85 = 7",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 479,
+      "y": 943
+    },
+    {
+      "id": 13,
+      "label": "Twinsen: after cinematic ( comportement 2)",
+      "baseLabel": "Twinsen: after cinematic ( comportement 2)",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 715,
+      "y": 716
+    },
+    {
+      "id": "97883409-3534-44d7-bcba-0175a3e83652",
+      "label": "Open Door 4",
+      "baseLabel": "Open Door 4",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 252,
+      "y": 878
+    },
+    {
+      "id": "5e426d9a-7cfa-4993-aa80-36c8e56a65d4",
+      "label": "54: Jail cell",
+      "baseLabel": "54: Jail cell",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -236,
+      "y": 873
+    },
+    {
+      "id": "6487fd89-1051-4a88-b38e-6cf6f41a5238",
+      "label": "Franco Rebel: after giving translator",
+      "baseLabel": "Franco Rebel: after giving translator",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 719,
+      "y": 882
+    },
+    {
+      "id": "19103dbd-58ab-4aa9-914d-88cb95d201ee",
+      "label": "Twinsen: Track == 3",
+      "baseLabel": "Twinsen: Track == 3",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 446,
+      "y": 881
+    },
+    {
+      "id": 14,
+      "label": "167: Triangle airlock",
+      "baseLabel": "167: Triangle airlock",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -236,
+      "y": 720
+    },
+    {
+      "id": 15,
+      "label": "13: L-shaped corridors",
+      "baseLabel": "13: L-shaped corridors",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -231,
+      "y": 796
+    },
+    {
+      "id": "49145e73-f51a-4d0c-a294-0e490378ba8c",
+      "label": "98",
+      "baseLabel": "98",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 10,
+      "y": 630
+    },
+    {
+      "id": "01de1006-0dcc-42a4-a17d-f9e7e8a78e56",
+      "label": "Button (3): Hit",
+      "baseLabel": "Button (3): Hit",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 9,
+      "y": 540
+    },
+    {
+      "id": "7d8f59f0-16dc-447e-8dc0-2039d082b095",
+      "label": "75: Landing zone",
+      "baseLabel": "75: Landing zone",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -228,
+      "y": 457
+    },
+    {
+      "id": "07c29895-9980-4808-8d86-2b4e78de60a8",
+      "label": "8: Ticket office",
+      "baseLabel": "8: Ticket office",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -834,
+      "y": -304
+    },
+    {
+      "id": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "label": "13: Ferry ticket",
+      "baseLabel": "13: Ferry ticket",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -821,
+      "y": 11
+    },
+    {
+      "id": "e57944ea-26d8-4616-b532-a27981fd128c",
+      "label": "Read temple of Bu ad",
+      "baseLabel": "Read temple of Bu ad",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -948,
+      "y": -223
+    },
+    {
+      "id": "13f7cf60-2558-466b-8589-3ef57b74eda5",
+      "label": "113",
+      "baseLabel": "113",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -943,
+      "y": -139
+    },
+    {
+      "id": "366972bf-08a2-4ac1-95ea-068525fd45b2",
+      "label": "Buy Ferry ticket",
+      "baseLabel": "Buy Ferry ticket",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -822,
+      "y": -63
+    },
+    {
+      "id": "9c277fa0-6f74-4c86-b0ab-c62162bbd605",
+      "label": "Paul: take ferry ticket",
+      "baseLabel": "Paul: take ferry ticket",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1042,
+      "y": 16
+    },
+    {
+      "id": "9b0afd47-b85f-4993-98ee-8502e38a14cf",
+      "label": "65: Esmer landing zone",
+      "baseLabel": "65: Esmer landing zone",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1227,
+      "y": 137
+    },
+    {
+      "id": 16,
+      "label": "10: Temple of Bu",
+      "baseLabel": "10: Temple of Bu",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1233,
+      "y": 331
+    },
+    {
+      "id": 17,
+      "label": "11: Downstairs",
+      "baseLabel": "11: Downstairs",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1234,
+      "y": 400
+    },
+    {
+      "id": 18,
+      "label": "12: Spacecraft area",
+      "baseLabel": "12: Spacecraft area",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1225,
+      "y": 471
+    },
+    {
+      "id": 19,
+      "label": "114: Spacecraft",
+      "baseLabel": "114: Spacecraft",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1017,
+      "y": 470
+    },
+    {
+      "id": "59c56616-0df3-44ac-8e6b-3766f45171c4",
+      "label": "Open safe",
+      "baseLabel": "Open safe",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1190,
+      "y": 610
+    },
+    {
+      "id": "fe5c2f58-1364-41db-ba59-b9d3b54347c5",
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1286,
+      "y": 562
+    },
+    {
+      "id": "5635be0b-f308-4de1-9272-279d30073498",
+      "label": "5 Itinerary token",
+      "baseLabel": "5 Itinerary token",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1201,
+      "y": 676
+    },
+    {
+      "id": "ca045123-a6e7-42a4-8464-d9c15500c2dd",
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 95,
+      "y": 934
+    },
+    {
+      "id": "dad9be60-f90f-496f-97e1-695594a5a7f5",
+      "label": "Inside Control panel zone + lookin at it (angle < 89)",
+      "baseLabel": "Inside Control panel zone + lookin at it (angle < 89)",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -585,
+      "y": 456
+    },
+    {
+      "id": "090ffc75-853d-4239-a635-5018af47bb30",
+      "label": "Chapter 5",
+      "baseLabel": "Chapter 5",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -523,
+      "y": 371
+    },
+    {
+      "id": 20,
+      "label": "5 Itinerary token = 0",
+      "baseLabel": "5 Itinerary token = 0",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -801,
+      "y": 375
+    },
+    {
+      "id": 21,
+      "label": "85 = 3",
+      "baseLabel": "85 = 3",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -642,
+      "y": 372
+    },
+    {
+      "id": 22,
+      "label": "13 Ferry ticket = 0",
+      "baseLabel": "13 Ferry ticket = 0",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1046,
+      "y": -66
+    },
+    {
+      "id": "e3281052-5de7-48a2-bd86-a1355eda089e",
+      "label": "Use Key (var_31) in center zone",
+      "baseLabel": "Use Key (var_31) in center zone",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3271,
+      "y": 148
+    },
+    {
+      "id": "d58aba05-2a60-44d1-a39b-ca0b1cd082f8",
+      "label": "in zone 10 (lava fall border)",
+      "baseLabel": "in zone 10 (lava fall border)",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 5331,
+      "y": 224
+    },
+    {
+      "id": "5e3f5bd6-148f-439e-98d6-893a72ee2afb",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 5504,
+      "y": 148
+    },
+    {
+      "id": 23,
+      "label": "188: Statue bottom",
+      "baseLabel": "188: Statue bottom",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 5101,
+      "y": 140
+    },
+    {
+      "id": 24,
+      "label": "187: Statue middle-bottom",
+      "baseLabel": "187: Statue middle-bottom",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4203,
+      "y": 144
+    },
+    {
+      "id": "7fc97cc2-027a-4840-8766-584aef817bc4",
+      "label": "scene var_13",
+      "baseLabel": "scene var_13",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4836,
+      "y": 99
+    },
+    {
+      "id": 25,
+      "label": "scene var_14",
+      "baseLabel": "scene var_14",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4837,
+      "y": 186
+    },
+    {
+      "id": "756327f0-278d-4e6a-96dd-64a6040a6068",
+      "label": "Destroy teleporters with mecapinguin",
+      "baseLabel": "Destroy teleporters with mecapinguin",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4544,
+      "y": 144
+    },
+    {
+      "id": "865352fa-a8f3-424d-b05f-9fe5f7fb58b0",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4957,
+      "y": 138
+    },
+    {
+      "id": "1898de3d-ece0-4b7b-9661-b28644d5adfd",
+      "label": "Note: In theory we should be able to SG throw the mettalic lid and hit the change scene zone to 188",
+      "baseLabel": "Note: In theory we should be able to SG throw the mettalic lid and hit the change scene zone to 188",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4690,
+      "y": 302
+    },
+    {
+      "id": "3c3e4113-7159-4a39-a955-9b18d99e1124",
+      "label": "34 Wanny fragment",
+      "baseLabel": "34 Wanny fragment",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2310,
+      "y": -341
+    },
+    {
+      "id": "1a24b70e-3e99-4596-a3d2-869f09e3ffef",
+      "label": "33 Mosquibee fragment",
+      "baseLabel": "33 Mosquibee fragment",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Mosquibee island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3106,
+      "y": -777
+    },
+    {
+      "id": "304c40de-f207-48ac-bdf8-0893cf35f0a4",
+      "label": "32 Sup fragment",
+      "baseLabel": "32 Sup fragment",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4447,
+      "y": -427
+    },
+    {
+      "id": "7a404d5e-ef5f-460d-bce5-e984cae35b2a",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3104,
+      "y": -417
+    },
+    {
+      "id": "e0cbd315-67b3-45a0-99d0-642f13f67a4e",
+      "label": "117: Fragment room",
+      "baseLabel": "117: Fragment room",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2314,
+      "y": -406
+    },
+    {
+      "id": 26,
+      "label": "112: Acces to fragment room",
+      "baseLabel": "112: Acces to fragment room",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2305,
+      "y": -479
+    },
+    {
+      "id": 27,
+      "label": "111: Gem corridor",
+      "baseLabel": "111: Gem corridor",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2314,
+      "y": -549
+    },
+    {
+      "id": 28,
+      "label": "100: Mine",
+      "baseLabel": "100: Mine",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2304,
+      "y": -623
+    },
+    {
+      "id": 29,
+      "label": "122: Passage to bank",
+      "baseLabel": "122: Passage to bank",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2311,
+      "y": -710
+    },
+    {
+      "id": 30,
+      "label": "99: Mine area",
+      "baseLabel": "99: Mine area",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2297,
+      "y": -805
+    },
+    {
+      "id": 31,
+      "label": "98: Elevator area",
+      "baseLabel": "98: Elevator area",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2120,
+      "y": -803
+    },
+    {
+      "id": 32,
+      "label": "123: Elevator building",
+      "baseLabel": "123: Elevator building",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1920,
+      "y": -802
+    },
+    {
+      "id": 33,
+      "label": "120: Elevator",
+      "baseLabel": "120: Elevator",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 442,
+      "y": -393
+    },
+    {
+      "id": 34,
+      "label": "var_160 > 0",
+      "baseLabel": "var_160 > 0",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 505,
+      "y": -806
+    },
+    {
+      "id": "8ec7c9fe-dc85-448a-9c66-4b46d0bdc9ea",
+      "label": "Chapter > 7",
+      "baseLabel": "Chapter > 7",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 367,
+      "y": -805
+    },
+    {
+      "id": 35,
+      "label": "var_129",
+      "baseLabel": "var_129",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 212,
+      "y": -809
+    },
+    {
+      "id": 36,
+      "label": "var_107 <= 1",
+      "baseLabel": "var_107 <= 1",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 637,
+      "y": -808
+    },
+    {
+      "id": "c80f497c-5141-40a2-a706-3c8a6fc38048",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 454,
+      "y": -666
+    },
+    {
+      "id": "12e6e2b2-9392-43d8-9f7d-392fb1f17b10",
+      "label": "OR",
+      "baseLabel": "OR",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "or",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 440,
+      "y": -563
+    },
+    {
+      "id": "9c2b512c-b89b-4acd-bd60-d44bea86b8a5",
+      "label": "enable zone to undergas",
+      "baseLabel": "enable zone to undergas",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 444,
+      "y": -480
+    },
+    {
+      "id": 37,
+      "label": "171: Shop",
+      "baseLabel": "171: Shop",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1709,
+      "y": 171
+    },
+    {
+      "id": 38,
+      "label": "171: Refinery area",
+      "baseLabel": "171: Refinery area",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1564,
+      "y": -255
+    },
+    {
+      "id": 39,
+      "label": "144: Acces to zeppelin port",
+      "baseLabel": "144: Acces to zeppelin port",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1561,
+      "y": -329
+    },
+    {
+      "id": 40,
+      "label": "interact lever 1",
+      "baseLabel": "interact lever 1",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1467,
+      "y": -411
+    },
+    {
+      "id": 41,
+      "label": "interact lever 2",
+      "baseLabel": "interact lever 2",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1642,
+      "y": -409
+    },
+    {
+      "id": 42,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1559,
+      "y": -471
+    },
+    {
+      "id": 43,
+      "label": "enable zone to zeppelin port",
+      "baseLabel": "enable zone to zeppelin port",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1560,
+      "y": -533
+    },
+    {
+      "id": 44,
+      "label": "107: Zeppelin port",
+      "baseLabel": "107: Zeppelin port",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1564,
+      "y": -609
+    },
+    {
+      "id": "8d43b243-0b05-4d74-a187-f03cd4ca6ed1",
+      "label": "var_160 : emperor has launched moon == 0",
+      "baseLabel": "var_160 : emperor has launched moon == 0",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -239,
+      "y": -805
+    },
+    {
+      "id": "70e250b5-9fc0-4eee-b1e5-f5bda6f411b8",
+      "label": "OR",
+      "baseLabel": "OR",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "or",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -2,
+      "y": -683
+    },
+    {
+      "id": "80518e1b-829b-4642-b322-b9c0d643fbbc",
+      "label": "Chapter < 8",
+      "baseLabel": "Chapter < 8",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 25,
+      "y": -805
+    },
+    {
+      "id": "94497c05-265b-46a2-bd7b-b2f5b8c5931f",
+      "label": "Suicide Monkey",
+      "baseLabel": "Suicide Monkey",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 241,
+      "y": -619
+    },
+    {
+      "id": "82599bb3-8780-41da-ba4e-982f0cce1137",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -102,
+      "y": -589
+    },
+    {
+      "id": "2488ae8d-3291-4634-aa93-03e9296f78c2",
+      "label": "var_107 > 1",
+      "baseLabel": "var_107 > 1",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -508,
+      "y": -803
+    },
+    {
+      "id": "666fcfb7-5006-400f-b1a6-ea4f16e410a6",
+      "label": "Colision with elevator doors ",
+      "baseLabel": "Colision with elevator doors ",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -92,
+      "y": -491
+    },
+    {
+      "id": "96866083-bc95-44e4-8ffe-7bf05b7f55c5",
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 0,
+      "y": -384
+    },
+    {
+      "id": "e1499743-942d-4a9b-a84b-244d2409886c",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 151,
+      "y": -479
+    },
+    {
+      "id": "0bef3440-7639-43f7-b14c-1cb83989b111",
+      "label": "Money Monkey\n[Magic: 3]",
+      "baseLabel": "Money Monkey",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "3",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -138,
+      "y": -380
+    },
+    {
+      "id": "d8ef0499-2b54-4988-9919-be07a4507ef2",
+      "label": "Chapter > 6",
+      "baseLabel": "Chapter > 6",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 800,
+      "y": -805
+    },
+    {
+      "id": 45,
+      "label": "var_107 == 2",
+      "baseLabel": "var_107 == 2",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 962,
+      "y": -806
+    },
+    {
+      "id": "5418825e-b132-4b3c-9c8a-d175041e7d45",
+      "label": "OR",
+      "baseLabel": "OR",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "or",
+      "island": "Elevator island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 820,
+      "y": -624
+    },
+    {
+      "id": "65dc8f52-d83a-4afd-a0c4-4374ad950688",
+      "label": "21: Gem +=1",
+      "baseLabel": "21: Gem +=1",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2074,
+      "y": -689
+    },
+    {
+      "id": 46,
+      "label": "21: Gem +=1",
+      "baseLabel": "21: Gem +=1",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2061,
+      "y": -499
+    },
+    {
+      "id": 54,
+      "label": "97: Ferryman area",
+      "baseLabel": "97: Ferryman area",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2299,
+      "y": -935
+    },
+    {
+      "id": 55,
+      "label": "96: Church area",
+      "baseLabel": "96: Church area",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2298,
+      "y": -1007
+    },
+    {
+      "id": 56,
+      "label": "118: Church building",
+      "baseLabel": "118: Church building",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2297,
+      "y": -1078
+    },
+    {
+      "id": "8d85fe1e-3c86-4e7f-a905-44d88fb1cf99",
+      "label": "105: Nest area",
+      "baseLabel": "105: Nest area",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Mosquibee island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3102,
+      "y": -1244
+    },
+    {
+      "id": "ad8a4e65-9405-480f-9973-4734d9b9cdd9",
+      "label": "Talk to Ferryman (track 12 + distance < 2000)",
+      "baseLabel": "Talk to Ferryman (track 12 + distance < 2000)",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2863,
+      "y": -1834
+    },
+    {
+      "id": "38275ba0-16d8-4484-aea3-d0958d7710ad",
+      "label": "var_82: seems to be the \"in transport\" var",
+      "baseLabel": "var_82: seems to be the \"in transport\" var",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3241,
+      "y": -2353
+    },
+    {
+      "id": "39a01d24-8319-4470-acb5-40a7fe7c56e9",
+      "label": "scene var_2 = 1",
+      "baseLabel": "scene var_2 = 1",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2864,
+      "y": -1726
+    },
+    {
+      "id": "3ecaa880-72da-45c0-a305-bc779fac3dd9",
+      "label": "In ferryman platform song zone",
+      "baseLabel": "In ferryman platform song zone",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2514,
+      "y": -2201
+    },
+    {
+      "id": "c4363dee-1167-4e2d-91d4-835091ff968b",
+      "label": "var_18 : Ferryman's song",
+      "baseLabel": "var_18 : Ferryman's song",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2479,
+      "y": -2308
+    },
+    {
+      "id": "289409fa-3ce6-4c13-b37e-0fb9cc8ff473",
+      "label": "Use ferryman's song",
+      "baseLabel": "Use ferryman's song",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2727,
+      "y": -2309
+    },
+    {
+      "id": "7da10529-1e1b-4b64-9fa3-c68c0a4445c9",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2726,
+      "y": -2195
+    },
+    {
+      "id": "c178d676-42c1-43a8-9930-e1151a249948",
+      "label": "21: Gems >= 4",
+      "baseLabel": "21: Gems >= 4",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2688,
+      "y": -1614
+    },
+    {
+      "id": "787be8d7-d4e1-42f8-ad12-4ae5e76e03f9",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2868,
+      "y": -1613
+    },
+    {
+      "id": 57,
+      "label": "21: Gems -= 4",
+      "baseLabel": "21: Gems -= 4",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3043,
+      "y": -1608
+    },
+    {
+      "id": "2db891e6-29d9-45ea-8dfd-0df17fed038d",
+      "label": "97: Ferryman area",
+      "baseLabel": "97: Ferryman area",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2526,
+      "y": -1834
+    },
+    {
+      "id": "585fd0da-4438-4272-90e1-01c1f3af464d",
+      "label": "Annie housemaid (spawn)",
+      "baseLabel": "Annie housemaid (spawn)",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2273,
+      "y": -2115
+    },
+    {
+      "id": "33759323-7cc0-4dd6-b981-e2e2727b451e",
+      "label": "69 == 0",
+      "baseLabel": "69 == 0",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1707,
+      "y": -2026
+    },
+    {
+      "id": "68deb3ea-135e-4af4-ab33-ba72d4bd8183",
+      "label": "scene var_1 = 2",
+      "baseLabel": "scene var_1 = 2",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2118,
+      "y": -2312
+    },
+    {
+      "id": "86a4ac1f-4637-414e-bdcc-7aa160f4fa8b",
+      "label": "64 >= 4",
+      "baseLabel": "64 >= 4",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2060,
+      "y": -2116
+    },
+    {
+      "id": "7f089870-d43d-4633-939a-883bcdfeb147",
+      "label": "Talk to Annie",
+      "baseLabel": "Talk to Annie",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2280,
+      "y": -2203
+    },
+    {
+      "id": "0baee40c-cca2-4b40-bde1-8690b9d6ea97",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2277,
+      "y": -2312
+    },
+    {
+      "id": "343d3671-7894-449b-8d75-eccb55241ddb",
+      "label": "116: Monk home",
+      "baseLabel": "116: Monk home",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2274,
+      "y": -2022
+    },
+    {
+      "id": "2c2b8f35-e197-43e5-9f15-77b2ab989d57",
+      "label": "121: Church",
+      "baseLabel": "121: Church",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1937,
+      "y": -1734
+    },
+    {
+      "id": 59,
+      "label": "scene var_1 = 1",
+      "baseLabel": "scene var_1 = 1",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1938,
+      "y": -1934
+    },
+    {
+      "id": "4f4bbbbd-f4c9-44f2-93b5-c0844bbd0195",
+      "label": "64 == 3",
+      "baseLabel": "64 == 3",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1708,
+      "y": -1937
+    },
+    {
+      "id": "02dbbb6c-f5f3-4e29-8734-b7d13b60ae27",
+      "label": "64 = 4",
+      "baseLabel": "64 = 4",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2056,
+      "y": -2036
+    },
+    {
+      "id": "d6077670-ab39-4963-86f4-ba14083e36d8",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1933,
+      "y": -2033
+    },
+    {
+      "id": "28905d2b-00ff-4b4d-b098-c11902a0bf9b",
+      "label": "Talk to MrLeMoine",
+      "baseLabel": "Talk to MrLeMoine",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1938,
+      "y": -1840
+    },
+    {
+      "id": "13658597-53b6-4fdd-9f45-0cffac9ac4a6",
+      "label": "churchLockedDoor closed and in door zone",
+      "baseLabel": "churchLockedDoor closed and in door zone",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1852,
+      "y": -1540
+    },
+    {
+      "id": "2c6d792e-0758-4ca4-a84e-9a7bf1a118b5",
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1579,
+      "y": -1494
+    },
+    {
+      "id": "d4756c82-5d69-455a-ad2f-e9151228713b",
+      "label": "119: Stairs (with lava)",
+      "baseLabel": "119: Stairs (with lava)",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1932,
+      "y": -1653
+    },
+    {
+      "id": 60,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1720,
+      "y": -1631
+    },
+    {
+      "id": "712a7c25-24cc-461b-a98d-43ca47c9b3c3",
+      "label": "64 = 3",
+      "baseLabel": "64 = 3",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1715,
+      "y": -1739
+    },
+    {
+      "id": 61,
+      "label": "118: Church building",
+      "baseLabel": "118: Church building",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2295,
+      "y": -1252
+    },
+    {
+      "id": "b11dd8e9-1a00-4c1f-88b7-166d6c730dd8",
+      "label": "8: Kash >= 10",
+      "baseLabel": "8: Kash >= 10",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -629,
+      "y": -137
+    },
+    {
+      "id": "1ad7a879-bb1c-4228-bd34-e97943ec2084",
+      "label": "8: Kash -= 10",
+      "baseLabel": "8: Kash -= 10",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -615,
+      "y": -65
+    },
+    {
+      "id": "8a6ec2c6-af31-4f8e-ac75-15b4758fab30",
+      "label": "101: Firefly tart house",
+      "baseLabel": "101: Firefly tart house",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2296,
+      "y": -1169
+    },
+    {
+      "id": "2a196def-b2d9-45ab-97c0-3e6de3e71c4f",
+      "label": "HungryOldWannie track = 11",
+      "baseLabel": "HungryOldWannie track = 11",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1573,
+      "y": -1417
+    },
+    {
+      "id": "40c63dd6-43e5-45e1-b909-362b0eaee5f3",
+      "label": "64 = 2",
+      "baseLabel": "64 = 2",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1371,
+      "y": -1417
+    },
+    {
+      "id": "bd794bf6-4c82-4c02-8d72-b87ec1fa686a",
+      "label": "Use Slice of tart and distance HungryOldWannie < 1500",
+      "baseLabel": "Use Slice of tart and distance HungryOldWannie < 1500",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1583,
+      "y": -1247
+    },
+    {
+      "id": 62,
+      "label": "HungryOldWannie track = 10",
+      "baseLabel": "HungryOldWannie track = 10",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1577,
+      "y": -1334
+    },
+    {
+      "id": "6a8871d1-3a4a-4941-ab82-2649b6368c1c",
+      "label": "25: Slice of tart",
+      "baseLabel": "25: Slice of tart",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1580,
+      "y": -1166
+    },
+    {
+      "id": "04675b68-737a-4c1d-8bfc-849a583b3395",
+      "label": "11: Glove",
+      "baseLabel": "11: Glove",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2515,
+      "y": -1167
+    },
+    {
+      "id": 63,
+      "label": "93: Temple",
+      "baseLabel": "93: Temple",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3094,
+      "y": 513
+    },
+    {
+      "id": 64,
+      "label": "103: Monster Area",
+      "baseLabel": "103: Monster Area",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Mosquibee island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3102,
+      "y": -1140
+    },
+    {
+      "id": 65,
+      "label": "Walrus\n[Magic: 4]",
+      "baseLabel": "Walrus",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "4",
+      "island": "Mosquibee island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3099,
+      "y": -1037
+    },
+    {
+      "id": 67,
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Mosquibee island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3105,
+      "y": -946
+    },
+    {
+      "id": 68,
+      "label": "Open fragment chest",
+      "baseLabel": "Open fragment chest",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Mosquibee island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3101,
+      "y": -863
+    },
+    {
+      "id": "eb6b4ea3-f9aa-4d4a-92cd-f85e768d9725",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2315,
+      "y": 229
+    },
+    {
+      "id": "9b7ccb14-9f66-4bac-8872-a1cdfe9e1b82",
+      "label": "106: Nest",
+      "baseLabel": "106: Nest",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Mosquibee island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3244,
+      "y": -1245
+    },
+    {
+      "id": 69,
+      "label": "104: Queen's throne room",
+      "baseLabel": "104: Queen's throne room",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Mosquibee island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3433,
+      "y": -1244
+    },
+    {
+      "id": 70,
+      "label": "176: Access to CX",
+      "baseLabel": "176: Access to CX",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Mosquibee island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3433,
+      "y": -1345
+    },
+    {
+      "id": "2e002e2d-bdc4-4001-a33d-560e044a4f80",
+      "label": "Chapter < 8",
+      "baseLabel": "Chapter < 8",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Mosquibee island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3234,
+      "y": -1344
+    },
+    {
+      "id": 71,
+      "label": "Chapter = 8",
+      "baseLabel": "Chapter = 8",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Mosquibee island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3237,
+      "y": -1441
+    },
+    {
+      "id": 72,
+      "label": "110: Emperor base",
+      "baseLabel": "110: Emperor base",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3682,
+      "y": -2445
+    },
+    {
+      "id": 73,
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4296,
+      "y": -2549
+    },
+    {
+      "id": 74,
+      "label": "Franco soldier\n[Magic: 3]",
+      "baseLabel": "Franco soldier",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "3",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4046,
+      "y": -2549
+    },
+    {
+      "id": 75,
+      "label": "179: Control tower",
+      "baseLabel": "179: Control tower",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4296,
+      "y": -2356
+    },
+    {
+      "id": "18892e88-c7dc-432e-ac75-de7b867e1d4b",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4296,
+      "y": -2445
+    },
+    {
+      "id": 76,
+      "label": "181: Emperor room",
+      "baseLabel": "181: Emperor room",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3925,
+      "y": -2354
+    },
+    {
+      "id": 77,
+      "label": "178: Switches room",
+      "baseLabel": "178: Switches room",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4574,
+      "y": -2351
+    },
+    {
+      "id": 78,
+      "label": "177: Stairs to control room",
+      "baseLabel": "177: Stairs to control room",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4573,
+      "y": -2276
+    },
+    {
+      "id": 79,
+      "label": "? 177 fragment: Control room",
+      "baseLabel": "? 177 fragment: Control room",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4573,
+      "y": -2200
+    },
+    {
+      "id": "9c3758dd-5bda-457e-8f7c-1bf1b8b7d326",
+      "label": "? Hussar\n[Magic: saber]",
+      "baseLabel": "? Hussar",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "saber",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4577,
+      "y": -2113
+    },
+    {
+      "id": 80,
+      "label": "? Key",
+      "baseLabel": "? Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4735,
+      "y": -2113
+    },
+    {
+      "id": "8b75a20c-9503-4f5e-bcf0-7fe816db80e1",
+      "label": "TODO: find a way to read the exact script for this fragment scene",
+      "baseLabel": "TODO: find a way to read the exact script for this fragment scene",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4997,
+      "y": -2199
+    },
+    {
+      "id": "c4f7fa7c-a2ea-46ac-aab6-b9608837eed8",
+      "label": "? Open chest",
+      "baseLabel": "? Open chest",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4575,
+      "y": -2031
+    },
+    {
+      "id": 81,
+      "label": "? 5 Itinerary token",
+      "baseLabel": "? 5 Itinerary token",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4571,
+      "y": -1968
+    },
+    {
+      "id": 85,
+      "label": "182: Emperor spacecraft",
+      "baseLabel": "182: Emperor spacecraft",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4296,
+      "y": -2274
+    },
+    {
+      "id": "8e941967-8a32-445e-b11d-3782d0ad5143",
+      "label": "170 = 1",
+      "baseLabel": "170 = 1",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4570,
+      "y": -1863
+    },
+    {
+      "id": "67d835f0-e89c-46b9-816e-c9015610a4c4",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4300,
+      "y": -1784
+    },
+    {
+      "id": 86,
+      "label": "189: Emperor spacecraft",
+      "baseLabel": "189: Emperor spacecraft",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4304,
+      "y": -1586
+    },
+    {
+      "id": 87,
+      "label": "152",
+      "baseLabel": "152",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4571,
+      "y": -1794
+    },
+    {
+      "id": "64f68f30-a027-43cd-85c8-cf592274dee3",
+      "label": "Chapter < 9",
+      "baseLabel": "Chapter < 9",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4575,
+      "y": -1726
+    },
+    {
+      "id": 88,
+      "label": "Chapter = 9",
+      "baseLabel": "Chapter = 9",
+      "color": "#db2777",
+      "font": {
+        "color": "#ffffff",
+        "size": 18,
+        "face": "Inter, sans-serif"
+      },
+      "shape": "box",
+      "nodeType": "chapter",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4573,
+      "y": -1648
+    },
+    {
+      "id": "36827438-aaed-4065-85ea-72f2daed70e3",
+      "label": "10: Saber",
+      "baseLabel": "10: Saber",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4127,
+      "y": -1803
+    },
+    {
+      "id": "eabdc1af-5dcf-414d-b17c-26673a88e783",
+      "label": "in zone chest and orientation < 220",
+      "baseLabel": "in zone chest and orientation < 220",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4127,
+      "y": -1933
+    },
+    {
+      "id": 89,
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4012,
+      "y": -1855
+    },
+    {
+      "id": 90,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4129,
+      "y": -1876
+    },
+    {
+      "id": "d6370c46-c941-41ed-9be2-a0a1561ed41e",
+      "label": "Emeperor\n[Magic: saber]",
+      "baseLabel": "Emeperor",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "saber",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3926,
+      "y": -2199
+    },
+    {
+      "id": "ba44764c-0536-4b78-8a85-900a452bea10",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3920,
+      "y": -2090
+    },
+    {
+      "id": 91,
+      "label": "emperor hit by Twinsen > 2",
+      "baseLabel": "emperor hit by Twinsen > 2",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3716,
+      "y": -2089
+    },
+    {
+      "id": 92,
+      "label": "Emperor: track 20",
+      "baseLabel": "Emperor: track 20",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3840,
+      "y": -2007
+    },
+    {
+      "id": 93,
+      "label": "Emperor: track 16",
+      "baseLabel": "Emperor: track 16",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4145,
+      "y": -2090
+    },
+    {
+      "id": 94,
+      "label": "emperor hit by Twinsen > 1",
+      "baseLabel": "emperor hit by Twinsen > 1",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4144,
+      "y": -2192
+    },
+    {
+      "id": 95,
+      "label": "Emperor: track 30",
+      "baseLabel": "Emperor: track 30",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3836,
+      "y": -1891
+    },
+    {
+      "id": 96,
+      "label": "Emperor: track 31",
+      "baseLabel": "Emperor: track 31",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3838,
+      "y": -1833
+    },
+    {
+      "id": 97,
+      "label": "Emperor: track 21",
+      "baseLabel": "Emperor: track 21",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Island CX",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3839,
+      "y": -1950
+    },
+    {
+      "id": 98,
+      "label": "88: Upper city",
+      "baseLabel": "88: Upper city",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4304,
+      "y": -1515
+    },
+    {
+      "id": "4f52b452-4a67-469f-868e-481396a1eb15",
+      "label": "Imperial guard 1\n[Magic: 4]",
+      "baseLabel": "Imperial guard 1",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "4",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4090,
+      "y": -1545
+    },
+    {
+      "id": 99,
+      "label": "Imperial guard 2\n[Magic: 4]",
+      "baseLabel": "Imperial guard 2",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "4",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4089,
+      "y": -1475
+    },
+    {
+      "id": "356398c8-02c6-4885-b286-fdbd15c0c594",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3927,
+      "y": -1509
+    },
+    {
+      "id": "8044cd81-51d5-4984-85ef-d70eca06e58a",
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3938,
+      "y": -1404
+    },
+    {
+      "id": 100,
+      "label": "91: Emperor palace",
+      "baseLabel": "91: Emperor palace",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4306,
+      "y": -1310
+    },
+    {
+      "id": 101,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4305,
+      "y": -1407
+    },
+    {
+      "id": 102,
+      "label": "154: Palace",
+      "baseLabel": "154: Palace",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4081,
+      "y": -1308
+    },
+    {
+      "id": 103,
+      "label": "158: bottom right 1",
+      "baseLabel": "158: bottom right 1",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4080,
+      "y": -1262
+    },
+    {
+      "id": 104,
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3978,
+      "y": -1311
+    },
+    {
+      "id": 105,
+      "label": "157: middle 2",
+      "baseLabel": "157: middle 2",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4081,
+      "y": -1216
+    },
+    {
+      "id": 106,
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3957,
+      "y": -1260
+    },
+    {
+      "id": 107,
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3980,
+      "y": -1211
+    },
+    {
+      "id": 108,
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3978,
+      "y": -1170
+    },
+    {
+      "id": 109,
+      "label": "161: middle 4",
+      "baseLabel": "161: middle 4",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4083,
+      "y": -1173
+    },
+    {
+      "id": 110,
+      "label": "165: top right 2",
+      "baseLabel": "165: top right 2",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4082,
+      "y": -1129
+    },
+    {
+      "id": 111,
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3979,
+      "y": -1124
+    },
+    {
+      "id": 112,
+      "label": "164: top right 1",
+      "baseLabel": "164: top right 1",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4080,
+      "y": -1083
+    },
+    {
+      "id": 113,
+      "label": "80: Final boss room",
+      "baseLabel": "80: Final boss room",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4081,
+      "y": -755
+    },
+    {
+      "id": 114,
+      "label": "163: top left 3 pigs",
+      "baseLabel": "163: top left 3 pigs",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4081,
+      "y": -1038
+    },
+    {
+      "id": 115,
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3978,
+      "y": -1079
+    },
+    {
+      "id": 116,
+      "label": "Red pigman\n[Magic: 3]",
+      "baseLabel": "Red pigman",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "3",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4227,
+      "y": -973
+    },
+    {
+      "id": 117,
+      "label": "Yellow pigman\n[Magic: 3]",
+      "baseLabel": "Yellow pigman",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "3",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3928,
+      "y": -967
+    },
+    {
+      "id": 118,
+      "label": "Brown pigman\n[Magic: 3]",
+      "baseLabel": "Brown pigman",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "3",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4083,
+      "y": -967
+    },
+    {
+      "id": 119,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4081,
+      "y": -887
+    },
+    {
+      "id": 120,
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4080,
+      "y": -829
+    },
+    {
+      "id": 121,
+      "label": "Hussar 1\n[Magic: 4]",
+      "baseLabel": "Hussar 1",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "4",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 3972,
+      "y": -690
+    },
+    {
+      "id": 122,
+      "label": "Hussar 2\n[Magic: 4]",
+      "baseLabel": "Hussar 2",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "4",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4087,
+      "y": -689
+    },
+    {
+      "id": 123,
+      "label": "Hussar 3\n[Magic: 4]",
+      "baseLabel": "Hussar 3",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "4",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4205,
+      "y": -692
+    },
+    {
+      "id": 124,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4087,
+      "y": -611
+    },
+    {
+      "id": "8b384b31-6461-404b-9291-64ae9a065682",
+      "label": "148: secret passage window = 4 (window broked)",
+      "baseLabel": "148: secret passage window = 4 (window broked)",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4460,
+      "y": -851
+    },
+    {
+      "id": "2796b566-c442-4eb6-8aa0-0c3572bcdaef",
+      "label": "hit by Twinsen in discreet mode",
+      "baseLabel": "hit by Twinsen in discreet mode",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4621,
+      "y": -751
+    },
+    {
+      "id": 125,
+      "label": "148: palace quest = 3 (chest opened)",
+      "baseLabel": "148: palace quest = 3 (chest opened)",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4455,
+      "y": -697
+    },
+    {
+      "id": 126,
+      "label": "distance > 1100",
+      "baseLabel": "distance > 1100",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4593,
+      "y": -805
+    },
+    {
+      "id": "b3f03223-46b2-4665-a630-58b7e045d713",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4453,
+      "y": -791
+    },
+    {
+      "id": 127,
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4278,
+      "y": -535
+    },
+    {
+      "id": 128,
+      "label": "Emperor monster\n[Magic: saber]",
+      "baseLabel": "Emperor monster",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "saber",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4092,
+      "y": -536
+    },
+    {
+      "id": 129,
+      "label": "Chest",
+      "baseLabel": "Chest",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4281,
+      "y": -611
+    },
+    {
+      "id": 130,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 4448,
+      "y": -581
+    },
+    {
+      "id": "0cf3efaa-7263-4fd5-994e-cd5f93dd1d79",
+      "label": "0: Twinsen's house",
+      "baseLabel": "0: Twinsen's house",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1202,
+      "y": -612
+    },
+    {
+      "id": 131,
+      "label": "1: Cellar",
+      "baseLabel": "1: Cellar",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1202,
+      "y": -687
+    },
+    {
+      "id": "6b7809e1-4a26-46ad-99c4-2cdbd0ee2ff6",
+      "label": "0: Holomap",
+      "baseLabel": "0: Holomap",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1118,
+      "y": -757
+    },
+    {
+      "id": 132,
+      "label": "1: Magic ball",
+      "baseLabel": "1: Magic ball",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1265,
+      "y": -753
+    },
+    {
+      "id": 133,
+      "label": "49: Twinsen's house area",
+      "baseLabel": "49: Twinsen's house area",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1216,
+      "y": -518
+    },
+    {
+      "id": 134,
+      "label": "8: Kash += 15",
+      "baseLabel": "8: Kash += 15",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -838,
+      "y": -766
+    },
+    {
+      "id": 135,
+      "label": "42: Lupin bourg",
+      "baseLabel": "42: Lupin bourg",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1213,
+      "y": -401
+    },
+    {
+      "id": 136,
+      "label": "43: Harbour",
+      "baseLabel": "43: Harbour",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1222,
+      "y": -289
+    },
+    {
+      "id": "691bae50-1671-4b10-a5b4-0d0bec834015",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -826,
+      "y": -138
+    },
+    {
+      "id": 137,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Citadel island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1224,
+      "y": 22
+    },
+    {
+      "id": 138,
+      "label": "65: Center dunes",
+      "baseLabel": "65: Center dunes",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1229,
+      "y": 195
+    },
+    {
+      "id": 139,
+      "label": "67: Temple of Bu park",
+      "baseLabel": "67: Temple of Bu park",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1228,
+      "y": 264
+    },
+    {
+      "id": "ba7643d7-f25f-4017-ac02-a641720592f7",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -855,
+      "y": 462
+    },
+    {
+      "id": 140,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Desert island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -1203,
+      "y": 539
+    },
+    {
+      "id": 141,
+      "label": "77: Switches building area",
+      "baseLabel": "77: Switches building area",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 14,
+      "y": 458
+    },
+    {
+      "id": 142,
+      "label": "21: Gem +=1",
+      "baseLabel": "21: Gem +=1",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2061,
+      "y": -622
+    },
+    {
+      "id": 143,
+      "label": "21: Gem +=1",
+      "baseLabel": "21: Gem +=1",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Wanny island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2057,
+      "y": -566
+    },
+    {
+      "id": 144,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -235,
+      "y": 634
+    },
+    {
+      "id": 145,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 96,
+      "y": 875
+    },
+    {
+      "id": "178023a1-4797-4fb5-88bb-b5d56cf2b617",
+      "label": "Franco guard\n[Magic: 3]",
+      "baseLabel": "Franco guard",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "3",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -33,
+      "y": 933
+    },
+    {
+      "id": 146,
+      "label": "29: Translator",
+      "baseLabel": "29: Translator",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 717,
+      "y": 944
+    },
+    {
+      "id": "5f3421de-16af-4b78-98ac-5ff18ec2a2ae",
+      "label": "93: lock armored exit door",
+      "baseLabel": "93: lock armored exit door",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -434,
+      "y": 967
+    },
+    {
+      "id": "a128e6dd-da47-4634-8999-6ae213de6c05",
+      "label": "hit valve",
+      "baseLabel": "hit valve",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": -236,
+      "y": 961
+    },
+    {
+      "id": 149,
+      "label": "93: lock armored exit door = 0",
+      "baseLabel": "93: lock armored exit door = 0",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 281,
+      "y": 940
+    },
+    {
+      "id": 150,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 718,
+      "y": 776
+    },
+    {
+      "id": 151,
+      "label": "hit valve",
+      "baseLabel": "hit valve",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 453,
+      "y": 713
+    },
+    {
+      "id": "a53bcb8c-9411-4c34-8baa-f4b16f62fdb8",
+      "label": "scene var_0 = 1 and near door",
+      "baseLabel": "scene var_0 = 1 and near door",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 451,
+      "y": 627
+    },
+    {
+      "id": 152,
+      "label": "23: Radar room",
+      "baseLabel": "23: Radar room",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Moon base",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 252,
+      "y": 714
+    },
+    {
+      "id": 153,
+      "label": "8: Zlittos > 100",
+      "baseLabel": "8: Zlittos > 100",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1163,
+      "y": 333
+    },
+    {
+      "id": 154,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1168,
+      "y": 401
+    },
+    {
+      "id": 155,
+      "label": "8: Zlittos -= 100",
+      "baseLabel": "8: Zlittos -= 100",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1399,
+      "y": 488
+    },
+    {
+      "id": 156,
+      "label": "87: Harbour",
+      "baseLabel": "87: Harbour",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1042,
+      "y": 401
+    },
+    {
+      "id": 157,
+      "label": "89: Town square",
+      "baseLabel": "89: Town square",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1038,
+      "y": 265
+    },
+    {
+      "id": 158,
+      "label": "147: Shop",
+      "baseLabel": "147: Shop",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 839,
+      "y": 264
+    },
+    {
+      "id": 159,
+      "label": "135: Casino",
+      "baseLabel": "135: Casino",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1033,
+      "y": 173
+    },
+    {
+      "id": "9f8f41d9-0257-4b1a-9cd9-87e4590e412c",
+      "label": "action in zone 4",
+      "baseLabel": "action in zone 4",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 839,
+      "y": 176
+    },
+    {
+      "id": "42c5750a-4da6-4d8d-bb13-8153588048db",
+      "label": "8: Zlittos += 5",
+      "baseLabel": "8: Zlittos += 5",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 838,
+      "y": 16
+    },
+    {
+      "id": 160,
+      "label": "8: Zlittos < 50 (need to verify core code)",
+      "baseLabel": "8: Zlittos < 50 (need to verify core code)",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 604,
+      "y": 79
+    },
+    {
+      "id": 161,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 847,
+      "y": 81
+    },
+    {
+      "id": 162,
+      "label": "8: Kashes > 0",
+      "baseLabel": "8: Kashes > 0",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 656,
+      "y": 185
+    },
+    {
+      "id": "52bcc79a-0839-4592-836c-a0f843f595dd",
+      "label": "talk to vendor",
+      "baseLabel": "talk to vendor",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 661,
+      "y": 264
+    },
+    {
+      "id": "a6ab2c00-66f9-426c-9274-ef7cab83bc85",
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 522,
+      "y": 230
+    },
+    {
+      "id": 163,
+      "label": "Open inventory",
+      "baseLabel": "Open inventory",
+      "color": "#3b82f6",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "standard",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 660,
+      "y": 337
+    },
+    {
+      "id": 164,
+      "label": "8: Zlittos += 20",
+      "baseLabel": "8: Zlittos += 20",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 391,
+      "y": 230
+    },
+    {
+      "id": 165,
+      "label": "133: Wheel room",
+      "baseLabel": "133: Wheel room",
+      "color": "#10b981",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "scene",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1027,
+      "y": 94
+    },
+    {
+      "id": 166,
+      "label": "Alligator 1\n[Magic: 3]",
+      "baseLabel": "Alligator 1",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "3",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1008,
+      "y": 1
+    },
+    {
+      "id": 167,
+      "label": "Alligator 2\n[Magic: 3]",
+      "baseLabel": "Alligator 2",
+      "color": "#ef4444",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "enemy",
+      "magicLevel": "3",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1126,
+      "y": 1
+    },
+    {
+      "id": 168,
+      "label": "8: Zlittos += 50",
+      "baseLabel": "8: Zlittos += 50",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 989,
+      "y": -99
+    },
+    {
+      "id": 169,
+      "label": "8: Zlittos += 50",
+      "baseLabel": "8: Zlittos += 50",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1151,
+      "y": -99
+    },
+    {
+      "id": 170,
+      "label": "Key",
+      "baseLabel": "Key",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1190,
+      "y": 157
+    },
+    {
+      "id": 171,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Otringal",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1183,
+      "y": 85
+    },
+    {
+      "id": 172,
+      "label": "8: Zlittos > 20",
+      "baseLabel": "8: Zlittos > 20",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1798,
+      "y": 101
+    },
+    {
+      "id": 173,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1801,
+      "y": 172
+    },
+    {
+      "id": 174,
+      "label": "8: Zlittos -= 20",
+      "baseLabel": "8: Zlittos -= 20",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Franco island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 1951,
+      "y": 101
+    },
+    {
+      "id": 175,
+      "label": "8: Zlittos > 5",
+      "baseLabel": "8: Zlittos > 5",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2981,
+      "y": 623
+    },
+    {
+      "id": 177,
+      "label": "8: Zlittos -= 5",
+      "baseLabel": "8: Zlittos -= 5",
+      "color": "#ca8a04",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "box",
+      "nodeType": "object",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2843,
+      "y": 438
+    },
+    {
+      "id": 179,
+      "label": "AND",
+      "baseLabel": "AND",
+      "color": "#7c3aed",
+      "font": {
+        "color": "#ffffff"
+      },
+      "shape": "ellipse",
+      "nodeType": "and",
+      "island": "Celebration island",
+      "borderWidth": 2,
+      "shapeProperties": {
+        "borderDashes": false
+      },
+      "x": 2861,
+      "y": 628
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": 1,
+      "to": 2,
+      "label": "starts"
+    },
+    {
+      "id": "e2",
+      "from": 1,
+      "to": 3,
+      "label": "starts"
+    },
+    {
+      "id": "e3",
+      "from": 2,
+      "to": 4,
+      "label": ""
+    },
+    {
+      "id": "e4",
+      "from": 3,
+      "to": 4,
+      "label": ""
+    },
+    {
+      "id": "e5",
+      "from": 4,
+      "to": 5,
+      "label": "both required"
+    },
+    {
+      "id": "e6",
+      "from": 1,
+      "to": 6,
+      "label": "skip gate"
+    },
+    {
+      "id": "e7",
+      "from": 5,
+      "to": 7,
+      "label": ""
+    },
+    {
+      "id": "e8",
+      "from": 6,
+      "to": 7,
+      "label": ""
+    },
+    {
+      "id": "e9",
+      "from": 7,
+      "to": 8,
+      "label": "any path"
+    },
+    {
+      "id": "e10",
+      "from": 8,
+      "to": 9,
+      "label": "win"
+    },
+    {
+      "id": "4de0dea5-23a6-4cfb-aabf-ea7ba8600909",
+      "from": "79f58300-d69a-471b-9563-9257811ebeae",
+      "to": "ce39ed33-c62c-4b02-b3c3-34a496cf45b5",
+      "label": ""
+    },
+    {
+      "id": "176351aa-c3bb-42e8-a48a-c6df3685a1b8",
+      "from": "3219b573-ac38-4985-b33f-ebe5627f8aa2",
+      "to": "ce39ed33-c62c-4b02-b3c3-34a496cf45b5",
+      "label": ""
+    },
+    {
+      "id": "8e208dac-032f-4e0e-8836-f3753823fd53",
+      "from": "15da195c-8411-4560-a92a-2ca71377a310",
+      "to": "b0b8482c-9d9c-4b16-a32f-7ccd642eb5c4",
+      "label": ""
+    },
+    {
+      "id": "7fcee0c0-f609-4e72-bfb6-586c411171dd",
+      "from": "b0b8482c-9d9c-4b16-a32f-7ccd642eb5c4",
+      "to": 9,
+      "label": ""
+    },
+    {
+      "id": "22592235-7dd0-447d-8704-61babe554a6f",
+      "from": "38efd80f-e851-4a91-a197-fdc8c65d53ae",
+      "to": "b96a9252-58b6-4263-a7f2-180dd3355da2",
+      "label": ""
+    },
+    {
+      "id": "d00ab0c1-826f-4b78-8374-5eda14577163",
+      "from": "d7d37f58-088f-4ca0-9bf9-8c9027c43ff0",
+      "to": "3219b573-ac38-4985-b33f-ebe5627f8aa2",
+      "label": ""
+    },
+    {
+      "id": "299ae881-4026-4ef0-9475-392f8b77fca6",
+      "from": "6f55766f-f64a-413d-b78b-641fa93db6cc",
+      "to": "0561b56f-583d-4e07-9a37-c09b09e714ca",
+      "label": ""
+    },
+    {
+      "id": "e3ddeb45-a045-4ebb-8fed-97752d22c956",
+      "from": "9e2c22df-4e05-4743-8900-78b20295f686",
+      "to": "5d1cb1d5-d074-4635-980d-a44ccee31b2d",
+      "label": ""
+    },
+    {
+      "id": "373e6cf8-ea84-41f5-b2b9-d9d54f01f276",
+      "from": "e8d0c70d-34bc-4d3e-af78-b98b4c674a12",
+      "to": "ad5dd532-5c7d-4a89-bd41-56da9a6f0cc6",
+      "label": ""
+    },
+    {
+      "id": "5134e5f6-6859-4224-8a70-228b66774f7d",
+      "from": "ed4a6628-9e2f-4414-8d1e-e1b91c7a95cc",
+      "to": "16a668cf-6309-4978-8e46-58e4678bae77",
+      "label": ""
+    },
+    {
+      "id": "15730b99-9bc5-4859-8665-287b28efd8a7",
+      "from": "e7c539e7-1c55-4e20-93aa-bd27595184fb",
+      "to": "9e2c22df-4e05-4743-8900-78b20295f686",
+      "label": ""
+    },
+    {
+      "id": "9edc54ea-993d-4a6c-9eed-93425acbbe70",
+      "from": "81c172d8-0ccb-4ac0-8576-09a1d70dd47c",
+      "to": "e7c539e7-1c55-4e20-93aa-bd27595184fb",
+      "label": ""
+    },
+    {
+      "id": "df399380-a7c7-46e7-ba70-9214d433933e",
+      "from": "ad5dd532-5c7d-4a89-bd41-56da9a6f0cc6",
+      "to": "ce2c8978-cfab-4d7c-b1a5-adf838ceda02",
+      "label": ""
+    },
+    {
+      "id": "9aac3926-0b3f-48c5-b5e6-ef07bcfacf48",
+      "from": "ce2c8978-cfab-4d7c-b1a5-adf838ceda02",
+      "to": "e457ac22-3f0b-4caf-a035-8bf19af861c6",
+      "label": ""
+    },
+    {
+      "id": "d7f42467-3092-4a5f-ac96-91159901d5ea",
+      "from": "d1ea87cb-cf18-49a6-8cb0-b799828ca13f",
+      "to": "467270b6-d262-4f52-9e03-67810261305e",
+      "label": ""
+    },
+    {
+      "id": "b2fdfdf5-aa16-4cb4-89bc-97aa18129061",
+      "from": "d1ea87cb-cf18-49a6-8cb0-b799828ca13f",
+      "to": "519b88a8-6578-4b3a-a6f7-efd8880d3013",
+      "label": ""
+    },
+    {
+      "id": "c87a12ee-43f0-48d8-a5d7-6b1ecad2d872",
+      "from": "32021ab9-fcf0-4535-987f-3d24002c5af6",
+      "to": "519b88a8-6578-4b3a-a6f7-efd8880d3013",
+      "label": ""
+    },
+    {
+      "id": "c93a5694-c22f-4670-9f50-864f2cba79e1",
+      "from": "519b88a8-6578-4b3a-a6f7-efd8880d3013",
+      "to": "a961f58d-966c-4104-af31-0df81a621b14",
+      "label": ""
+    },
+    {
+      "id": "e67b8f63-dc14-4644-bdae-74904b04b3d6",
+      "from": "6a445a4c-ecfd-4b4b-a926-fff6c9fea99d",
+      "to": "21f38f9f-52b2-4279-a81c-61c0c597dc4a",
+      "label": ""
+    },
+    {
+      "id": "a7aaf17e-c416-4cd5-8fb5-28b7aa7ea6be",
+      "from": "21f38f9f-52b2-4279-a81c-61c0c597dc4a",
+      "to": "d1ea87cb-cf18-49a6-8cb0-b799828ca13f",
+      "label": ""
+    },
+    {
+      "id": "0ba2024e-8c21-449c-b685-58c1157417e2",
+      "from": 13,
+      "to": "6a445a4c-ecfd-4b4b-a926-fff6c9fea99d",
+      "label": ""
+    },
+    {
+      "id": "80d0ff94-d748-4ab9-9dfd-3a6e3876bda8",
+      "from": "97883409-3534-44d7-bcba-0175a3e83652",
+      "to": 10,
+      "label": ""
+    },
+    {
+      "id": "0644ee7f-b761-48cf-9a5d-f155327b467e",
+      "from": "6487fd89-1051-4a88-b38e-6cf6f41a5238",
+      "to": "67a55143-0001-4ee9-a7f7-c3defa844641",
+      "label": ""
+    },
+    {
+      "id": "e466a799-8875-4b9f-995e-22cb371e3821",
+      "from": "19103dbd-58ab-4aa9-914d-88cb95d201ee",
+      "to": "6487fd89-1051-4a88-b38e-6cf6f41a5238",
+      "label": ""
+    },
+    {
+      "id": "56d823fc-4b3f-4069-9301-7566617af283",
+      "from": "c11e2aaf-4f4c-480e-a5ef-385b0804981b",
+      "to": "19103dbd-58ab-4aa9-914d-88cb95d201ee",
+      "label": ""
+    },
+    {
+      "id": "c17e022e-e6a7-43d1-bdf6-6e2cabe52ef7",
+      "from": "97883409-3534-44d7-bcba-0175a3e83652",
+      "to": "c11e2aaf-4f4c-480e-a5ef-385b0804981b",
+      "label": ""
+    },
+    {
+      "id": "65fa0d72-aeda-4bbf-aee5-2c3eda4521a8",
+      "from": 14,
+      "to": 15,
+      "label": ""
+    },
+    {
+      "id": "712d27c7-7b55-457e-a693-28cdb1cda443",
+      "from": 15,
+      "to": "5e426d9a-7cfa-4993-aa80-36c8e56a65d4",
+      "label": ""
+    },
+    {
+      "id": "98b2764d-21a9-4e2d-a558-9ebbec4cae13",
+      "from": "01de1006-0dcc-42a4-a17d-f9e7e8a78e56",
+      "to": "49145e73-f51a-4d0c-a294-0e490378ba8c",
+      "label": ""
+    },
+    {
+      "id": "20a8ace0-3c4e-4cd1-8d2d-b68bb055f799",
+      "from": "07c29895-9980-4808-8d86-2b4e78de60a8",
+      "to": "e57944ea-26d8-4616-b532-a27981fd128c",
+      "label": ""
+    },
+    {
+      "id": "14eb3241-73f7-448c-9d2b-3dae3146805b",
+      "from": "e57944ea-26d8-4616-b532-a27981fd128c",
+      "to": "13f7cf60-2558-466b-8589-3ef57b74eda5",
+      "label": ""
+    },
+    {
+      "id": "65c82640-cb3f-4cd4-8626-8bc1d6d6d0dd",
+      "from": "366972bf-08a2-4ac1-95ea-068525fd45b2",
+      "to": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "label": ""
+    },
+    {
+      "id": "b569e54b-9a68-4c14-988d-25f3f790caa3",
+      "from": "366972bf-08a2-4ac1-95ea-068525fd45b2",
+      "to": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "label": ""
+    },
+    {
+      "id": "f53300bd-461d-4f15-9497-516443205df7",
+      "from": "366972bf-08a2-4ac1-95ea-068525fd45b2",
+      "to": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "label": ""
+    },
+    {
+      "id": "d2598245-9221-46f8-b3a9-e0c73bddcd68",
+      "from": "366972bf-08a2-4ac1-95ea-068525fd45b2",
+      "to": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "label": ""
+    },
+    {
+      "id": "e0a0a0ed-13a7-4362-9c4e-a19fdd3075d6",
+      "from": "366972bf-08a2-4ac1-95ea-068525fd45b2",
+      "to": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "label": ""
+    },
+    {
+      "id": "1398a7cc-c1e3-41e6-8def-b697b347c9d7",
+      "from": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "to": "9c277fa0-6f74-4c86-b0ab-c62162bbd605",
+      "label": ""
+    },
+    {
+      "id": "ba48464d-4f2b-4f5c-adb0-6052268d5db1",
+      "from": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "to": "9c277fa0-6f74-4c86-b0ab-c62162bbd605",
+      "label": ""
+    },
+    {
+      "id": "d58e0908-47e9-46ef-80c8-595e7516a003",
+      "from": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "to": "9c277fa0-6f74-4c86-b0ab-c62162bbd605",
+      "label": ""
+    },
+    {
+      "id": "211c6d67-1823-4b47-9a56-11298697eb76",
+      "from": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "to": "9c277fa0-6f74-4c86-b0ab-c62162bbd605",
+      "label": ""
+    },
+    {
+      "id": "a12f9907-b6e7-40c8-b581-f3f72a520cec",
+      "from": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "to": "9c277fa0-6f74-4c86-b0ab-c62162bbd605",
+      "label": ""
+    },
+    {
+      "id": "6134b544-328f-4711-93ae-a73c589297cb",
+      "from": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "to": "9c277fa0-6f74-4c86-b0ab-c62162bbd605",
+      "label": ""
+    },
+    {
+      "id": "c36f3bf4-0d3f-48bc-9966-9b16eda1637c",
+      "from": "a68f417a-7221-4d5c-b00f-b88c5d7c8af2",
+      "to": "9c277fa0-6f74-4c86-b0ab-c62162bbd605",
+      "label": ""
+    },
+    {
+      "id": "2c1e94a0-98a7-474e-9bf8-800ff03204f5",
+      "from": 16,
+      "to": 17,
+      "label": ""
+    },
+    {
+      "id": "29b41d11-94c1-4615-873a-e16cb1c30977",
+      "from": 17,
+      "to": 18,
+      "label": ""
+    },
+    {
+      "id": "5db1d91b-d417-4e73-9cce-a78a8a1f5d5c",
+      "from": 18,
+      "to": "fe5c2f58-1364-41db-ba59-b9d3b54347c5",
+      "label": ""
+    },
+    {
+      "id": "bb592e68-ee32-4cee-adca-a6eb956edc27",
+      "from": "59c56616-0df3-44ac-8e6b-3766f45171c4",
+      "to": "5635be0b-f308-4de1-9272-279d30073498",
+      "label": ""
+    },
+    {
+      "id": "6602a933-d7f2-45d8-b6ee-d7b2f85b3bdf",
+      "from": "5e426d9a-7cfa-4993-aa80-36c8e56a65d4",
+      "to": "f1fd9ad4-0c47-4d35-9f82-90abed81ee46",
+      "label": ""
+    },
+    {
+      "id": "292b8df0-4ce7-406f-85b9-617623a82d5a",
+      "from": "ca045123-a6e7-42a4-8464-d9c15500c2dd",
+      "to": "f1fd9ad4-0c47-4d35-9f82-90abed81ee46",
+      "label": ""
+    },
+    {
+      "id": "61d5471b-6535-487b-8bb1-44a69fcd2f75",
+      "from": "ca045123-a6e7-42a4-8464-d9c15500c2dd",
+      "to": "f1fd9ad4-0c47-4d35-9f82-90abed81ee46",
+      "label": ""
+    },
+    {
+      "id": "4b198016-ab32-49cf-9bbd-70c58007ec6d",
+      "from": "f1fd9ad4-0c47-4d35-9f82-90abed81ee46",
+      "to": "97883409-3534-44d7-bcba-0175a3e83652",
+      "label": ""
+    },
+    {
+      "id": "728a40e9-16d9-461b-995f-6974754647c4",
+      "from": 18,
+      "to": 19,
+      "label": ""
+    },
+    {
+      "id": "ea8cdffa-de78-4a63-aece-5286339590da",
+      "from": "dad9be60-f90f-496f-97e1-695594a5a7f5",
+      "to": 20,
+      "label": ""
+    },
+    {
+      "id": "b90735c6-9139-4d9e-8d94-3202bf8bc3dd",
+      "from": "dad9be60-f90f-496f-97e1-695594a5a7f5",
+      "to": "090ffc75-853d-4239-a635-5018af47bb30",
+      "label": ""
+    },
+    {
+      "id": "57d6c47f-5661-4bd8-b721-7c9e11ac50df",
+      "from": "dad9be60-f90f-496f-97e1-695594a5a7f5",
+      "to": 21,
+      "label": ""
+    },
+    {
+      "id": "9d5e0f72-6b29-4f7a-b1e1-ad8b363538de",
+      "from": "dad9be60-f90f-496f-97e1-695594a5a7f5",
+      "to": "7d8f59f0-16dc-447e-8dc0-2039d082b095",
+      "label": ""
+    },
+    {
+      "id": "c5d925d5-af01-4900-85a7-6b698c40f3a2",
+      "from": "9c277fa0-6f74-4c86-b0ab-c62162bbd605",
+      "to": 22,
+      "label": ""
+    },
+    {
+      "id": "18c8702d-d502-41c2-b62f-5bd3f5dcf0cb",
+      "from": "e3281052-5de7-48a2-bd86-a1355eda089e",
+      "to": "38efd80f-e851-4a91-a197-fdc8c65d53ae",
+      "label": ""
+    },
+    {
+      "id": "670f6bf6-47c4-4863-a2f5-f3956a6b099d",
+      "from": "e3281052-5de7-48a2-bd86-a1355eda089e",
+      "to": "d543b7f1-bdc4-4827-b3a0-220bbcf0f58a",
+      "label": ""
+    },
+    {
+      "id": "b61101c7-0940-4731-b868-40bd7b119947",
+      "from": "ce39ed33-c62c-4b02-b3c3-34a496cf45b5",
+      "to": "e3281052-5de7-48a2-bd86-a1355eda089e",
+      "label": ""
+    },
+    {
+      "id": "1b252fef-248c-4db5-ac82-9e076fe0b3ad",
+      "from": "ca98bb8c-aa93-439d-82fd-e4e8db665b54",
+      "to": "79f58300-d69a-471b-9563-9257811ebeae",
+      "label": ""
+    },
+    {
+      "id": "8ef87f98-ac53-43cb-9edf-dbb65c51e91d",
+      "from": "15da195c-8411-4560-a92a-2ca71377a310",
+      "to": "5e3f5bd6-148f-439e-98d6-893a72ee2afb",
+      "label": ""
+    },
+    {
+      "id": "79c50e2a-0738-4b92-8df2-66eb5de783d4",
+      "from": "d58aba05-2a60-44d1-a39b-ca0b1cd082f8",
+      "to": "5e3f5bd6-148f-439e-98d6-893a72ee2afb",
+      "label": ""
+    },
+    {
+      "id": "bdca4cb6-f8a3-48ba-975c-22ced38752cb",
+      "from": "5e3f5bd6-148f-439e-98d6-893a72ee2afb",
+      "to": 9,
+      "label": ""
+    },
+    {
+      "id": "ea07369e-59c1-42c6-bcda-efa121284cb0",
+      "from": 23,
+      "to": "15da195c-8411-4560-a92a-2ca71377a310",
+      "label": ""
+    },
+    {
+      "id": "675525a7-ec6f-4dfd-b689-10315b74e7de",
+      "from": 23,
+      "to": "d58aba05-2a60-44d1-a39b-ca0b1cd082f8",
+      "label": ""
+    },
+    {
+      "id": "eba44659-02c2-4da4-9c8b-a9e71fc325dc",
+      "from": "b96a9252-58b6-4263-a7f2-180dd3355da2",
+      "to": 24,
+      "label": ""
+    },
+    {
+      "id": "feb52150-e5b5-41a1-a8a3-2bc86781ff9d",
+      "from": 24,
+      "to": "32350e7a-13ba-427d-ac0e-ad1fac7f494e",
+      "label": ""
+    },
+    {
+      "id": "b69c5ca1-fafa-4cb2-abe8-b780a54af967",
+      "from": "7fc97cc2-027a-4840-8766-584aef817bc4",
+      "to": "865352fa-a8f3-424d-b05f-9fe5f7fb58b0",
+      "label": ""
+    },
+    {
+      "id": "5dad8ba2-666d-4548-9b7e-82a209fda583",
+      "from": "7fc97cc2-027a-4840-8766-584aef817bc4",
+      "to": "865352fa-a8f3-424d-b05f-9fe5f7fb58b0",
+      "label": ""
+    },
+    {
+      "id": "198aee46-6b10-4f7e-8d12-9dbfa7def215",
+      "from": 25,
+      "to": "865352fa-a8f3-424d-b05f-9fe5f7fb58b0",
+      "label": ""
+    },
+    {
+      "id": "f15bd27f-64ec-41f7-bf82-37dffccf9871",
+      "from": "865352fa-a8f3-424d-b05f-9fe5f7fb58b0",
+      "to": 23,
+      "label": ""
+    },
+    {
+      "id": "fd627720-ca2e-40fe-8085-e4c0c8368d58",
+      "from": 24,
+      "to": "756327f0-278d-4e6a-96dd-64a6040a6068",
+      "label": ""
+    },
+    {
+      "id": "7178744b-ca0a-4eb9-8261-da0c00939509",
+      "from": "756327f0-278d-4e6a-96dd-64a6040a6068",
+      "to": "7fc97cc2-027a-4840-8766-584aef817bc4",
+      "label": ""
+    },
+    {
+      "id": "c2172a43-51b2-4da4-8cb9-0be4ed4c7a3d",
+      "from": "756327f0-278d-4e6a-96dd-64a6040a6068",
+      "to": 25,
+      "label": ""
+    },
+    {
+      "id": "8a4da799-d95c-455a-af61-7e11c9086e27",
+      "from": "1898de3d-ece0-4b7b-9661-b28644d5adfd",
+      "to": 23,
+      "label": ""
+    },
+    {
+      "id": "c57514e6-1f04-4788-8c35-bc3c09750051",
+      "from": "3c3e4113-7159-4a39-a955-9b18d99e1124",
+      "to": "7a404d5e-ef5f-460d-bce5-e984cae35b2a",
+      "label": ""
+    },
+    {
+      "id": "4e501c1b-77a8-4be4-99e8-74ef391dc3d1",
+      "from": "1a24b70e-3e99-4596-a3d2-869f09e3ffef",
+      "to": "7a404d5e-ef5f-460d-bce5-e984cae35b2a",
+      "label": ""
+    },
+    {
+      "id": "b74cb0d9-cbd3-47d4-bbe0-86e1ba182462",
+      "from": "304c40de-f207-48ac-bdf8-0893cf35f0a4",
+      "to": "7a404d5e-ef5f-460d-bce5-e984cae35b2a",
+      "label": ""
+    },
+    {
+      "id": "165fe360-79b3-4809-a55b-df239c651ec1",
+      "from": "3219b573-ac38-4985-b33f-ebe5627f8aa2",
+      "to": "7a404d5e-ef5f-460d-bce5-e984cae35b2a",
+      "label": ""
+    },
+    {
+      "id": "99ed43f2-ed4f-4697-afaa-49fd81a28c02",
+      "from": "7a404d5e-ef5f-460d-bce5-e984cae35b2a",
+      "to": "79f58300-d69a-471b-9563-9257811ebeae",
+      "label": ""
+    },
+    {
+      "id": "5c05bf3b-81e8-4fe5-bd95-dbca622bfd9a",
+      "from": "e0cbd315-67b3-45a0-99d0-642f13f67a4e",
+      "to": "3c3e4113-7159-4a39-a955-9b18d99e1124",
+      "label": ""
+    },
+    {
+      "id": "e2dc0737-b7b4-45c7-b7c3-c5980ab2c479",
+      "from": 26,
+      "to": "e0cbd315-67b3-45a0-99d0-642f13f67a4e",
+      "label": ""
+    },
+    {
+      "id": "8a5cb500-0e9b-48f0-9cda-2d5426eaf17a",
+      "from": 27,
+      "to": 26,
+      "label": ""
+    },
+    {
+      "id": "05d3a299-d89f-4778-8675-9f07c6dc3717",
+      "from": 28,
+      "to": 27,
+      "label": ""
+    },
+    {
+      "id": "862c85f8-747d-478f-b048-b14a02b1dfd4",
+      "from": 29,
+      "to": 28,
+      "label": ""
+    },
+    {
+      "id": "5732a81e-4f46-43f3-96c3-53f6ee8046b9",
+      "from": 30,
+      "to": 29,
+      "label": ""
+    },
+    {
+      "id": "ea6fec99-9656-4907-9ec3-eb8267d5c331",
+      "from": 31,
+      "to": 30,
+      "label": ""
+    },
+    {
+      "id": "f5be7ffb-f089-423e-b9fa-a6be39cef79f",
+      "from": 32,
+      "to": 31,
+      "label": ""
+    },
+    {
+      "id": "0b570fc5-06ff-4710-920c-0893dce025e9",
+      "from": 34,
+      "to": "c80f497c-5141-40a2-a706-3c8a6fc38048",
+      "label": ""
+    },
+    {
+      "id": "b5da2dd9-4956-49dd-8476-a7ebb11baf44",
+      "from": 35,
+      "to": "c80f497c-5141-40a2-a706-3c8a6fc38048",
+      "label": ""
+    },
+    {
+      "id": "054238ed-9544-4b9e-a426-a086661d6e8c",
+      "from": "8ec7c9fe-dc85-448a-9c66-4b46d0bdc9ea",
+      "to": "c80f497c-5141-40a2-a706-3c8a6fc38048",
+      "label": ""
+    },
+    {
+      "id": "9d54e55b-570a-4be2-9431-aaa9c17b7232",
+      "from": 36,
+      "to": "12e6e2b2-9392-43d8-9f7d-392fb1f17b10",
+      "label": ""
+    },
+    {
+      "id": "afcceb9f-84ef-4c96-b977-2163b25655b0",
+      "from": "c80f497c-5141-40a2-a706-3c8a6fc38048",
+      "to": "12e6e2b2-9392-43d8-9f7d-392fb1f17b10",
+      "label": ""
+    },
+    {
+      "id": "6d99728c-7a8f-4a7d-bba8-f4c0d7d30fe1",
+      "from": 33,
+      "to": "9c2b512c-b89b-4acd-bd60-d44bea86b8a5",
+      "label": ""
+    },
+    {
+      "id": "c18c59c2-bcdd-4d23-a11a-fb810d75c9ce",
+      "from": "9c2b512c-b89b-4acd-bd60-d44bea86b8a5",
+      "to": 32,
+      "label": ""
+    },
+    {
+      "id": "991369c5-12a4-4dfb-b354-b1e0b896ca5d",
+      "from": "12e6e2b2-9392-43d8-9f7d-392fb1f17b10",
+      "to": "9c2b512c-b89b-4acd-bd60-d44bea86b8a5",
+      "label": ""
+    },
+    {
+      "id": "32a37ec9-b820-48cf-bd89-d28b762c9f72",
+      "from": "e457ac22-3f0b-4caf-a035-8bf19af861c6",
+      "to": 37,
+      "label": ""
+    },
+    {
+      "id": "c9b560b8-b671-4e7f-9a51-47fb5b6b4abf",
+      "from": "e457ac22-3f0b-4caf-a035-8bf19af861c6",
+      "to": 38,
+      "label": ""
+    },
+    {
+      "id": "cb1b11cb-a387-4be5-8636-2d2a3f65f06f",
+      "from": 38,
+      "to": 39,
+      "label": ""
+    },
+    {
+      "id": "d7d05382-243c-452c-9a80-e6166ffe6191",
+      "from": 39,
+      "to": 40,
+      "label": ""
+    },
+    {
+      "id": "fba4d6dc-d013-4cfb-9a01-0c742ddfb053",
+      "from": 39,
+      "to": 41,
+      "label": ""
+    },
+    {
+      "id": "3686c095-b26e-46ed-b6cb-10ac5c1e0ce9",
+      "from": 40,
+      "to": 42,
+      "label": ""
+    },
+    {
+      "id": "ed109a86-89d1-49ef-8951-a3efe668fae7",
+      "from": 41,
+      "to": 42,
+      "label": ""
+    },
+    {
+      "id": "ea80a656-d5b7-49ba-b308-be9b1b67822c",
+      "from": 42,
+      "to": 43,
+      "label": ""
+    },
+    {
+      "id": "3858539c-58a5-4226-aeec-fe33d8b9e2ce",
+      "from": 43,
+      "to": 44,
+      "label": ""
+    },
+    {
+      "id": "c5c9d22e-d9e6-45a0-91b4-a9648b649696",
+      "from": 44,
+      "to": 33,
+      "label": ""
+    },
+    {
+      "id": "257177d8-01d9-48a0-adbe-6840dd2d3489",
+      "from": "80518e1b-829b-4642-b322-b9c0d643fbbc",
+      "to": "70e250b5-9fc0-4eee-b1e5-f5bda6f411b8",
+      "label": ""
+    },
+    {
+      "id": "ecceb3df-a4ee-44ac-ad31-689ce442d377",
+      "from": "8d43b243-0b05-4d74-a187-f03cd4ca6ed1",
+      "to": "70e250b5-9fc0-4eee-b1e5-f5bda6f411b8",
+      "label": ""
+    },
+    {
+      "id": "2d2030f4-c078-46ae-9b54-473b9c0e844c",
+      "from": "70e250b5-9fc0-4eee-b1e5-f5bda6f411b8",
+      "to": "82599bb3-8780-41da-ba4e-982f0cce1137",
+      "label": ""
+    },
+    {
+      "id": "86d254eb-15d3-40d3-a7ac-bde51cac813f",
+      "from": "82599bb3-8780-41da-ba4e-982f0cce1137",
+      "to": "9c2b512c-b89b-4acd-bd60-d44bea86b8a5",
+      "label": ""
+    },
+    {
+      "id": "5d59c045-be3d-4cba-97a7-cad02a46569d",
+      "from": "2488ae8d-3291-4634-aa93-03e9296f78c2",
+      "to": "82599bb3-8780-41da-ba4e-982f0cce1137",
+      "label": ""
+    },
+    {
+      "id": "9cc651c2-0031-49f4-8d9c-e088c9799323",
+      "from": "70e250b5-9fc0-4eee-b1e5-f5bda6f411b8",
+      "to": 35,
+      "label": ""
+    },
+    {
+      "id": "4ea589d3-4141-4b0b-9e80-42c2043a86d1",
+      "from": "82599bb3-8780-41da-ba4e-982f0cce1137",
+      "to": "94497c05-265b-46a2-bd7b-b2f5b8c5931f",
+      "label": ""
+    },
+    {
+      "id": "53fc421e-433a-4da2-91b3-5be0f9e2f9d5",
+      "from": "666fcfb7-5006-400f-b1a6-ea4f16e410a6",
+      "to": "e1499743-942d-4a9b-a84b-244d2409886c",
+      "label": ""
+    },
+    {
+      "id": "320cdf5a-9f38-4817-b705-232c4f00bc4f",
+      "from": "96866083-bc95-44e4-8ffe-7bf05b7f55c5",
+      "to": "e1499743-942d-4a9b-a84b-244d2409886c",
+      "label": ""
+    },
+    {
+      "id": "81ba2fd4-5c99-4f14-8c5e-5821239c2d45",
+      "from": 45,
+      "to": "5418825e-b132-4b3c-9c8a-d175041e7d45",
+      "label": ""
+    },
+    {
+      "id": "2a52bfdf-fe6f-4ee9-a63b-baff11ccc2b1",
+      "from": "d8ef0499-2b54-4988-9919-be07a4507ef2",
+      "to": "5418825e-b132-4b3c-9c8a-d175041e7d45",
+      "label": ""
+    },
+    {
+      "id": "0ab8dc10-2e42-4be6-94a2-99eb030b5f59",
+      "from": "5418825e-b132-4b3c-9c8a-d175041e7d45",
+      "to": "94497c05-265b-46a2-bd7b-b2f5b8c5931f",
+      "label": ""
+    },
+    {
+      "id": "8335f7d8-1802-4176-b61b-cf165756d2d9",
+      "from": "5418825e-b132-4b3c-9c8a-d175041e7d45",
+      "to": "9c2b512c-b89b-4acd-bd60-d44bea86b8a5",
+      "label": ""
+    },
+    {
+      "id": "eba20110-9751-4c83-a702-7b0fdba07fd0",
+      "from": "0bef3440-7639-43f7-b14c-1cb83989b111",
+      "to": "96866083-bc95-44e4-8ffe-7bf05b7f55c5",
+      "label": ""
+    },
+    {
+      "id": "c1548b03-58ef-4102-a363-5c4d2add94dc",
+      "from": "e1499743-942d-4a9b-a84b-244d2409886c",
+      "to": "9c2b512c-b89b-4acd-bd60-d44bea86b8a5",
+      "label": ""
+    },
+    {
+      "id": "ab187484-a683-431e-bf2a-2ab577778ac4",
+      "from": 28,
+      "to": "65dc8f52-d83a-4afd-a0c4-4374ad950688",
+      "label": ""
+    },
+    {
+      "id": "c07e346d-2b41-44fd-a544-8fede545c4ea",
+      "from": 27,
+      "to": 46,
+      "label": ""
+    },
+    {
+      "id": "139ab952-54df-42e9-9af8-e2735e404962",
+      "from": "e0cbd315-67b3-45a0-99d0-642f13f67a4e",
+      "to": 47,
+      "label": ""
+    },
+    {
+      "id": "a3417e20-1c01-46c4-a751-13669f5672c7",
+      "from": 47,
+      "to": 48,
+      "label": ""
+    },
+    {
+      "id": "75150ee9-5665-4579-a174-5b8656876b60",
+      "from": 48,
+      "to": 49,
+      "label": ""
+    },
+    {
+      "id": "368cf947-9115-48e8-92d2-ef4efa90b271",
+      "from": 49,
+      "to": 50,
+      "label": ""
+    },
+    {
+      "id": "e9cbe009-dca1-4069-969b-26a0c704de41",
+      "from": 50,
+      "to": 51,
+      "label": ""
+    },
+    {
+      "id": "6b8660af-6218-4e5c-8115-9742ca3626cf",
+      "from": 49,
+      "to": 52,
+      "label": ""
+    },
+    {
+      "id": "b0affb16-41dc-4622-8597-62ac5b274257",
+      "from": 49,
+      "to": 53,
+      "label": ""
+    },
+    {
+      "id": "f54d1c1e-e6e2-41f8-8d9a-ee6e83fd5750",
+      "from": 51,
+      "to": 54,
+      "label": ""
+    },
+    {
+      "id": "d9c06bad-2ec8-47fa-bafd-4b53097eb2b4",
+      "from": 54,
+      "to": 55,
+      "label": ""
+    },
+    {
+      "id": "0d7d336b-b07c-43b3-8546-ee96ad04bd5d",
+      "from": 55,
+      "to": 56,
+      "label": ""
+    },
+    {
+      "id": "63b2593e-e5f3-4143-8548-a4f1b7a6e7aa",
+      "from": "ad8a4e65-9405-480f-9973-4734d9b9cdd9",
+      "to": "39a01d24-8319-4470-acb5-40a7fe7c56e9",
+      "label": ""
+    },
+    {
+      "id": "19732a8c-e1a4-4933-87c6-487293f016d8",
+      "from": "c4363dee-1167-4e2d-91d4-835091ff968b",
+      "to": "289409fa-3ce6-4c13-b37e-0fb9cc8ff473",
+      "label": ""
+    },
+    {
+      "id": "f200bc59-9a1b-4463-a277-92a4f5e51536",
+      "from": "3ecaa880-72da-45c0-a305-bc779fac3dd9",
+      "to": "7da10529-1e1b-4b64-9fa3-c68c0a4445c9",
+      "label": ""
+    },
+    {
+      "id": "1eef9b7b-4c8d-4f9b-81c6-bb5ec63805f3",
+      "from": "289409fa-3ce6-4c13-b37e-0fb9cc8ff473",
+      "to": "7da10529-1e1b-4b64-9fa3-c68c0a4445c9",
+      "label": ""
+    },
+    {
+      "id": "6dc4b5d3-c6e3-462f-8b96-b4b7780ed0ba",
+      "from": "7da10529-1e1b-4b64-9fa3-c68c0a4445c9",
+      "to": "ad8a4e65-9405-480f-9973-4734d9b9cdd9",
+      "label": ""
+    },
+    {
+      "id": "d24b09f3-fd21-4a49-aa2d-9bed7f9e45fe",
+      "from": "c178d676-42c1-43a8-9930-e1151a249948",
+      "to": "787be8d7-d4e1-42f8-ad12-4ae5e76e03f9",
+      "label": ""
+    },
+    {
+      "id": "186d4acd-fd37-4463-913e-4fd47092ae6a",
+      "from": "39a01d24-8319-4470-acb5-40a7fe7c56e9",
+      "to": "787be8d7-d4e1-42f8-ad12-4ae5e76e03f9",
+      "label": ""
+    },
+    {
+      "id": "2c26d7eb-d2ba-475a-9732-b420b5f6929b",
+      "from": "787be8d7-d4e1-42f8-ad12-4ae5e76e03f9",
+      "to": 57,
+      "label": ""
+    },
+    {
+      "id": "0abbd145-32cf-48e3-a905-073487956770",
+      "from": "787be8d7-d4e1-42f8-ad12-4ae5e76e03f9",
+      "to": "8d85fe1e-3c86-4e7f-a905-44d88fb1cf99",
+      "label": ""
+    },
+    {
+      "id": "9ad52111-f775-48d0-b43b-89934e04cb9a",
+      "from": "2db891e6-29d9-45ea-8dfd-0df17fed038d",
+      "to": "3ecaa880-72da-45c0-a305-bc779fac3dd9",
+      "label": ""
+    },
+    {
+      "id": "e1ed78bc-9cae-4d51-bfda-ca6e4d01c8bd",
+      "from": "2db891e6-29d9-45ea-8dfd-0df17fed038d",
+      "to": "ad8a4e65-9405-480f-9973-4734d9b9cdd9",
+      "label": ""
+    },
+    {
+      "id": "23186952-9a02-42ed-8396-34a48ede328f",
+      "from": "33759323-7cc0-4dd6-b981-e2e2727b451e",
+      "to": "c6c1e1de-3c1d-4765-a01e-b535ca5eaf87",
+      "label": ""
+    },
+    {
+      "id": "1c149fb9-acbe-4a33-8477-08260947742f",
+      "from": "68deb3ea-135e-4af4-ab33-ba72d4bd8183",
+      "to": "c6c1e1de-3c1d-4765-a01e-b535ca5eaf87",
+      "label": ""
+    },
+    {
+      "id": "4229111a-5bbf-43d7-8204-f48e9d2f7128",
+      "from": "86a4ac1f-4637-414e-bdcc-7aa160f4fa8b",
+      "to": "585fd0da-4438-4272-90e1-01c1f3af464d",
+      "label": ""
+    },
+    {
+      "id": "35606d54-204c-4540-b576-d56d1d711852",
+      "from": "585fd0da-4438-4272-90e1-01c1f3af464d",
+      "to": "7f089870-d43d-4633-939a-883bcdfeb147",
+      "label": ""
+    },
+    {
+      "id": "8804698b-4dae-483b-ad9e-0014f72d916d",
+      "from": "0baee40c-cca2-4b40-bde1-8690b9d6ea97",
+      "to": "c4363dee-1167-4e2d-91d4-835091ff968b",
+      "label": ""
+    },
+    {
+      "id": "7b750165-84ff-4141-ab39-100a401ef75b",
+      "from": "68deb3ea-135e-4af4-ab33-ba72d4bd8183",
+      "to": "0baee40c-cca2-4b40-bde1-8690b9d6ea97",
+      "label": ""
+    },
+    {
+      "id": "8285638c-8753-4946-94eb-44e55447f782",
+      "from": "33759323-7cc0-4dd6-b981-e2e2727b451e",
+      "to": "68deb3ea-135e-4af4-ab33-ba72d4bd8183",
+      "label": ""
+    },
+    {
+      "id": "0b896d26-d4d3-42a0-9e36-dab78d303da9",
+      "from": "7f089870-d43d-4633-939a-883bcdfeb147",
+      "to": "0baee40c-cca2-4b40-bde1-8690b9d6ea97",
+      "label": ""
+    },
+    {
+      "id": "7719371b-ad6f-4e0f-abc1-90d00548bbe6",
+      "from": "343d3671-7894-449b-8d75-eccb55241ddb",
+      "to": "585fd0da-4438-4272-90e1-01c1f3af464d",
+      "label": ""
+    },
+    {
+      "id": "a09d1e17-54b1-4c93-8541-da757d308d1b",
+      "from": "4f4bbbbd-f4c9-44f2-93b5-c0844bbd0195",
+      "to": "d6077670-ab39-4963-86f4-ba14083e36d8",
+      "label": ""
+    },
+    {
+      "id": "1bb11df4-9ff7-45cb-b8c6-aa7f08c369e3",
+      "from": "84cd63c9-bba4-4311-9e79-b94e8b048228",
+      "to": "d6077670-ab39-4963-86f4-ba14083e36d8",
+      "label": ""
+    },
+    {
+      "id": "ef3ce847-f9c6-407f-b878-3a2b6295b5b8",
+      "from": "02dbbb6c-f5f3-4e29-8734-b7d13b60ae27",
+      "to": "86a4ac1f-4637-414e-bdcc-7aa160f4fa8b",
+      "label": ""
+    },
+    {
+      "id": "bbbb55e8-435b-40a8-8af3-dcd7714e15ad",
+      "from": "d6077670-ab39-4963-86f4-ba14083e36d8",
+      "to": "02dbbb6c-f5f3-4e29-8734-b7d13b60ae27",
+      "label": ""
+    },
+    {
+      "id": "2edf2a2c-2e5e-4a9c-aec6-f43395f8cc37",
+      "from": "33759323-7cc0-4dd6-b981-e2e2727b451e",
+      "to": "d6077670-ab39-4963-86f4-ba14083e36d8",
+      "label": ""
+    },
+    {
+      "id": "886ef40a-1af7-4651-a180-9678a31f9afc",
+      "from": "28905d2b-00ff-4b4d-b098-c11902a0bf9b",
+      "to": 59,
+      "label": ""
+    },
+    {
+      "id": "3e2a4d6b-4060-4810-a272-454f602a418d",
+      "from": 59,
+      "to": "d6077670-ab39-4963-86f4-ba14083e36d8",
+      "label": ""
+    },
+    {
+      "id": "2b1ed2e3-d33f-4848-8df6-b2862b088fe7",
+      "from": "2c2b8f35-e197-43e5-9f15-77b2ab989d57",
+      "to": "28905d2b-00ff-4b4d-b098-c11902a0bf9b",
+      "label": ""
+    },
+    {
+      "id": "2e02eb84-59b5-450f-8b55-25c50786c755",
+      "from": "d4756c82-5d69-455a-ad2f-e9151228713b",
+      "to": "2c2b8f35-e197-43e5-9f15-77b2ab989d57",
+      "label": ""
+    },
+    {
+      "id": "058e896f-b4ed-42ef-bdd7-303497dbb7fd",
+      "from": "13658597-53b6-4fdd-9f45-0cffac9ac4a6",
+      "to": 60,
+      "label": ""
+    },
+    {
+      "id": "b8122e1c-6a04-4a98-817c-30840536ac17",
+      "from": "2c6d792e-0758-4ca4-a84e-9a7bf1a118b5",
+      "to": 60,
+      "label": ""
+    },
+    {
+      "id": "a5549454-ca4b-4f67-851a-69951fccdc7e",
+      "from": "4f4bbbbd-f4c9-44f2-93b5-c0844bbd0195",
+      "to": "712a7c25-24cc-461b-a98d-43ca47c9b3c3",
+      "label": ""
+    },
+    {
+      "id": "b511f811-dd53-44ed-be47-61779778c921",
+      "from": 60,
+      "to": "712a7c25-24cc-461b-a98d-43ca47c9b3c3",
+      "label": ""
+    },
+    {
+      "id": "8e4d1edc-21a4-4395-9343-24952caeb941",
+      "from": 60,
+      "to": "d4756c82-5d69-455a-ad2f-e9151228713b",
+      "label": ""
+    },
+    {
+      "id": "02fc6558-6f5a-4592-bcf9-5b29de4a0369",
+      "from": 61,
+      "to": "d4756c82-5d69-455a-ad2f-e9151228713b",
+      "label": ""
+    },
+    {
+      "id": "eb95f01f-737d-4fb2-a396-48d8a5d78f46",
+      "from": 61,
+      "to": "13658597-53b6-4fdd-9f45-0cffac9ac4a6",
+      "label": ""
+    },
+    {
+      "id": "6f74c2cb-4637-4d1f-9ec4-fd21330035e7",
+      "from": 61,
+      "to": "2c6d792e-0758-4ca4-a84e-9a7bf1a118b5",
+      "label": ""
+    },
+    {
+      "id": "d9b3e78b-adc4-4cfa-8211-457bb28bcb6f",
+      "from": 61,
+      "to": "2c6d792e-0758-4ca4-a84e-9a7bf1a118b5",
+      "label": ""
+    },
+    {
+      "id": "b87bdd15-d135-4119-97dd-2a5f86c671a7",
+      "from": 61,
+      "to": "343d3671-7894-449b-8d75-eccb55241ddb",
+      "label": ""
+    },
+    {
+      "id": "9e8bbd91-6704-46bd-ba85-023b0d9f5bed",
+      "from": "366972bf-08a2-4ac1-95ea-068525fd45b2",
+      "to": "1ad7a879-bb1c-4228-bd34-e97943ec2084",
+      "label": ""
+    },
+    {
+      "id": "896f8a3d-7501-4052-8bf7-22fb260ad966",
+      "from": 56,
+      "to": "8a6ec2c6-af31-4f8e-ac75-15b4758fab30",
+      "label": ""
+    },
+    {
+      "id": "052aa26a-f85e-4ec0-b6c7-dbe16b32adc7",
+      "from": "2a196def-b2d9-45ab-97c0-3e6de3e71c4f",
+      "to": "40c63dd6-43e5-45e1-b909-362b0eaee5f3",
+      "label": ""
+    },
+    {
+      "id": "4a5441eb-015d-4c6b-9412-e8f9a874f71b",
+      "from": "bd794bf6-4c82-4c02-8d72-b87ec1fa686a",
+      "to": 62,
+      "label": ""
+    },
+    {
+      "id": "c7c828a4-d26a-41a9-bdf2-494c93b621b6",
+      "from": 62,
+      "to": "2a196def-b2d9-45ab-97c0-3e6de3e71c4f",
+      "label": ""
+    },
+    {
+      "id": "058fe500-62ec-4396-8a24-e39b638b3bd2",
+      "from": "dbe1843c-0698-4c90-b169-d9b9af3fcc14",
+      "to": "3f932bbc-2dcd-4e84-9bc8-00adcad1926a",
+      "label": ""
+    },
+    {
+      "id": "c00cd452-e200-451f-b534-0fc8670794d8",
+      "from": "2a196def-b2d9-45ab-97c0-3e6de3e71c4f",
+      "to": "3f932bbc-2dcd-4e84-9bc8-00adcad1926a",
+      "label": ""
+    },
+    {
+      "id": "c817ffde-3ea8-454e-ac9a-357ba98a16f8",
+      "from": "3f932bbc-2dcd-4e84-9bc8-00adcad1926a",
+      "to": 63,
+      "label": ""
+    },
+    {
+      "id": "f64f69b8-078d-4cd4-93a1-31e209d43fd6",
+      "from": "2a196def-b2d9-45ab-97c0-3e6de3e71c4f",
+      "to": "2c6d792e-0758-4ca4-a84e-9a7bf1a118b5",
+      "label": ""
+    },
+    {
+      "id": "98f703f1-aae4-44f6-8760-c2e6c1eccdb8",
+      "from": "6a8871d1-3a4a-4941-ab82-2649b6368c1c",
+      "to": "bd794bf6-4c82-4c02-8d72-b87ec1fa686a",
+      "label": ""
+    },
+    {
+      "id": "597fe55e-0025-4774-9a1a-1e6fc46df0ff",
+      "from": 61,
+      "to": "bd794bf6-4c82-4c02-8d72-b87ec1fa686a",
+      "label": ""
+    },
+    {
+      "id": "ba633d99-1c13-40c3-9c12-3583e4b3c40d",
+      "from": "8a6ec2c6-af31-4f8e-ac75-15b4758fab30",
+      "to": "04675b68-737a-4c1d-8bfc-849a583b3395",
+      "label": ""
+    },
+    {
+      "id": "33113935-63a6-41a6-afcd-80bdd3b1bc90",
+      "from": "8a6ec2c6-af31-4f8e-ac75-15b4758fab30",
+      "to": 61,
+      "label": ""
+    },
+    {
+      "id": "d8b70495-6c89-44ef-8838-700d4846d843",
+      "from": 63,
+      "to": "ce39ed33-c62c-4b02-b3c3-34a496cf45b5",
+      "label": ""
+    },
+    {
+      "id": "1e4a421c-ce82-47f7-bad3-241fb3a516bf",
+      "from": "e7c539e7-1c55-4e20-93aa-bd27595184fb",
+      "to": 63,
+      "label": ""
+    },
+    {
+      "id": "fd74324c-0bb7-4513-8977-5a5d9632df8b",
+      "from": "8a6ec2c6-af31-4f8e-ac75-15b4758fab30",
+      "to": "6a8871d1-3a4a-4941-ab82-2649b6368c1c",
+      "label": ""
+    },
+    {
+      "id": "a02d77a5-f0ac-480b-9b92-77fc3727fa26",
+      "from": "8d85fe1e-3c86-4e7f-a905-44d88fb1cf99",
+      "to": 64,
+      "label": ""
+    },
+    {
+      "id": "5bb02e67-5e6b-4933-b541-a2fb1fce502f",
+      "from": "04675b68-737a-4c1d-8bfc-849a583b3395",
+      "to": 65,
+      "label": ""
+    },
+    {
+      "id": "f4a11056-9ceb-4ee0-ad9e-d07d128fe2c6",
+      "from": 64,
+      "to": 65,
+      "label": ""
+    },
+    {
+      "id": "ec308a56-dab2-4922-9a4b-6066c255e501",
+      "from": 65,
+      "to": 67,
+      "label": ""
+    },
+    {
+      "id": "3912538a-41e0-4b1e-9280-c90a46d29943",
+      "from": 67,
+      "to": 68,
+      "label": ""
+    },
+    {
+      "id": "67e27071-bcde-47fd-ad9e-af3e27caa1c3",
+      "from": 68,
+      "to": "1a24b70e-3e99-4596-a3d2-869f09e3ffef",
+      "label": ""
+    },
+    {
+      "id": "6bbff520-364c-4657-a40b-3452d7a747a9",
+      "from": 64,
+      "to": 66,
+      "label": ""
+    },
+    {
+      "id": "15d637b1-7c12-4dfb-97bd-176d5bea636e",
+      "from": "0561b56f-583d-4e07-9a37-c09b09e714ca",
+      "to": "eb6b4ea3-f9aa-4d4a-92cd-f85e768d9725",
+      "label": ""
+    },
+    {
+      "id": "23358ab6-b0e1-46bf-b788-44530dc5e433",
+      "from": "e457ac22-3f0b-4caf-a035-8bf19af861c6",
+      "to": "eb6b4ea3-f9aa-4d4a-92cd-f85e768d9725",
+      "label": ""
+    },
+    {
+      "id": "4481acfa-bcec-4778-aa2a-5090c6296fe8",
+      "from": "eb6b4ea3-f9aa-4d4a-92cd-f85e768d9725",
+      "to": "d7d37f58-088f-4ca0-9bf9-8c9027c43ff0",
+      "label": ""
+    },
+    {
+      "id": "414a394f-f710-4c90-af0d-cfff6f1424b8",
+      "from": "8d85fe1e-3c86-4e7f-a905-44d88fb1cf99",
+      "to": "9b7ccb14-9f66-4bac-8872-a1cdfe9e1b82",
+      "label": ""
+    },
+    {
+      "id": "d83acb6e-839f-47b7-aeb1-05081615c8b7",
+      "from": "9b7ccb14-9f66-4bac-8872-a1cdfe9e1b82",
+      "to": 69,
+      "label": ""
+    },
+    {
+      "id": "44980e62-8761-43ac-9500-b5198fc848de",
+      "from": 69,
+      "to": 70,
+      "label": ""
+    },
+    {
+      "id": "f74cbaf4-b4fd-40d8-9cc7-65a7f6ba115c",
+      "from": 70,
+      "to": "2e002e2d-bdc4-4001-a33d-560e044a4f80",
+      "label": ""
+    },
+    {
+      "id": "d24054d5-4111-4988-84cf-fb7bf871f2aa",
+      "from": "2e002e2d-bdc4-4001-a33d-560e044a4f80",
+      "to": 71,
+      "label": ""
+    },
+    {
+      "id": "47a3f485-9d9d-4016-9081-79113ed8ea13",
+      "from": 70,
+      "to": 72,
+      "label": ""
+    },
+    {
+      "id": "6784de56-6af5-4ed0-a0d8-25f07095f289",
+      "from": 72,
+      "to": 74,
+      "label": ""
+    },
+    {
+      "id": "a1d0b0d9-2b51-4604-b8b5-c7d2dad4c02f",
+      "from": 74,
+      "to": 73,
+      "label": ""
+    },
+    {
+      "id": "0ceafdc4-50d1-48d5-9812-828250093e99",
+      "from": 72,
+      "to": "18892e88-c7dc-432e-ac75-de7b867e1d4b",
+      "label": ""
+    },
+    {
+      "id": "36495556-429c-442e-99f8-8d8114e64e4f",
+      "from": 73,
+      "to": "18892e88-c7dc-432e-ac75-de7b867e1d4b",
+      "label": ""
+    },
+    {
+      "id": "325f2c71-2ab4-44fd-aaeb-745710bde37b",
+      "from": "18892e88-c7dc-432e-ac75-de7b867e1d4b",
+      "to": 75,
+      "label": ""
+    },
+    {
+      "id": "45d7f597-1e30-4c18-919d-292a27809660",
+      "from": 75,
+      "to": 76,
+      "label": ""
+    },
+    {
+      "id": "65a276e7-9442-48d4-b495-381930808705",
+      "from": 75,
+      "to": 77,
+      "label": ""
+    },
+    {
+      "id": "3b3da05a-28d4-40c2-92a9-3993a54ca8a1",
+      "from": 77,
+      "to": 78,
+      "label": ""
+    },
+    {
+      "id": "4c4fd702-4f08-4283-ab87-7ca7d8d4e637",
+      "from": 78,
+      "to": 79,
+      "label": ""
+    },
+    {
+      "id": "9dfe83fb-b7e1-48c2-a873-19a1a730c986",
+      "from": 79,
+      "to": "9c3758dd-5bda-457e-8f7c-1bf1b8b7d326",
+      "label": ""
+    },
+    {
+      "id": "208c1801-fef8-494c-8d29-78cf2a61eba3",
+      "from": "9c3758dd-5bda-457e-8f7c-1bf1b8b7d326",
+      "to": 80,
+      "label": ""
+    },
+    {
+      "id": "beb0b24f-4fd7-479b-b2b7-4e5d64925353",
+      "from": "8b75a20c-9503-4f5e-bcf0-7fe816db80e1",
+      "to": 79,
+      "label": ""
+    },
+    {
+      "id": "4afb2aba-f3bd-4a95-b951-4e0c3603f027",
+      "from": "9c3758dd-5bda-457e-8f7c-1bf1b8b7d326",
+      "to": "c4f7fa7c-a2ea-46ac-aab6-b9608837eed8",
+      "label": ""
+    },
+    {
+      "id": "071a034f-5f6e-44ed-9369-6b4d49bcbb14",
+      "from": 80,
+      "to": "c4f7fa7c-a2ea-46ac-aab6-b9608837eed8",
+      "label": ""
+    },
+    {
+      "id": "0e1d32b0-57a8-4389-9ff4-b5c457240fbc",
+      "from": "c4f7fa7c-a2ea-46ac-aab6-b9608837eed8",
+      "to": 81,
+      "label": ""
+    },
+    {
+      "id": "35a6fb0b-2998-44c2-bb35-53268f44f575",
+      "from": 79,
+      "to": 84,
+      "label": ""
+    },
+    {
+      "id": "9572ddbd-f625-4ef2-92ad-f9162730c965",
+      "from": 84,
+      "to": 83,
+      "label": ""
+    },
+    {
+      "id": "3f50518d-57fe-4e22-a9ab-5ec898de1039",
+      "from": 83,
+      "to": "d8f031af-9525-4213-9258-eb85a0a9f492",
+      "label": ""
+    },
+    {
+      "id": "21772795-056e-4f05-b697-b1a080ff0e79",
+      "from": "d8f031af-9525-4213-9258-eb85a0a9f492",
+      "to": 82,
+      "label": ""
+    },
+    {
+      "id": "b78b5a13-05d8-44a1-81a2-40f6dd8086a4",
+      "from": 83,
+      "to": 82,
+      "label": ""
+    },
+    {
+      "id": "2f82d549-c441-4721-bcb5-1129269635a7",
+      "from": 82,
+      "to": 85,
+      "label": ""
+    },
+    {
+      "id": "a7d06d8a-c443-4e6f-9075-f2e9209c337f",
+      "from": 75,
+      "to": 85,
+      "label": ""
+    },
+    {
+      "id": "00d0c232-e1cb-4825-b45b-87a4b7457b52",
+      "from": "8e941967-8a32-445e-b11d-3782d0ad5143",
+      "to": "67d835f0-e89c-46b9-816e-c9015610a4c4",
+      "label": ""
+    },
+    {
+      "id": "3cae04c1-1d01-4081-8dc8-ad2b2882fa1f",
+      "from": 81,
+      "to": "67d835f0-e89c-46b9-816e-c9015610a4c4",
+      "label": ""
+    },
+    {
+      "id": "8e155b98-72d8-4b05-aa71-8b3dff68fec1",
+      "from": 85,
+      "to": "67d835f0-e89c-46b9-816e-c9015610a4c4",
+      "label": ""
+    },
+    {
+      "id": "e1f20a39-4d53-447f-aef7-45926785514c",
+      "from": "67d835f0-e89c-46b9-816e-c9015610a4c4",
+      "to": 86,
+      "label": ""
+    },
+    {
+      "id": "2379a2ec-1b23-4fb8-be41-7d8334d573f6",
+      "from": "67d835f0-e89c-46b9-816e-c9015610a4c4",
+      "to": 87,
+      "label": ""
+    },
+    {
+      "id": "e5f3761f-3731-498f-8ca6-b33b1b94d4ea",
+      "from": "67d835f0-e89c-46b9-816e-c9015610a4c4",
+      "to": "64f68f30-a027-43cd-85c8-cf592274dee3",
+      "label": ""
+    },
+    {
+      "id": "d9901671-1c9f-46b2-aab3-50737b0f34fa",
+      "from": "64f68f30-a027-43cd-85c8-cf592274dee3",
+      "to": 88,
+      "label": ""
+    },
+    {
+      "id": "f5185fca-097a-4669-bbda-27f5ee82dd1f",
+      "from": "eabdc1af-5dcf-414d-b17c-26673a88e783",
+      "to": 90,
+      "label": ""
+    },
+    {
+      "id": "e2f90753-c073-4c22-95ee-96c2ecefcd8f",
+      "from": 89,
+      "to": 90,
+      "label": ""
+    },
+    {
+      "id": "6f337424-4333-481a-99bf-4e4c5294751d",
+      "from": 90,
+      "to": "36827438-aaed-4065-85ea-72f2daed70e3",
+      "label": ""
+    },
+    {
+      "id": "ac737253-3f98-4c2f-b53f-83fcbc941e3d",
+      "from": 76,
+      "to": "eabdc1af-5dcf-414d-b17c-26673a88e783",
+      "label": ""
+    },
+    {
+      "id": "09292d2a-6f52-46b4-af81-baf57d8349c4",
+      "from": "36827438-aaed-4065-85ea-72f2daed70e3",
+      "to": "9c3758dd-5bda-457e-8f7c-1bf1b8b7d326",
+      "label": ""
+    },
+    {
+      "id": "d0374db4-f5f8-4a08-a879-cde9790af1d2",
+      "from": "d6370c46-c941-41ed-9be2-a0a1561ed41e",
+      "to": "ba44764c-0536-4b78-8a85-900a452bea10",
+      "label": ""
+    },
+    {
+      "id": "506468cd-f3e4-4f44-a5ed-c10b66048f3c",
+      "from": "e6618fef-b845-4eaf-a3e7-cc6b17b05324",
+      "to": "ba44764c-0536-4b78-8a85-900a452bea10",
+      "label": ""
+    },
+    {
+      "id": "fd27696f-eb8f-40a0-b68c-bd80a8eb7fe6",
+      "from": 91,
+      "to": "ba44764c-0536-4b78-8a85-900a452bea10",
+      "label": ""
+    },
+    {
+      "id": "c41fc83c-a098-4fe8-a92c-a0c552ffb11e",
+      "from": 76,
+      "to": "d6370c46-c941-41ed-9be2-a0a1561ed41e",
+      "label": ""
+    },
+    {
+      "id": "5cf93192-7309-449a-b501-cf47b7212355",
+      "from": "ba44764c-0536-4b78-8a85-900a452bea10",
+      "to": 92,
+      "label": ""
+    },
+    {
+      "id": "0c7447e7-b891-4d7b-928b-0e02cc7b5191",
+      "from": 93,
+      "to": "ba44764c-0536-4b78-8a85-900a452bea10",
+      "label": ""
+    },
+    {
+      "id": "dab61dd7-eed5-4c4a-bfc4-3282db987c34",
+      "from": 94,
+      "to": 93,
+      "label": ""
+    },
+    {
+      "id": "1621ccc8-3271-4200-88d3-8dd4b0ebbe4a",
+      "from": "d6370c46-c941-41ed-9be2-a0a1561ed41e",
+      "to": 91,
+      "label": ""
+    },
+    {
+      "id": "65de3f33-2f8e-491b-9761-6e08436dccaf",
+      "from": "d6370c46-c941-41ed-9be2-a0a1561ed41e",
+      "to": 94,
+      "label": ""
+    },
+    {
+      "id": "be356e96-101a-4515-8904-96c3b54de2d6",
+      "from": 95,
+      "to": 96,
+      "label": ""
+    },
+    {
+      "id": "bff8eed4-7edd-4acb-80c5-7efe70879cef",
+      "from": 92,
+      "to": 97,
+      "label": ""
+    },
+    {
+      "id": "d34f64aa-da67-4e05-ad47-bb5142f5c953",
+      "from": 97,
+      "to": 95,
+      "label": ""
+    },
+    {
+      "id": "2dcb2279-d3d7-4084-bb31-15c62c1eaf81",
+      "from": 96,
+      "to": 89,
+      "label": ""
+    },
+    {
+      "id": "24c3ba03-1aa7-48a6-ba09-ec47d649a669",
+      "from": 86,
+      "to": 98,
+      "label": ""
+    },
+    {
+      "id": "d4456e32-a913-4f02-bddd-2085ac0e4617",
+      "from": 98,
+      "to": "4f52b452-4a67-469f-868e-481396a1eb15",
+      "label": ""
+    },
+    {
+      "id": "165ac9f0-851f-4f8b-833c-95ac6a088133",
+      "from": 98,
+      "to": 99,
+      "label": ""
+    },
+    {
+      "id": "b8f7a908-5417-4f81-b2cd-e5dd0ace5aac",
+      "from": "4f52b452-4a67-469f-868e-481396a1eb15",
+      "to": "356398c8-02c6-4885-b286-fdbd15c0c594",
+      "label": ""
+    },
+    {
+      "id": "815fafa5-a405-4421-b847-c2326b270dc7",
+      "from": 99,
+      "to": "356398c8-02c6-4885-b286-fdbd15c0c594",
+      "label": ""
+    },
+    {
+      "id": "06006260-9c2a-4c09-ba1c-845fbc5124c0",
+      "from": "356398c8-02c6-4885-b286-fdbd15c0c594",
+      "to": "8044cd81-51d5-4984-85ef-d70eca06e58a",
+      "label": ""
+    },
+    {
+      "id": "9cff8d9d-01c9-4db0-b11a-065c3991f7dd",
+      "from": 98,
+      "to": 101,
+      "label": ""
+    },
+    {
+      "id": "b8ec538b-057d-4bc5-beb0-a6b30fc2966a",
+      "from": "8044cd81-51d5-4984-85ef-d70eca06e58a",
+      "to": 101,
+      "label": ""
+    },
+    {
+      "id": "5cec25ab-74dc-4335-a511-53a6800d1e92",
+      "from": 101,
+      "to": 100,
+      "label": ""
+    },
+    {
+      "id": "f23e82ea-7ac3-4118-92a6-12fd818f4723",
+      "from": 100,
+      "to": 102,
+      "label": ""
+    },
+    {
+      "id": "8a2c5894-687c-4b5e-97b5-0943f9ad7b38",
+      "from": 102,
+      "to": 103,
+      "label": ""
+    },
+    {
+      "id": "3c04886d-4e41-4579-ab1c-651fe1852fa0",
+      "from": 102,
+      "to": 104,
+      "label": ""
+    },
+    {
+      "id": "180b3bea-e48e-4e67-8588-94456f298e5a",
+      "from": 104,
+      "to": 103,
+      "label": ""
+    },
+    {
+      "id": "a636fe3e-743f-4705-a974-d6e59cf0e653",
+      "from": 103,
+      "to": 106,
+      "label": ""
+    },
+    {
+      "id": "bb047bb2-b82d-497c-bd2e-8765d61403c9",
+      "from": 106,
+      "to": 105,
+      "label": ""
+    },
+    {
+      "id": "ebad78d7-f8c6-4bce-b423-47f95095ca21",
+      "from": 105,
+      "to": 107,
+      "label": ""
+    },
+    {
+      "id": "fd5f8ff6-117e-462b-b0f8-8a5e6ae6e28c",
+      "from": 105,
+      "to": 109,
+      "label": ""
+    },
+    {
+      "id": "cb2df3bd-6b28-435f-9d7d-8b6a7e9e35c5",
+      "from": 107,
+      "to": 109,
+      "label": ""
+    },
+    {
+      "id": "1458a00c-456a-44b7-90d9-633ac8890bdd",
+      "from": 103,
+      "to": 105,
+      "label": ""
+    },
+    {
+      "id": "c24329dd-1c66-425f-a6e5-21f6a8b8e302",
+      "from": 109,
+      "to": 110,
+      "label": ""
+    },
+    {
+      "id": "3f04371c-9d33-4cdb-9b72-a97277c1458b",
+      "from": 109,
+      "to": 108,
+      "label": ""
+    },
+    {
+      "id": "289d4706-4dc8-4c2e-ac44-4a905b74a780",
+      "from": 108,
+      "to": 110,
+      "label": ""
+    },
+    {
+      "id": "a109a76e-294d-4e34-8f2c-a118e18f8d5b",
+      "from": 110,
+      "to": 111,
+      "label": ""
+    },
+    {
+      "id": "04919540-7148-4e68-a48c-b22929db69de",
+      "from": 111,
+      "to": 112,
+      "label": ""
+    },
+    {
+      "id": "ec8058aa-77cc-4e9d-94e3-117dab90e9ec",
+      "from": 110,
+      "to": 112,
+      "label": ""
+    },
+    {
+      "id": "03ed245a-b035-4306-a13d-d6e84e63b617",
+      "from": 115,
+      "to": 114,
+      "label": ""
+    },
+    {
+      "id": "c138b046-b772-41b9-99f0-e6eac97a7106",
+      "from": 112,
+      "to": 114,
+      "label": ""
+    },
+    {
+      "id": "24b23122-d6f3-463c-8e2d-47f82f33dd26",
+      "from": 112,
+      "to": 115,
+      "label": ""
+    },
+    {
+      "id": "f627c1a1-08eb-49c3-acd7-5059df9e9637",
+      "from": 114,
+      "to": 116,
+      "label": ""
+    },
+    {
+      "id": "6c285e0c-8672-4f46-adb5-bcb3c0c54d5a",
+      "from": 114,
+      "to": 118,
+      "label": ""
+    },
+    {
+      "id": "0f828c8a-fb2a-4bd3-8c42-ea8daff89732",
+      "from": 114,
+      "to": 117,
+      "label": ""
+    },
+    {
+      "id": "8fb4233e-5748-4bc4-8be1-37cb4e46f32c",
+      "from": 117,
+      "to": 119,
+      "label": ""
+    },
+    {
+      "id": "3a67518f-3d69-4f23-846f-f635574757ce",
+      "from": 118,
+      "to": 119,
+      "label": ""
+    },
+    {
+      "id": "6bbbc947-7989-4e13-9cbc-7809a293506b",
+      "from": 116,
+      "to": 119,
+      "label": ""
+    },
+    {
+      "id": "9c3a6f86-d712-4dc3-9740-e0cdc276fce3",
+      "from": 119,
+      "to": 120,
+      "label": ""
+    },
+    {
+      "id": "25010603-71f9-49a9-832f-3b2d2b05b35a",
+      "from": 120,
+      "to": 113,
+      "label": ""
+    },
+    {
+      "id": "3c1a62a3-6aff-4b59-9b61-751650c1a9d3",
+      "from": 113,
+      "to": 121,
+      "label": ""
+    },
+    {
+      "id": "33c5608e-2af5-48bb-82ba-115b0beb54b8",
+      "from": 113,
+      "to": 122,
+      "label": ""
+    },
+    {
+      "id": "258cf21a-3335-4247-bc2c-5fc1292df176",
+      "from": 113,
+      "to": 123,
+      "label": ""
+    },
+    {
+      "id": "a8565ce8-ddee-4434-ae9c-28891cd72b80",
+      "from": 123,
+      "to": 124,
+      "label": ""
+    },
+    {
+      "id": "a0363060-6f38-4985-8c57-04c664db3337",
+      "from": 122,
+      "to": 124,
+      "label": ""
+    },
+    {
+      "id": "59e7f27f-f88d-4006-aad5-8a21ef7ebd3a",
+      "from": 121,
+      "to": 124,
+      "label": ""
+    },
+    {
+      "id": "7dd91e41-d047-45cb-bd07-a1ad3c3ed73a",
+      "from": "b3f03223-46b2-4665-a630-58b7e045d713",
+      "to": "8b384b31-6461-404b-9291-64ae9a065682",
+      "label": ""
+    },
+    {
+      "id": "fd49cfd0-f60b-4495-bbe7-e87eea877251",
+      "from": 126,
+      "to": "b3f03223-46b2-4665-a630-58b7e045d713",
+      "label": ""
+    },
+    {
+      "id": "aebea289-e03d-480d-b336-d52e3ec723e2",
+      "from": "2796b566-c442-4eb6-8aa0-0c3572bcdaef",
+      "to": "b3f03223-46b2-4665-a630-58b7e045d713",
+      "label": ""
+    },
+    {
+      "id": "5ccdc2ba-00b5-477f-8bb7-b0914717b168",
+      "from": 125,
+      "to": "b3f03223-46b2-4665-a630-58b7e045d713",
+      "label": ""
+    },
+    {
+      "id": "4d0b0167-e8d9-4303-83d0-a99c6037e822",
+      "from": "8b384b31-6461-404b-9291-64ae9a065682",
+      "to": 100,
+      "label": ""
+    },
+    {
+      "id": "7e395810-f74d-41ac-892a-41d5c84c8f16",
+      "from": 128,
+      "to": 127,
+      "label": ""
+    },
+    {
+      "id": "bf414cd3-5ef4-497f-909f-de36e71d2273",
+      "from": 124,
+      "to": 128,
+      "label": ""
+    },
+    {
+      "id": "ee805eed-080f-4d0d-87b8-d7d83bb39b92",
+      "from": 124,
+      "to": 129,
+      "label": ""
+    },
+    {
+      "id": "461a5b99-36f8-435e-a51a-fd4f25b17a58",
+      "from": 129,
+      "to": 130,
+      "label": ""
+    },
+    {
+      "id": "b5b51b48-39c6-4116-a42b-ea00a0928503",
+      "from": 127,
+      "to": 130,
+      "label": ""
+    },
+    {
+      "id": "47812c1f-dd6d-44fb-8b1d-abdd4b45694a",
+      "from": 130,
+      "to": 125,
+      "label": ""
+    },
+    {
+      "id": "ac2a4d02-0913-4834-afc5-f7fab67da6ab",
+      "from": 130,
+      "to": "304c40de-f207-48ac-bdf8-0893cf35f0a4",
+      "label": ""
+    },
+    {
+      "id": "f8f5a039-3a7c-4423-8641-a755634590c0",
+      "from": 1,
+      "to": "0cf3efaa-7263-4fd5-994e-cd5f93dd1d79",
+      "label": ""
+    },
+    {
+      "id": "c0e12407-5336-490d-9d91-f86d68e70a15",
+      "from": "0cf3efaa-7263-4fd5-994e-cd5f93dd1d79",
+      "to": 131,
+      "label": ""
+    },
+    {
+      "id": "0895c373-7c2a-46f4-aba0-bd174c5feaa9",
+      "from": 131,
+      "to": 132,
+      "label": ""
+    },
+    {
+      "id": "1d649b2e-c7c0-4ed1-a9fc-359d39b988ae",
+      "from": 131,
+      "to": "6b7809e1-4a26-46ad-99c4-2cdbd0ee2ff6",
+      "label": ""
+    },
+    {
+      "id": "91e68bb6-0db0-44bf-abae-b7a940547315",
+      "from": "0cf3efaa-7263-4fd5-994e-cd5f93dd1d79",
+      "to": 133,
+      "label": ""
+    },
+    {
+      "id": "d7fd40b8-7479-4b2a-ba44-890f0688ab5f",
+      "from": "0cf3efaa-7263-4fd5-994e-cd5f93dd1d79",
+      "to": 134,
+      "label": ""
+    },
+    {
+      "id": "2311638b-d864-4229-8f1d-6f7f0bcf7d03",
+      "from": 133,
+      "to": 135,
+      "label": ""
+    },
+    {
+      "id": "211aaf41-efc2-4ae1-9269-d94d36d0614e",
+      "from": 135,
+      "to": 136,
+      "label": ""
+    },
+    {
+      "id": "b38dc6b6-cb01-4ee0-9f68-d0e449da17f6",
+      "from": 136,
+      "to": "07c29895-9980-4808-8d86-2b4e78de60a8",
+      "label": ""
+    },
+    {
+      "id": "87d2fb08-5327-48e3-971f-f510f932fbc7",
+      "from": "b11dd8e9-1a00-4c1f-88b7-166d6c730dd8",
+      "to": "691bae50-1671-4b10-a5b4-0d0bec834015",
+      "label": ""
+    },
+    {
+      "id": "0e4201c1-028a-44c1-9f94-a16055b269b3",
+      "from": "13f7cf60-2558-466b-8589-3ef57b74eda5",
+      "to": "691bae50-1671-4b10-a5b4-0d0bec834015",
+      "label": ""
+    },
+    {
+      "id": "9d687a6f-191b-49c7-a516-2db6ccf8157e",
+      "from": "07c29895-9980-4808-8d86-2b4e78de60a8",
+      "to": "691bae50-1671-4b10-a5b4-0d0bec834015",
+      "label": ""
+    },
+    {
+      "id": "c7c2db72-f63c-42cb-8034-6fe445188e7e",
+      "from": "691bae50-1671-4b10-a5b4-0d0bec834015",
+      "to": "366972bf-08a2-4ac1-95ea-068525fd45b2",
+      "label": ""
+    },
+    {
+      "id": "78e3de14-5fe1-401c-a0db-1e7ba45be865",
+      "from": 134,
+      "to": "b11dd8e9-1a00-4c1f-88b7-166d6c730dd8",
+      "label": ""
+    },
+    {
+      "id": "d2011bf8-0f08-4265-a6f7-bed6a717d70d",
+      "from": 136,
+      "to": 137,
+      "label": ""
+    },
+    {
+      "id": "1cebdd8a-a391-46dc-b4c3-9e0fb6231512",
+      "from": "9c277fa0-6f74-4c86-b0ab-c62162bbd605",
+      "to": 137,
+      "label": ""
+    },
+    {
+      "id": "9ff22ace-2ea6-417e-983b-065a10fed3f1",
+      "from": 137,
+      "to": "9b0afd47-b85f-4993-98ee-8502e38a14cf",
+      "label": ""
+    },
+    {
+      "id": "a964f387-a9f2-4ec7-b2fa-e51450680857",
+      "from": "9b0afd47-b85f-4993-98ee-8502e38a14cf",
+      "to": 138,
+      "label": ""
+    },
+    {
+      "id": "61ceab63-4ec9-4ed1-a01e-780442b999cc",
+      "from": 138,
+      "to": 139,
+      "label": ""
+    },
+    {
+      "id": "b1c18df3-65cb-4c4d-9fd6-c09787e1e3bb",
+      "from": 139,
+      "to": 16,
+      "label": ""
+    },
+    {
+      "id": "74ccbff4-a56d-41a4-8e17-edd5d0c5f2ec",
+      "from": 19,
+      "to": "ba7643d7-f25f-4017-ac02-a641720592f7",
+      "label": ""
+    },
+    {
+      "id": "1173c422-69ea-499b-9cb3-eaa68286ec55",
+      "from": "5635be0b-f308-4de1-9272-279d30073498",
+      "to": "ba7643d7-f25f-4017-ac02-a641720592f7",
+      "label": ""
+    },
+    {
+      "id": "cb9820e1-0691-4bc9-9f22-f2b20a816d31",
+      "from": "ba7643d7-f25f-4017-ac02-a641720592f7",
+      "to": "dad9be60-f90f-496f-97e1-695594a5a7f5",
+      "label": ""
+    },
+    {
+      "id": "a9120bba-7735-4d1f-8782-fc6c6b7d4bfa",
+      "from": 18,
+      "to": 140,
+      "label": ""
+    },
+    {
+      "id": "18fd9aa7-ee78-4872-91cf-fb82805c5645",
+      "from": "fe5c2f58-1364-41db-ba59-b9d3b54347c5",
+      "to": 140,
+      "label": ""
+    },
+    {
+      "id": "a4d3c1e4-ac66-4b87-9891-bec342036ef6",
+      "from": 140,
+      "to": "59c56616-0df3-44ac-8e6b-3766f45171c4",
+      "label": ""
+    },
+    {
+      "id": "d8867200-4a82-4f31-95fe-e2c7e79e231c",
+      "from": "7d8f59f0-16dc-447e-8dc0-2039d082b095",
+      "to": 141,
+      "label": ""
+    },
+    {
+      "id": "c827c029-5e01-4105-8853-679ef883dcfa",
+      "from": 28,
+      "to": 143,
+      "label": ""
+    },
+    {
+      "id": "2355ec54-be49-46f5-8ba1-9ede303f7eaa",
+      "from": 28,
+      "to": 142,
+      "label": ""
+    },
+    {
+      "id": "f4af8977-1e2f-4b37-bde0-2907ed2c184e",
+      "from": 30,
+      "to": 54,
+      "label": ""
+    },
+    {
+      "id": "d282f904-0efd-43c1-8931-3d0051da0c59",
+      "from": 141,
+      "to": "01de1006-0dcc-42a4-a17d-f9e7e8a78e56",
+      "label": ""
+    },
+    {
+      "id": "54432cf9-575c-41c6-829e-b29ea66aa2d0",
+      "from": "7d8f59f0-16dc-447e-8dc0-2039d082b095",
+      "to": 144,
+      "label": ""
+    },
+    {
+      "id": "ea54a582-af39-4cd0-9ced-bb04d578b9fc",
+      "from": "49145e73-f51a-4d0c-a294-0e490378ba8c",
+      "to": 144,
+      "label": ""
+    },
+    {
+      "id": "1a9c4d0e-f33b-49d0-aa06-79dff9f14e1e",
+      "from": 144,
+      "to": 14,
+      "label": ""
+    },
+    {
+      "id": "bf1f051a-b137-4ca5-ac0d-d56e81ac919d",
+      "from": "5e426d9a-7cfa-4993-aa80-36c8e56a65d4",
+      "to": 145,
+      "label": ""
+    },
+    {
+      "id": "97c4f303-4e14-4667-84fe-b9a114db820b",
+      "from": "ca045123-a6e7-42a4-8464-d9c15500c2dd",
+      "to": 145,
+      "label": ""
+    },
+    {
+      "id": "f51c855b-c9e2-427a-9359-ede0f0f8e4af",
+      "from": 145,
+      "to": "97883409-3534-44d7-bcba-0175a3e83652",
+      "label": ""
+    },
+    {
+      "id": "eb1f9fa0-ce08-4a89-bf13-8143799d0c98",
+      "from": "178023a1-4797-4fb5-88bb-b5d56cf2b617",
+      "to": "ca045123-a6e7-42a4-8464-d9c15500c2dd",
+      "label": ""
+    },
+    {
+      "id": "12cd0fa2-cc42-4a8f-a235-2b291fe7739f",
+      "from": "5e426d9a-7cfa-4993-aa80-36c8e56a65d4",
+      "to": "178023a1-4797-4fb5-88bb-b5d56cf2b617",
+      "label": ""
+    },
+    {
+      "id": "20bbebee-5263-4f8c-be58-1dc6666e1b32",
+      "from": "6487fd89-1051-4a88-b38e-6cf6f41a5238",
+      "to": 146,
+      "label": ""
+    },
+    {
+      "id": "2e0e41ec-3336-4840-af5e-540e3f768c41",
+      "from": "5f3421de-16af-4b78-98ac-5ff18ec2a2ae",
+      "to": 15,
+      "label": ""
+    },
+    {
+      "id": "51d2a05b-1c48-4f69-8dc7-c57e555e8acc",
+      "from": "5e426d9a-7cfa-4993-aa80-36c8e56a65d4",
+      "to": "a128e6dd-da47-4634-8999-6ae213de6c05",
+      "label": ""
+    },
+    {
+      "id": "2bfbf81b-3475-43ea-9345-27722b43d1ee",
+      "from": "6487fd89-1051-4a88-b38e-6cf6f41a5238",
+      "to": 147,
+      "label": ""
+    },
+    {
+      "id": "82a72b13-16fa-4f86-8fb9-0dec6b8c8ea1",
+      "from": 147,
+      "to": "5f3421de-16af-4b78-98ac-5ff18ec2a2ae",
+      "label": ""
+    },
+    {
+      "id": "b016dbd0-3b59-4393-9022-8bea77eb9e5e",
+      "from": "a128e6dd-da47-4634-8999-6ae213de6c05",
+      "to": 147,
+      "label": ""
+    },
+    {
+      "id": "57aed47a-ea2d-41db-9a16-6065704bcda0",
+      "from": "97883409-3534-44d7-bcba-0175a3e83652",
+      "to": "19103dbd-58ab-4aa9-914d-88cb95d201ee",
+      "label": ""
+    },
+    {
+      "id": "fba54ecd-250f-4a36-90f8-88d3ea2a4c46",
+      "from": "97883409-3534-44d7-bcba-0175a3e83652",
+      "to": 149,
+      "label": ""
+    },
+    {
+      "id": "3b630852-f63c-4947-b598-364e1a7ac88a",
+      "from": "a128e6dd-da47-4634-8999-6ae213de6c05",
+      "to": "5f3421de-16af-4b78-98ac-5ff18ec2a2ae",
+      "label": ""
+    },
+    {
+      "id": "ceffd6e5-a221-4ee2-87f0-f84878aa1d47",
+      "from": 15,
+      "to": 148,
+      "label": ""
+    },
+    {
+      "id": "1e5b19ee-704a-4507-b10a-47ec4ec0248f",
+      "from": 15,
+      "to": 150,
+      "label": ""
+    },
+    {
+      "id": "4256a5fc-299b-4cf9-8df8-7559185e34d8",
+      "from": "67a55143-0001-4ee9-a7f7-c3defa844641",
+      "to": 150,
+      "label": ""
+    },
+    {
+      "id": "654d345b-5a6a-410d-a448-32b199d7df39",
+      "from": 150,
+      "to": 13,
+      "label": ""
+    },
+    {
+      "id": "9c462147-9087-4f89-9292-9694b3da898a",
+      "from": 151,
+      "to": "a53bcb8c-9411-4c34-8baa-f4b16f62fdb8",
+      "label": ""
+    },
+    {
+      "id": "39153c57-b6b1-4306-bc1f-b8e70e2bebc8",
+      "from": "a53bcb8c-9411-4c34-8baa-f4b16f62fdb8",
+      "to": "21f38f9f-52b2-4279-a81c-61c0c597dc4a",
+      "label": ""
+    },
+    {
+      "id": "e6d1ee88-45bb-40bf-88f8-06f2a54841cf",
+      "from": 15,
+      "to": 152,
+      "label": ""
+    },
+    {
+      "id": "dd4915b5-c256-4c42-ab4d-a9b531f8f7b1",
+      "from": 152,
+      "to": 151,
+      "label": ""
+    },
+    {
+      "id": "6d056630-c26a-4c42-94e8-275cbda8bd8c",
+      "from": 152,
+      "to": "32021ab9-fcf0-4535-987f-3d24002c5af6",
+      "label": ""
+    },
+    {
+      "id": "b77c42de-3547-42b3-acea-535e4fab37fc",
+      "from": 153,
+      "to": 154,
+      "label": ""
+    },
+    {
+      "id": "aaa29132-b744-4f36-93ae-7206e16f3ae8",
+      "from": 154,
+      "to": "81c172d8-0ccb-4ac0-8576-09a1d70dd47c",
+      "label": ""
+    },
+    {
+      "id": "0d8422e1-8e4d-4656-affa-2973b7099aa1",
+      "from": "81c172d8-0ccb-4ac0-8576-09a1d70dd47c",
+      "to": 155,
+      "label": ""
+    },
+    {
+      "id": "d3c19050-2358-4f51-880d-0b5cc8f383e0",
+      "from": "a961f58d-966c-4104-af31-0df81a621b14",
+      "to": 156,
+      "label": ""
+    },
+    {
+      "id": "8b462e71-6f64-4b3d-9a3c-9377b804c61a",
+      "from": 156,
+      "to": 154,
+      "label": ""
+    },
+    {
+      "id": "3e407a85-75d1-4f37-b2dd-8fa32b1237bd",
+      "from": 156,
+      "to": "ed4a6628-9e2f-4414-8d1e-e1b91c7a95cc",
+      "label": ""
+    },
+    {
+      "id": "0b206722-fde9-46da-98cd-6218bcc8adda",
+      "from": 156,
+      "to": 157,
+      "label": ""
+    },
+    {
+      "id": "956a9dca-cedf-497c-a046-c2468454c10b",
+      "from": 156,
+      "to": 157,
+      "label": ""
+    },
+    {
+      "id": "a5b8cc43-4f3f-48b9-9868-929719f71966",
+      "from": 157,
+      "to": "e8d0c70d-34bc-4d3e-af78-b98b4c674a12",
+      "label": ""
+    },
+    {
+      "id": "09783cfc-e6e4-46b5-bf4f-9a6b6cd46bf2",
+      "from": 157,
+      "to": 158,
+      "label": ""
+    },
+    {
+      "id": "2031af72-6724-4181-ba99-6fc899ed1da3",
+      "from": 157,
+      "to": 159,
+      "label": ""
+    },
+    {
+      "id": "a8f40872-cd4c-46e4-b0fa-c5eb17c54c0f",
+      "from": 157,
+      "to": 161,
+      "label": ""
+    },
+    {
+      "id": "1686f6b2-01b8-4544-98bf-f8543ad70598",
+      "from": "9f8f41d9-0257-4b1a-9cd9-87e4590e412c",
+      "to": 161,
+      "label": ""
+    },
+    {
+      "id": "6ceef860-43d3-44c9-af88-953e9c1b728a",
+      "from": 160,
+      "to": 161,
+      "label": ""
+    },
+    {
+      "id": "38c5d92b-55a6-47ca-a126-1b09976ebe09",
+      "from": 160,
+      "to": 161,
+      "label": ""
+    },
+    {
+      "id": "004a1eff-dd0f-4676-b39f-fe33e6ba4d44",
+      "from": 161,
+      "to": "42c5750a-4da6-4d8d-bb13-8153588048db",
+      "label": ""
+    },
+    {
+      "id": "a96e9b33-a0b7-4535-ac56-0ba264018a83",
+      "from": 158,
+      "to": "52bcc79a-0839-4592-836c-a0f843f595dd",
+      "label": ""
+    },
+    {
+      "id": "3d5f2430-281b-40f6-a675-68a68d5ee0b0",
+      "from": "52bcc79a-0839-4592-836c-a0f843f595dd",
+      "to": "a6ab2c00-66f9-426c-9274-ef7cab83bc85",
+      "label": ""
+    },
+    {
+      "id": "a0b399de-b61b-4556-9173-9a4b8752d438",
+      "from": 162,
+      "to": "a6ab2c00-66f9-426c-9274-ef7cab83bc85",
+      "label": ""
+    },
+    {
+      "id": "549abdc9-92c1-4f7f-ba5b-fdaed538fa48",
+      "from": 163,
+      "to": "a6ab2c00-66f9-426c-9274-ef7cab83bc85",
+      "label": ""
+    },
+    {
+      "id": "74200289-4181-4070-8ddf-a3fce602c265",
+      "from": "a6ab2c00-66f9-426c-9274-ef7cab83bc85",
+      "to": 164,
+      "label": ""
+    },
+    {
+      "id": "28893bd8-ccab-4f9f-8de8-641551f0aa1d",
+      "from": 159,
+      "to": 165,
+      "label": ""
+    },
+    {
+      "id": "d06a7d00-059c-4037-b8d7-7640c60ea99f",
+      "from": 165,
+      "to": 166,
+      "label": ""
+    },
+    {
+      "id": "c228cb1d-a34b-4ff5-8e46-258f3816afc4",
+      "from": 165,
+      "to": 167,
+      "label": ""
+    },
+    {
+      "id": "5d38a3a6-ad6e-4737-bb34-e2469ffae294",
+      "from": 166,
+      "to": 168,
+      "label": ""
+    },
+    {
+      "id": "224526ff-e644-42d0-b9f3-54fdb741375e",
+      "from": 167,
+      "to": 169,
+      "label": ""
+    },
+    {
+      "id": "2e5d468c-809c-401e-b314-cebdc6223aa4",
+      "from": 167,
+      "to": 171,
+      "label": ""
+    },
+    {
+      "id": "3345bfd9-8f15-4891-9aef-f227cceb064f",
+      "from": 166,
+      "to": 171,
+      "label": ""
+    },
+    {
+      "id": "2d343a93-0505-44db-b3a3-5fdfefbda171",
+      "from": 171,
+      "to": 170,
+      "label": ""
+    },
+    {
+      "id": "4717ad68-3596-4678-8778-ab5150aed348",
+      "from": 170,
+      "to": 159,
+      "label": ""
+    },
+    {
+      "id": "c8a46121-0c44-46cc-9568-3e244af34c6c",
+      "from": 37,
+      "to": 173,
+      "label": ""
+    },
+    {
+      "id": "349ec5d6-aa5e-40b5-a37d-c7cc77e2dad0",
+      "from": 37,
+      "to": 173,
+      "label": ""
+    },
+    {
+      "id": "24436569-9a12-46b2-9b35-20ad27344ef6",
+      "from": 37,
+      "to": 173,
+      "label": ""
+    },
+    {
+      "id": "0e5823ac-7675-4da7-97c9-fbdf1e461461",
+      "from": 37,
+      "to": 173,
+      "label": ""
+    },
+    {
+      "id": "c310a5dc-1c76-453f-9a45-ff5bad93e4e4",
+      "from": 172,
+      "to": 173,
+      "label": ""
+    },
+    {
+      "id": "0841759d-5a72-462f-bd27-881282c4592d",
+      "from": 173,
+      "to": "6f55766f-f64a-413d-b78b-641fa93db6cc",
+      "label": ""
+    },
+    {
+      "id": "db64c15b-1368-4baf-b42a-723d54ece755",
+      "from": "6f55766f-f64a-413d-b78b-641fa93db6cc",
+      "to": 174,
+      "label": ""
+    },
+    {
+      "id": "6fdf8329-6be2-4926-815f-75bf828a93e7",
+      "from": "e7c539e7-1c55-4e20-93aa-bd27595184fb",
+      "to": 179,
+      "label": ""
+    },
+    {
+      "id": "1f9ed7e7-4a22-43d1-bb61-38c79190f90b",
+      "from": 175,
+      "to": 179,
+      "label": ""
+    },
+    {
+      "id": "6dfca71e-b0c9-44ca-b41c-7157cf04cee4",
+      "from": 179,
+      "to": "ce2c8978-cfab-4d7c-b1a5-adf838ceda02",
+      "label": ""
+    },
+    {
+      "id": "53f5f95d-06ac-42a7-85e5-d5302180ef14",
+      "from": "ce2c8978-cfab-4d7c-b1a5-adf838ceda02",
+      "to": 177,
+      "label": ""
+    }
+  ]
+}
